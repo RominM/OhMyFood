@@ -1,0 +1,19 @@
+{
+  "name": "p3_rm",
+  "version": "1.0.0",
+  "description": "P3 OC",
+  "main": "index.js",
+  "scripts": {
+    "sass":"sass --watch ./sass/main.scss:./css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RominM/RominManogil_03_18032021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RominM/RominManogil_03_18032021/issues"
+  },
+  "homepage": "https://github.com/RominM/RominManogil_03_18032021#readme"
+}
