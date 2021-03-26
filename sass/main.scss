@@ -1,11 +1,19 @@
 @import "./1.Base/variables";
 @import "./1.Base/typographie";
 
+.block-page {
+    line-height: 2em;
+    margin: 0;
+    padding: 0;
+}
+
 .header {
+    padding: 15px;
     &__title {
+        display: block;
         font-family: Shrikhand;
         font-size: 2em;
-        width: 60%;
+        width: 175px;
         margin: auto;
     }
 }
