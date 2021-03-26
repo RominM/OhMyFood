@@ -21,8 +21,15 @@
 .local {
     display: flex;
     justify-content: center;
-    background-color: $color-grey;
+    background-color: $color_dark-grey;
+    padding: 10px;
+    box-shadow: inset 0px 2px 5px 2px #b1b1b1;
     &__img {
-        width: 15px;
+        width: 10px;
+        margin-right: 10px;
+    }
+    &__txt {
+        font-size: 0.9em;
+        font-family: 'Roboto-Medium', 'sans-serif';
     }
 }
