@@ -4,7 +4,9 @@
 .header {
     &__title {
         font-family: Shrikhand;
-        font-size: 5em;
+        font-size: 2em;
+        width: 60%;
+        margin: auto;
     }
 }
 
@@ -13,6 +15,6 @@
     justify-content: center;
     background-color: $color-grey;
     &__img {
-        width: 10px;
+        width: 15px;
     }
 }
