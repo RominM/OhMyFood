@@ -1,5 +1,18 @@
 @import "./1.Base/variables";
+@import "./1.Base/typographie";
 
-body {
-    background-color: $sprout;
+.header {
+    &__title {
+        font-family: Shrikhand;
+        font-size: 5em;
+    }
+}
+
+.local {
+    display: flex;
+    justify-content: center;
+    background-color: $color-grey;
+    &__img {
+        width: 10px;
+    }
 }

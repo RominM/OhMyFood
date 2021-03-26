@@ -2,6 +2,23 @@
 ======== COLOR ========
 **********************/
 
-$primary: #9356DC;
-$secondary: #FF79DA 
-$tertiary: #99E2D0
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$color-grey: #cecece;
+
+/**********************
+========= FONT ========
+**********************/
+
+$title-font: Shrikhand;/*title & logo*/
+$txt-font: Roboto;
+$title-size: 1.2em;
+$txt-size: 0.9em;
+
+/**********************
+========= SIZE ========
+**********************/
+
+$size-widht: 110px;
+$size-height: 75px;
