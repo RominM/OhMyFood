@@ -2,7 +2,6 @@
 @import "./1.Base/typographie";
 
 .block-page {
-    line-height: 2em;
     margin: 0;
     padding: 0;
 }
@@ -31,5 +30,39 @@
     &__txt {
         font-size: 0.9em;
         font-family: 'Roboto-Medium', 'sans-serif';
+    }
+}
+
+.explor {
+    background-color: $color_clear-grey;
+    padding: 20px;
+    &__title {
+        font-family: 'Roboto-Black';
+        font-size: 1.5em;
+        text-align: center;
+        padding: 25px 0px 5px 0px;
+    }
+    &__subtitle {
+        font-family: 'Roboto-Light';
+        font-size: 1em;
+        text-align: center;
+        padding: 10px 0px 10px 0px;
+    }
+    &__btn {
+        width: 175px;
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        text-align: center;
+        border: none;
+        border-radius: 25px;
+        padding: 12px;
+        background: linear-gradient($color-primary, $color-secondary);
+        a {
+            text-decoration: none;
+            font-family: 'Roboto-Medium';
+            font-size: 1em;
+            color: #fff;
+        }
     }
 }
