@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux
+    <meta name="description" content="Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux
         utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les
         restaurants car leur menu est préparé à l’avance. Plus de perte de temps à consulter la carte
         !">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
-    
+
     <title>Acceuil - Ohmyfood!</title>
 </head>
 
@@ -20,89 +20,109 @@
         <span class="header__title">ohmyfood</span>
     </header>
 
-        <div class="local">
-            <div class="local__img">
-                <img src="images/logo/map-marker-alt-solid.svg" alt="icon marker">
-            </div>
-            <span class="local__txt">Paris, Belleville</span>
+    <div class="local">
+        <div class="local__img">
+            <img src="images/logo/map-marker-alt-solid.svg" alt="icon marker">
         </div>
+        <span class="local__txt">Paris, Belleville</span>
+    </div>
 
-        <div class="explor">
-            <h2 class="explor__title">Réservez le menu qui vous convient</h2>
-            <h3 class="explor__subtitle">Découvrez des restaurants d'exception, séléctionnés par nos soins.</h3>
-            <a href="#restaurants" class="explor__btn">Explorer nos restaurants</a>
+    <div class="explor">
+        <h2 class="explor__title">Réservez le menu qui vous convient</h2>
+        <h3 class="explor__subtitle">Découvrez des restaurants d'exception, séléctionnés par nos soins.</h3>
+        <a href="#restaurants" class="explor__btn">Explorer nos restaurants</a>
         <div>
 
-        <div class="working">
-            <div class="working__title">
-                <h2>Fonctionnement</h2>
-            </div>
+            <div class="working">
+                <div class="working__title">
+                    <h2>Fonctionnement</h2>
+                </div>
 
-            <ol class="working__list">
-                <li class="working__list--choice">
-                    <div>
-                        <img src="images/logo/mobile-alt-solid.svg" alt="icon telephone">
+                <ol class="working__list">
+                    <li class="working__list--choice">
+                        <div>
+                            <img src="images/logo/mobile-alt-solid.svg" alt="icon telephone">
+                        </div>
+                        <span>Choisissez un restaurant</span>
+                    </li>
+                    <li class="working__list--compose">
+                        <div>
+                            <img src="images/logo/list-ul-solid.svg" alt="icon menu">
+                        </div>
+                        <span>Composez votre menu</span>
+                    </li>
+                    <li class="working__list--taste">
+                        <div>
+                            <img src="images/logo/store-solid.svg" alt="icon store">
+                        </div>
+                        <span>Dégustez au restaurant</span>
+                    </li>
+                </ol>
+
+            </div>
+            <main>
+
+                <section class="restaurants">
+                    <div class="restaurants__title">
+                        <h2>Restaurant</h2>
                     </div>
-                    <span>Choisissez un restaurant</span>
-                </li>
-                <li class="working__list--compose">
-                    <div>
-                        <img src="images/logo/list-ul-solid.svg" alt="icon menu">
+
+                    <!-- CARD N°1 -->
+                    <div class="restaurants__card">
+                        <div class="restaurants__card--img">
+                            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="assiette repas 1"
+                                class="restaurants__card--bg">
+                            <span class="restaurants__card--sticker">Nouveau</span>
+                        </div>
+
+                        <h3 class="restaurants__card--name">La palette du goût</h3>
+                        <span class="restaurants__card--txt">Ménilmontant</span>
+                        <img src="images/logo/heart-regular.svg" alt="logo coeur">
                     </div>
-                    <span>Composez votre menu</span>
-                </li>
-                <li class="working__list--taste">
-                    <div>
-                        <img src="images/logo/store-solid.svg" alt="icon store">
+
+                    <!-- CARD N°2 -->
+                    <div class="restaurants__card">
+                        <div class="restaurants__card--img">
+                            <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="assiette repas 3"
+                                class="restaurants__card--bg">
+                            <span class="restaurants__card--sticker">Nouveau</span>
+                        </div>
+
+                        <h3 class="restaurants__card--name">La note enchantée</h3>
+                        <span class="restaurants__card--txt">charonne</span>
+                        <img src="images/logo/heart-regular.svg" alt="logo coeur">
                     </div>
-                    <span>Dégustez au restaurant</span>
-                </li>
-            </ol>
 
-        </div>
-        <main>
+                    <!-- CARD N°3 -->
+                    <div class="card">
+                        <div class="restaurants__card--img">
+                            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="assiette repas 3">
+                        </div>
+                        <h3 class="restaurants__card--name">À la française</h3>
+                        <span class="restaurants__card--txt"></span>
+                        <img src="images/logo/heart-regular.svg" alt="logo coeur">
+                    </div>
 
-        <section class="restaurants">
-            <div class="restaurantTitle">
-                <h2></h2>
-            </div>
+                    <!-- CARD N°4 -->
+                    <div class="card">
+                        <div class="restaurants__card--img">
+                            <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                                alt="assiette repas 4">
+                        </div>
+                        <h3 class="restaurants__card--name">À la française</h3>
+                        <span class="restaurants__card--txt"></span>
+                        <img src="images/logo/heart-regular.svg" alt="logo coeur">
+                    </div>
 
-            <div class="card">
-                <img src="" alt="">
-                <h4></h4>
-                <p></p>
-                <i></i>
-            </div>
+                </section>
 
-            <div class="card">
-                <img src="" alt="">
-                <h4></h4>
-                <p></p>
-                <i></i>
-            </div>
+            </main>
 
-            <div class="card">
-                <img src="" alt="">
-                <h4></h4>
-                <p></p>
-                <i></i>
-            </div>
+            <footer>
 
-            <div class="card">
-                <img src="" alt="">
-                <h4></h4>
-                <p></p>
-                <i></i>
-            </div>
-
-        </section>
-
-    </main>
-
-    <footer>
-
-    </footer>
+            </footer>
 </body>
+
 </html>
 
 
@@ -190,7 +210,7 @@
 
 
 
-    <!-- <header>
+<!-- <header>
         <div class="logo">
 <<<<<<< HEAD
             <img src="images/logo/ohmyfood@1x.svg" alt="" class="omf">
@@ -229,7 +249,7 @@
             </div>
         </div>
     </header> -->
-    <!-- <nav>
+<!-- <nav>
         <h2>Fonctionnement</h2>
         <ul>
             <li>
@@ -275,7 +295,7 @@
             </li>
         </ul>
     </nav> -->
-    <!-- <section class="select">
+<!-- <section class="select">
         <h2>Restaurants</h2>
         <div class="resto">
             <a href="" class="link">
@@ -342,7 +362,7 @@
             </a>
         </div>
     </section> -->
-    <!-- <footer>
+<!-- <footer>
         <div class="logo">
             <img src="images/logo/ohmyfood@2x.svg" alt="">
         </div>
