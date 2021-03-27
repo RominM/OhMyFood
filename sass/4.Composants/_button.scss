@@ -1,0 +1,21 @@
+//__button.scss__//
+
+.explor {
+    &__btn {
+        width: 175px;
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        text-align: center;
+        border: none;
+        border-radius: 25px;
+        padding: 12px;
+        background: linear-gradient($color-primary, $color-secondary);
+        a {
+            text-decoration: none;
+            font-family: 'Roboto-Medium';
+            font-size: 1em;
+            color: #fff;
+        }
+    }
+}
