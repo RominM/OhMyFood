@@ -1,8 +1,8 @@
 //__main.sass__\\
 
 //** 1.BASE **\\
+@import "./1.Base/variables";
 //** 2.UTILS **\\
-@import "./2.Utils/variables";
 @import "./2.Utils/typographie";
 @import "./2.Utils/mixins";
 //** 3.LAYOUT **\\
