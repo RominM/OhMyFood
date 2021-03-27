@@ -11,11 +11,17 @@
         border-radius: 25px;
         padding: 12px;
         background: linear-gradient($color-primary, $color-secondary);
+        box-shadow: 0px 2px 5px 2px #cccccc;
+        transition: 0.2s;
         a {
             text-decoration: none;
             font-family: 'Roboto-Medium';
             font-size: 1em;
             color: #fff;
         }
+    }
+    &__btn:hover {
+        box-shadow: 2px 0px 5px 2px #cccccc;
+        background: linear-gradient($color-clear_primary, $color-clear_secondary);
     }
 }
