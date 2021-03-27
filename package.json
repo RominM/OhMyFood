@@ -1,7 +1,7 @@
 {
   "name": "p3_rm",
   "version": "1.0.0",
-  "description": "P3 OC",
+  "description": "P3_OC",
   "main": "index.js",
   "scripts": {
     "sass":"sass --watch ./sass/master.scss:./css/style.css --style compressed"

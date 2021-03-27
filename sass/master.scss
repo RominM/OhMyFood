@@ -1,7 +1,8 @@
-//__main.sass__\\
+//__master.sass__\\
 
 //** 1.BASE **\\
 @import "./1.Base/variables";
+@import "./1.Base/mixins";
 //** 2.UTILS **\\
 @import "./2.Utils/typographie";
 @import "./2.Utils/mixins";
@@ -10,6 +11,7 @@
 @import "./3.Layout/footer";
 //** 4.COMPOSANTS **\\
 @import "./4.Composants/button";
+@import "./4.Composants/loader";
 //** 5.PAGE **\\
 @import "./5.Pages/home";
-@import "./5.Pages/main.scss";
+@import "./5.Pages/main";
