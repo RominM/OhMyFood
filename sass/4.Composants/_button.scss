@@ -13,8 +13,7 @@
         background: linear-gradient($color-primary, $color-secondary);
         box-shadow: 0px 2px 5px 2px #cccccc;
         transition: 0.3s;
-        a {
-            text-decoration: none;
+        &__btn--txt {
             font-family: 'Roboto-Medium';
             font-size: 1em;
             color: #fff;

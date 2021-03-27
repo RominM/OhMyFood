@@ -18,9 +18,14 @@
 <body>
     <div class="block-page">
 
+        <!-- LOADER -->
+        <div class=" bg-loader shutdown">
+          <div class="loader" id="loader-1"></div>
+        </div>
+
         <!-- HEADER -->
         <header class="header">
-            <span class="header__title">ohmyfood</span>
+            <h1>ohmyfood</h1>
         </header>
 
         <!-- LOCAL -->
@@ -31,13 +36,20 @@
             <span class="local__txt">Paris, Belleville</span>
         </div>
 
+    <!--<div class="local">
+            <div class="local__img">
+                <img src="images/logo/map-marker-alt-solid.svg" alt="icon marker">
+            </div>
+            <input type="text" placeholder="Paris, Belleville" name="search" class="local__txt"/>
+        </div>-->
+
         <!-- EXPLOR -->
         <div class="explor">
             <h2 class="explor__title">Réservez le menu qui vous convient</h2>
             <h3 class="explor__subtitle">Découvrez des restaurants d'exception, séléctionnés par nos soins.</h3>
-            <div class="explor__btn">
-                <a href="#restaurants">Explorer nos restaurants</a>
-            </div>
+            <button href="#restaurants" class="explor__btn">
+                <span class="explor__btn--txt">Explorer nos restaurants</span>
+            </button>
         </div>
 
         <div class="working">
