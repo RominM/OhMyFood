@@ -1,5 +1,12 @@
+//__main.sass__//
+
+//** BASE **//
+
 @import "./1.Base/variables";
 @import "./1.Base/typographie";
+//__________________________\\ 
+
+@import "./4.Composants/button";
 
 .block-page {
     margin: 0;
@@ -47,22 +54,5 @@
         font-size: 1em;
         text-align: center;
         padding: 10px 0px 10px 0px;
-    }
-    &__btn {
-        width: 175px;
-        margin: auto;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        text-align: center;
-        border: none;
-        border-radius: 25px;
-        padding: 12px;
-        background: linear-gradient($color-primary, $color-secondary);
-        a {
-            text-decoration: none;
-            font-family: 'Roboto-Medium';
-            font-size: 1em;
-            color: #fff;
-        }
     }
 }
