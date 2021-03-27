@@ -1,18 +1,3 @@
-//__main.sass__\\
-
-//** 1.BASE **\\
-@import "./1.Base/variables";
-//** 2.UTILS **\\
-@import "./2.Utils/typographie";
-@import "./2.Utils/mixins";
-//** 3.LAYOUT **\\
-@import "./3.Layout/header";
-@import "./3.Layout/footer";
-//** 4.COMPOSANTS **\\
-@import "./4.Composants/button";
-//** 5.PAGE **\\
-@import "./5.Pages/home";
-
 .local {
     display: flex;
     justify-content: center;
