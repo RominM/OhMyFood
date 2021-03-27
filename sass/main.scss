@@ -1,10 +1,15 @@
-//__main.sass__//
+//__main.sass__\\
 
-//** BASE **//
+//** BASE **\\
 
-@import "./1.Base/variables";
-@import "./1.Base/typographie";
-//__________________________\\ 
+@import "reset.css";
+
+//** UTILS **\\
+
+@import "./2.Utils/variables";
+@import "./2.Utils/typographie";
+
+//** COMPOSANTS **\\
 
 @import "./4.Composants/button";
 
