@@ -1,32 +1,17 @@
 //__main.sass__\\
 
-//** BASE **\\
-
-//** UTILS **\\
-
+//** 1.BASE **\\
+//** 2.UTILS **\\
 @import "./2.Utils/variables";
 @import "./2.Utils/typographie";
 @import "./2.Utils/mixins";
-
-//** COMPOSANTS **\\
-
+//** 3.LAYOUT **\\
+@import "./3.Layout/header";
+@import "./3.Layout/footer";
+//** 4.COMPOSANTS **\\
 @import "./4.Composants/button";
-
-.block-page {
-    margin: 0;
-    padding: 0;
-}
-
-.header {
-    padding: 15px;
-    &__title {
-        display: block;
-        font-family: Shrikhand;
-        font-size: 2em;
-        width: 175px;
-        margin: auto;
-    }
-}
+//** 5.PAGE **\\
+@import "./5.Pages/home";
 
 .local {
     display: flex;
