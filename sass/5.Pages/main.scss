@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     background-color: $color_dark-grey;
-    padding: 10px;
+    padding: 18px;
     box-shadow: inset 0px 2px 5px 2px #b1b1b1;
     &__img {
         width: 10px;
@@ -16,17 +16,17 @@
 
 .explor {
     background-color: $color_clear-grey;
-    padding: 20px;
+    padding: 15px 10px 50px 10px;
     &__title {
         font-family: 'Roboto-Black';
         font-size: 1.5em;
         text-align: center;
-        padding: 25px 0px 5px 0px;
+        padding: 25px 5px 5px 5px;
     }
     &__subtitle {
         font-family: 'Roboto-Light';
-        font-size: 1.1em;
+        font-size: 1em;
         text-align: center;
-        padding: 10px 0px 10px 0px;
+        padding: 10px 0px 35px 0px;
     }
 }
