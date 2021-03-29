@@ -6,3 +6,13 @@
 	border: 3px solid transparent;
 	animation: rotate linear 3.5s;
 }
+
+@mixin WorkList {
+	position: relative;
+	border-radius: 15px;
+	padding: 15px 0px 15px 0px;
+	width: 250px;
+	height: 50px;
+	margin: auto auto 25px;
+	text-align: center;
+}
