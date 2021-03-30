@@ -4,7 +4,8 @@
     button {
         display: block;
         width: 65%;
-        height: 45px;
+        height: auto;
+        min-height: 50px;
         margin: auto;
         border: none;
         border-radius: 25px;
@@ -14,10 +15,8 @@
         transition: 0.3s;
         color: #fff;
         cursor: pointer;
-        &__btn--txt {
-            font-family: 'Roboto-Bold';
-            font-size: 1em;
-        }
+        font-family: 'Roboto-Medium';
+        font-size: 1em;
     }
     &__btn:hover {
         box-shadow: 2px 0px 5px 2px #cccccc;
