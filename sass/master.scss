@@ -5,13 +5,12 @@
 @import "./1.Base/mixins";
 //** 2.UTILS **\\
 @import "./2.Utils/typographie";
-@import "./2.Utils/mixins";
 //** 3.LAYOUT **\\
 @import "./3.Layout/header";
+@import "./3.Layout/main";
 @import "./3.Layout/footer";
 //** 4.COMPOSANTS **\\
 @import "./4.Composants/button";
 @import "./4.Composants/loader";
 //** 5.PAGE **\\
 @import "./5.Pages/home";
-@import "./5.Pages/main";
