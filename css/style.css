@@ -21,6 +21,31 @@
   font-family: "Shrikhand";
   src: url(../../Fonts/Shrikhand/Shrikhand-Regular.ttf) format("truetype");
 }
+h1 {
+  font-family: "Shrikhand";
+  font-size: 1.5em;
+}
+
+h2 {
+  font-family: "Roboto-Black", "sans-serif";
+  font-size: 1.4em;
+}
+
+h3 {
+  font-family: "Roboto-Black";
+  font-size: 1em;
+}
+
+.light {
+  font-family: "Roboto-Light";
+  font-size: 1em;
+}
+
+.medium {
+  font-size: 0.9em;
+  font-family: "Roboto-Medium", "sans-serif";
+}
+
 .header {
   display: flex;
   padding: 15px;
@@ -43,24 +68,17 @@
   padding: 18px;
   box-shadow: inset 0px 2px 5px 2px #b1b1b1;
 }
-.local__txt {
-  font-size: 0.9em;
-  font-family: "Roboto-Medium", "sans-serif";
-}
 
 .explor {
   background-color: #f6f6f6;
   padding: 15px 10px 50px 10px;
 }
-.explor__title {
-  font-family: "Roboto-Black", "sans-serif";
-  font-size: 1.5em;
+.explor h2 {
   text-align: center;
   padding: 25px 20px 5px 20px;
 }
-.explor__subtitle {
-  font-family: "Roboto-Light";
-  font-size: 1em;
+.explor .light {
+  display: block;
   text-align: center;
   padding: 10px 0px 35px 0px;
 }
@@ -85,8 +103,6 @@
   color: #fff;
 }
 .working h2 {
-  font-family: "Roboto-Black", "sans-serif";
-  font-size: 1.4em;
   padding: 50px 0px 25px 25px;
 }
 .working__list {
@@ -159,7 +175,7 @@
   box-shadow: 0px 5px 10px 1px #e2e2e2;
   transition: transform cubic-bezier(0.6, -0.59, 0.29, 1.68) 0.5s;
 }
-.restaurants__card--sticker {
+.restaurants__card .medium {
   position: absolute;
   top: 5%;
   right: 5%;
@@ -167,13 +183,11 @@
   text-align: center;
   background-color: #abf7e0;
   padding: 7px;
-  font-family: "Roboto-Medium", "sans-serif";
-  font-size: 0.9em;
   color: #38ad8a;
   border-radius: 3px;
   transition: 1s;
 }
-.restaurants__card--sticker:hover {
+.restaurants__card .medium:hover {
   transform: scale(1.2);
 }
 .restaurants__card:hover {
@@ -184,14 +198,6 @@
   height: 50px;
   padding: 10px;
   line-height: 1.3em;
-}
-.restaurants .blocTxt h3 {
-  font-family: "Roboto-Black";
-  font-size: 1em;
-}
-.restaurants .blocTxt span {
-  font-family: "Roboto-Light";
-  font-size: 0.9em;
 }
 
 .footer {

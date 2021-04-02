@@ -25,3 +25,31 @@
     src:url(../../Fonts/Shrikhand/Shrikhand-Regular.ttf) format('truetype')
 }
 
+//title//
+
+h1 {
+    font-family: 'Shrikhand';
+    font-size: 1.5em;
+}
+
+h2 {
+    font-family: 'Roboto-Black','sans-serif';
+    font-size: 1.4em;
+}
+
+h3 {
+    font-family: 'Roboto-Black';
+    font-size: 1em;
+}
+
+//span//
+
+.light {
+    font-family: 'Roboto-Light';
+    font-size: 1em;
+}
+
+.medium {
+    font-size: 0.9em;
+    font-family: 'Roboto-Medium', 'sans-serif';
+}

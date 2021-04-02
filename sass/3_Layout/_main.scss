@@ -4,24 +4,17 @@
     background-color: $color_dark-grey;
     padding: 18px;
     box-shadow: inset 0px 2px 5px 2px #b1b1b1;
-    &__txt {
-        font-size: 0.9em;
-        font-family: 'Roboto-Medium', 'sans-serif';
-    }
 }
 
 .explor {
     background-color: $color_clear-grey;
     padding: 15px 10px 50px 10px;
-    &__title {
-        font-family: 'Roboto-Black','sans-serif';
-        font-size: 1.5em;
+    h2 {
         text-align: center;
         padding: 25px 20px 5px 20px;
     }
-    &__subtitle {
-        font-family: 'Roboto-Light';
-        font-size: 1em;
+    .light {
+        display: block;
         text-align: center;
         padding: 10px 0px 35px 0px;
     }
@@ -46,8 +39,6 @@
         color: #fff;
     }
     h2 {
-        font-family: 'Roboto-Black','sans-serif';
-        font-size: 1.4em;
         padding: 50px 0px 25px 25px;
     }
     &__list {
@@ -99,7 +90,7 @@
         border-radius: 15px;
         box-shadow: 0px 5px 10px 1px rgb(226, 226, 226);
         transition: transform cubic-bezier(0.6, -0.59, 0.29, 1.68) .5s;
-        &--sticker {
+        .medium { //sticker//
             position: absolute;
             top: 5%;
             right: 5%;
@@ -107,8 +98,6 @@
             text-align: center;
             background-color: rgb(171, 247, 224);
             padding: 7px;
-            font-family: 'Roboto-Medium','sans-serif';
-            font-size: 0.9em;
             color: rgb(56, 173, 138);
             border-radius: 3px;
             transition: 1s;
@@ -125,13 +114,5 @@
         height: 50px;
         padding: 10px;
         line-height: 1.3em;
-        h3 {
-            font-family: 'Roboto-Black';
-            font-size: 1em;
-        }
-        span {
-            font-family: 'Roboto-Light';
-            font-size: .9em;
-        }
     }
 }
