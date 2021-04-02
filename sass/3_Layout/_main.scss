@@ -123,25 +123,28 @@ ul {
 }
 
 .dish {
+    display: flex;
     padding: 10px;
     border: solid 1px red;
     border-radius: 15px;
     width: 310px;
     height: 60px;
     margin: 10px auto;
-    white-space: nowrap;
-    overflow: hidden;
     line-height: 1.2em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
     &__name {
     }
     &__flex {
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
+        // flex-wrap: nowrap;
+        flex-direction: column;
     }
         &--side {
+            
         }
         &--price {
-        
+            
         }
 }

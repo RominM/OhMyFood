@@ -46,6 +46,13 @@ h3 {
   font-size: 0.9em;
 }
 
+.dish {
+  font-family: "Roboto-Medium", "sans-serif";
+}
+.dish__flex--side {
+  font-family: "Roboto-Light";
+}
+
 .header {
   display: flex;
   padding: 15px;
@@ -206,20 +213,21 @@ ul {
 }
 
 .dish {
+  display: flex;
   padding: 10px;
   border: solid 1px red;
   border-radius: 15px;
   width: 310px;
   height: 60px;
   margin: 10px auto;
-  white-space: nowrap;
-  overflow: hidden;
   line-height: 1.2em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .dish__flex {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  flex-direction: column;
 }
 .footer {
   width: 100%;

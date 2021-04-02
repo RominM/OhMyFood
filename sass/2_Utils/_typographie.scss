@@ -55,7 +55,10 @@ h3 {
 }
 
 .dish {
-    &__name {
-        
+    font-family: 'Roboto-Medium', 'sans-serif';
+    &__flex {
+        &--side {
+            font-family: 'Roboto-Light';
+        }
     }
 }
