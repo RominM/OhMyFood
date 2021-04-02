@@ -68,6 +68,10 @@ h3 {
   margin: auto;
 }
 
+body {
+  position: relative;
+}
+
 .local {
   display: flex;
   justify-content: center;
@@ -207,28 +211,78 @@ h3 {
   line-height: 1.3em;
 }
 
+.menu {
+  position: absolute;
+  top: 90%;
+  background-color: #f6f6f6;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+.menu h1 {
+  position: relative;
+  padding: 25px 10px 10px 25px;
+}
+.menu h1 .ImgHeart {
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.start, .plats, .course {
+  margin-top: 25px;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+hr {
+  width: 50px;
+  height: 4px;
+  margin-left: 20px;
+  background-color: #99E2D0;
+  border: none;
+}
+
 ul {
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
 }
 
 .dish {
+  position: relative;
   display: flex;
+  justify-content: space-between;
   padding: 10px;
-  border: solid 1px red;
+  background-color: #fff;
   border-radius: 15px;
-  width: 310px;
-  height: 60px;
+  width: 300px;
+  height: 65px;
   margin: 10px auto;
-  line-height: 1.2em;
+  line-height: 1.5em;
   white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .dish__flex {
   display: flex;
   flex-direction: column;
 }
+.dish__flex--name {
+  font-size: 1.2em;
+}
+.dish__price {
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-sizing: border-box;
+  width: 50px;
+  height: 100%;
+  margin: auto;
+  padding-top: 30px;
+}
+
 .footer {
   width: 100%;
   max-height: 200px;
