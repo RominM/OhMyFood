@@ -1,16 +1,17 @@
 //__master.sass__\\
 
 //** 1.BASE **\\
-@import "./1.Base/variables";
-@import "./1.Base/mixins";
+@import "./1_Base/variables";
+@import "./1_Base/mixins";
 //** 2.UTILS **\\
-@import "./2.Utils/typographie";
+@import "./2_Utils/typographie";
 //** 3.LAYOUT **\\
-@import "./3.Layout/header";
-@import "./3.Layout/main";
-@import "./3.Layout/footer";
+@import "./3_Layout/header";
+@import "./3_Layout/main";
+@import "./3_Layout/footer";
 //** 4.COMPOSANTS **\\
-@import "./4.Composants/button";
-@import "./4.Composants/loader";
+@import "./4_Composants/button";
+@import "./4_Composants/loader";
+@import "./4_Composants/img";
 //** 5.PAGE **\\
-@import "./5.Pages/home";
+@import "./5_Pages/home";
