@@ -1,0 +1,137 @@
+.local {
+    display: flex;
+    justify-content: center;
+    background-color: $color_dark-grey;
+    padding: 18px;
+    box-shadow: inset 0px 2px 5px 2px #b1b1b1;
+    &__txt {
+        font-size: 0.9em;
+        font-family: 'Roboto-Medium', 'sans-serif';
+    }
+}
+
+.explor {
+    background-color: $color_clear-grey;
+    padding: 15px 10px 50px 10px;
+    &__title {
+        font-family: 'Roboto-Black','sans-serif';
+        font-size: 1.5em;
+        text-align: center;
+        padding: 25px 20px 5px 20px;
+    }
+    &__subtitle {
+        font-family: 'Roboto-Light';
+        font-size: 1em;
+        text-align: center;
+        padding: 10px 0px 35px 0px;
+    }
+}
+
+.working {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 25px;
+    .number{
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(-50%,-50%);
+        width: 25px;
+        height: 25px;
+        font-family: 'Roboto-Bold';
+        font-size: 0.9em;
+        border-radius: 50%;
+        padding: 7px 0px 0px 8px;
+        background-color: $color-primary;
+        color: #fff;
+    }
+    h2 {
+        font-family: 'Roboto-Black','sans-serif';
+        font-size: 1.4em;
+        padding: 50px 0px 25px 25px;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    &__list--grey {
+        @include WorkList;
+        background-color: $color_dark-grey;
+    }
+    &__list--purple {
+        @include WorkList;
+        background-color: $color_clear-purple;
+    }
+    span {
+        margin-right: 25px;
+    }
+}
+
+.restaurants {
+    background-color: $color_clear-grey;
+    padding: 25px 10px 25px 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    h2 {
+        font-family: 'Roboto-Black','sans-serif';
+        font-size: 1.4em;
+        padding: 50px 0px 25px 25px;
+        width: 100%;
+    }
+    &__title {
+        font-family: 'Roboto-Bold','sans-serif';
+        font-size: 0.8em;
+    }
+    &__card {
+        position: relative;
+        width: 90%;
+        max-width: 500px;
+        height: 190px;
+        margin: auto;
+        margin-bottom: 50px;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 0px 5px 10px 1px rgb(226, 226, 226);
+        transition: transform cubic-bezier(0.6, -0.59, 0.29, 1.68) .5s;
+        &--sticker {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            width: 100px;
+            text-align: center;
+            background-color: rgb(171, 247, 224);
+            padding: 7px;
+            font-family: 'Roboto-Medium','sans-serif';
+            font-size: 0.9em;
+            color: rgb(56, 173, 138);
+            border-radius: 3px;
+            transition: 1s;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+    .blocTxt {
+        position: relative;
+        height: 50px;
+        padding: 10px;
+        line-height: 1.3em;
+        h3 {
+            font-family: 'Roboto-Black';
+            font-size: 1em;
+        }
+        span {
+            font-family: 'Roboto-Light';
+            font-size: .9em;
+        }
+    }
+}

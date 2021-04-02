@@ -1,0 +1,54 @@
+//__LOADER__//
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes rotate2 {
+	0% {
+		transform: rotate(0deg);
+		border-top-color: $color-primary;
+	}
+	50% {
+		transform: rotate(180deg);
+		border-top-color: $color-secondary;
+	}
+	100% {
+		transform: rotate(360deg);
+		border-top-color: $color-tertiary;
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.loader {
+	position: absolute;
+	top: 50%;
+	left: 15%;
+	transform: translate(-50%,-50%);
+	margin: auto;
+	width: 250px;
+	height: 250px;
+	display: block;
+	overflow: hidden;
+	div {
+		height: 100%;
+	}
+}
+
+.loader, .loader div {
+	@include loaderMix;
+	border-radius: 50%;
+	padding: 7px;
+	animation: rotate2 2.5s;
+}

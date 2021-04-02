@@ -1,0 +1,57 @@
+//__img.scss__//
+
+.local {
+    &__img {
+        width: 10px;
+        margin-right: 10px;
+    }
+}
+
+.working {
+    &__list img{
+        width: 18px;
+        height: 20px;
+        margin-left: 25px;
+    }
+}
+
+.restaurants{
+    &__card {
+        &--bg {
+            object-fit: cover;
+            object-position: center 60%;
+            width: 100%;
+            height: 130px;
+        }
+
+    }
+}
+
+.ImgHeart {
+    position: absolute;
+    width: 25px;
+    bottom: 15%;
+    right: 5%;
+    cursor: pointer;
+    transition: transform cubic-bezier(0.74, -1.66, 0.22, 2.66) .2s;
+    &:hover {
+        transform: scale(1.2);
+        background: linear-gradient($color-primary, $color-secondary);
+    }
+    &:active {
+        background: linear-gradient($color-primary, $color-secondary);
+    }
+    &:focus {
+        background: linear-gradient($color-primary, $color-secondary);
+    }
+}
+
+
+.imgBg {
+    position: relative;
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 200px;
+    }
+}
