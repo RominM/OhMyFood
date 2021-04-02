@@ -116,3 +116,32 @@
         line-height: 1.3em;
     }
 }
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dish {
+    padding: 10px;
+    border: solid 1px red;
+    border-radius: 15px;
+    width: 310px;
+    height: 60px;
+    margin: 10px auto;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 1.2em;
+    &__name {
+    }
+    &__flex {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+        &--side {
+        }
+        &--price {
+        
+        }
+}

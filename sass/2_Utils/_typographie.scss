@@ -50,6 +50,12 @@ h3 {
 }
 
 .medium {
-    font-size: 0.9em;
     font-family: 'Roboto-Medium', 'sans-serif';
+    font-size: 0.9em;
+}
+
+.dish {
+    &__name {
+        
+    }
 }

@@ -15,7 +15,7 @@
     <div class="block-page">
 
         <!-- LOADER -->
-        <div class='loader loader'>
+        <!-- <div class='loader loader'>
             <div>
                 <div>
                     <div>
@@ -35,7 +35,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- HEADER -->
         <header class="header">
@@ -51,31 +51,40 @@
 
         <main class="menu">
 
-            <h1>La palette du goût</h1>
-            <img src="../IMAGES/logo/heart-regular.svg" alt="coeur" class="ImgHeart">
+            <div class="menu__name">
+                <h1>La palette du goût</h1>
+                <img src="../IMAGES/logo/heart-regular.svg" alt="coeur" class="ImgHeart">
+            </div>
 
-            <h3>Entrées</h3>
+            <div class="menu__title">
+                <span class="light">Entrées</span class="light">
+            </div>
             <hr />
-            <div>
-                <span>Fricassée d'escargot</span>
-                <span>Au piment d'Espelette </span>
-                <span>25€</span>
-            </div>
 
-            <div>
-                <span>Foie gras de canard mi-cuit</span>
-                <span>Et ses copeaux de truffe noire</span>
-                <span>35€</span>
-            </div>
-
-            <div>
-                <span>Oeuf au plat</span>
-                <span>Assaisonné à la truffe sur lit de caviar</span>
-                <span>20€</span>
-            </div>
-
-
-            <div class="plats">
+            <ul>
+                <li class="dish">
+                    <span class="dish__name">Fricassée d'escargot</span>
+                    <div class="dish__flex">
+                        <span class="dish__flex--side">Au piment d'Espelette </span>
+                        <span class="dish__flex--price">25€</span>
+                    </div>
+                </li>
+                <li class="dish">
+                    <span class="dish__name">Foie gras de canard mi-cuit</span>
+                    <div class="dish__flex">
+                        <span class="dish__flex--side">Et ses copeaux de truffe noire</span>
+                        <span class="dish__flex--price">35€</span>
+                    </div>
+                </li>
+                <li class="dish">
+                    <span class="dish__name">Oeuf au plat</span>
+                    <div class="dish__flex">
+                        <span class="dish__flex--side">Assaisonné à la truffe sur lit de caviar</span>
+                        <span class="dish__flex--price">20€</span>
+                    </div>
+                </li>
+            </ul>
+            
 
                 <!-- Plats
 Filet de boeuf aux herbes
