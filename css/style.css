@@ -286,7 +286,6 @@ ul {
 }
 
 .footer {
-  position: absolute;
   width: 100%;
   max-height: 200px;
   margin: auto;
@@ -442,6 +441,7 @@ ul {
 }
 
 .block-page {
+  position: relative;
   margin: 0;
   padding: 0;
 }
