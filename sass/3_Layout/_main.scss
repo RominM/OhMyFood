@@ -123,6 +123,7 @@ body {
 
 .menu {
     position: absolute;
+    width: 100%;
     top: 90%;
     background-color: $color_clear-grey;
     border-top-right-radius: 25px;
@@ -165,7 +166,8 @@ ul {
     padding: 10px;
     background-color: #fff;
     border-radius: 15px;
-    width: 300px;
+    width: 340px;
+    max-width: 90%;
     height: 65px;
     margin: 10px auto;
     line-height: 1.5em;
