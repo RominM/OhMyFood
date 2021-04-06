@@ -59,7 +59,7 @@ body {
         background-color: $color_clear-purple;
     }
     span {
-        margin-right: 25px;
+        margin-right: 20px;
     }
 }
 
@@ -74,10 +74,9 @@ body {
         color: #000;
     }
     h2 {
-        font-family: 'Roboto-Black','sans-serif';
-        font-size: 1.4em;
         padding: 50px 0px 25px 25px;
-        width: 100%;
+        width: 95%;
+        margin: auto;
     }
     &__title {
         font-family: 'Roboto-Bold','sans-serif';
@@ -86,7 +85,7 @@ body {
     &__card {
         position: relative;
         width: 90%;
-        max-width: 500px;
+        max-width: 600px;
         height: 190px;
         margin: auto;
         margin-bottom: 50px;

@@ -125,7 +125,7 @@ body {
   position: relative;
   border-radius: 15px;
   align-items: center;
-  width: 275px;
+  width: 375px;
   height: 65px;
   margin: auto 25px 25px;
   display: flex;
@@ -139,7 +139,7 @@ body {
   position: relative;
   border-radius: 15px;
   align-items: center;
-  width: 275px;
+  width: 375px;
   height: 65px;
   margin: auto 25px 25px;
   display: flex;
@@ -150,7 +150,7 @@ body {
   background-color: #f7ecff;
 }
 .working span {
-  margin-right: 25px;
+  margin-right: 20px;
 }
 
 .restaurants {
@@ -165,10 +165,9 @@ body {
   color: #000;
 }
 .restaurants h2 {
-  font-family: "Roboto-Black", "sans-serif";
-  font-size: 1.4em;
   padding: 50px 0px 25px 25px;
-  width: 100%;
+  width: 95%;
+  margin: auto;
 }
 .restaurants__title {
   font-family: "Roboto-Bold", "sans-serif";
@@ -177,7 +176,7 @@ body {
 .restaurants__card {
   position: relative;
   width: 90%;
-  max-width: 500px;
+  max-width: 600px;
   height: 190px;
   margin: auto;
   margin-bottom: 50px;
