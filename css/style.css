@@ -286,6 +286,8 @@ ul {
 }
 
 .footer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
   max-height: 200px;
   margin: auto;
@@ -321,6 +323,7 @@ ul {
 .explor button {
   display: block;
   width: 70%;
+  max-width: 500px;
   height: auto;
   min-height: 50px;
   margin: auto;
@@ -444,6 +447,8 @@ ul {
   position: relative;
   margin: 0;
   padding: 0;
+  height: 100%;
+  border: solid 2px;
 }
 
 /*# sourceMappingURL=style.css.map */
