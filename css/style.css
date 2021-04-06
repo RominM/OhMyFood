@@ -212,8 +212,27 @@ body {
   line-height: 1.3em;
 }
 
+.menu {
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  background-color: #f6f6f6;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+.menu h1 {
+  position: relative;
+  padding: 25px 10px 10px 25px;
+}
+.menu h1 .ImgHeart {
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
 .footer {
-  top: 100%;
+  position: absolute;
+  bottom: 100%;
   width: 100%;
   max-height: 200px;
   margin: auto;
@@ -365,6 +384,36 @@ body {
   object-fit: cover;
   width: 100%;
   height: 200px;
+}
+
+.start, .main, .course {
+  margin-top: 25px;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+.start hr, .main hr, .course hr {
+  width: 50px;
+  height: 4px;
+  margin-top: 5px;
+  margin-left: 0;
+  background-color: #99E2D0;
+  border: none;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: solid green;
+}
+.list .formStart, .list .formMain, .list .formCourse {
+  border: solid;
+  flex-wrap: wrap;
+  width: 300px;
+}
+
+ul {
+  display: flex;
 }
 
 .block-page {

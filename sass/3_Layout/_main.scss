@@ -121,3 +121,21 @@ body {
         line-height: 1.3em;
     }
 }
+
+.menu {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    background-color: $color_clear-grey;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    h1 {
+        position: relative;
+        padding: 25px 10px 10px 25px;
+        .ImgHeart {
+            top: 50%;
+            left: 90%;
+            transform: translate(-50%,-50%);
+        }
+    }
+}
