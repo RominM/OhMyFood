@@ -143,23 +143,32 @@ body {
     margin-top: 25px;
     padding-left: 20px;
     text-transform: uppercase;
+    hr {
+        width: 50px;
+        height: 4px;
+        margin-top: 5px;
+        margin-left: 0;
+        background-color: $color-tertiary;
+        border: none;
+    }
 }
 
-hr {
-    width: 50px;
-    height: 4px;
-    margin-left: 20px;
-    background-color: $color-tertiary;
-    border: none;
-}
+
 
 .list {
     display: flex;
-    border: solid red;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    &__bloc {
+        display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+    }
 }
 
 ul {
-    border: solid;
+    // max-width: 30%;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
