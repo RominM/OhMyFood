@@ -1,0 +1,35 @@
+//__footer__//
+
+.footer {
+    // position: absolute;
+    top: 100%;
+    width: 100%;
+    max-height: 200px;
+    margin: auto;
+    padding: 30px;
+    background-color: rgb(56, 56, 56);
+    h1 {
+        font-family: 'Shrikhand';
+        font-size: 1.2em;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    &__flex {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            min-width: 250px;
+            margin: 0px 50px 10px 0px;
+            font-family: 'Roboto-Medium';
+            font-size: 1.1em;
+            a {
+                color: #fff;
+                text-decoration: none;
+                width: 25%;
+            }
+        }
+        img {
+            width: 15px;
+        }
+    }
+}

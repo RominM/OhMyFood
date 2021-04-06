@@ -1,0 +1,30 @@
+{
+  "name": "p3_rm",
+  "version": "1.0.0",
+  "description": "P3_OC",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/master.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css -u autoprefixer -o ./css/stylePrefix.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RominM/RominManogil_03_18032021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RominM/RominManogil_03_18032021/issues"
+  },
+  "homepage": "https://github.com/RominM/RominManogil_03_18032021#readme",
+  "dependencies": {
+    "sass": "^1.32.8"
+  },
+  "devDependencies": {
+    "postcss": "^8.2.9",
+    "postcss-cli": "^8.3.1"
+  },
+  "browserslist": [
+    "last 30 version"
+  ]
+}

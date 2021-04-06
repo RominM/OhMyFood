@@ -1,252 +1,460 @@
-/* 
-*Identité :
-    Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux
-    utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les
-    restaurants car leur menu est préparé à l’avance. Plus de perte de temps à consulter la carte
-    !
-
-* Couleurs :
-    ● Primaire: #9356DC
-    ● Secondaire: #FF79DA
-    ● Tertiaire: #99E2D0
-
-*Polices :
-    ● Logo et titres: Shrikhand
-    ● Texte: Roboto
-
-*Footer :
-    ● Le footer est identique sur toutes les pages.
-    ● Au clic sur “Contact”, un renvoi vers une adresse mail est effectué.
-
-*Header :
-    ● Le header est présent sur toutes les pages.
-    ● Sur la page d’accueil, il contient le logo du site.
-    ● Sur les pages de menu, il contient en plus un bouton de retour vers la page d’accueil
-
-*Boutons :
-    ● Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir.
-        L’ombre portée devra également être plus visible.
-    ● À terme, les visiteurs pourront sauvegarder leurs menus préférés. Pour ça, un
-        bouton "J’aime" en forme de cœur est présent sur la maquette. Au clic, il devra se
-        remplir progressivement. Pour cette première version, l’effet peut être apparaître au
-        survol sur desktop au lieu du clic.
-
-*Page d’accueil :
-    ● Quand l’application aura plus de menus, un “loading spinner” sera nécessaire. Sur
-    cette maquette, nous souhaitons en avoir un aperçu. Il devra apparaître pendant 1 à
-    3 secondes quand on arrive sur la page d'accueil, couvrir l'intégralité de l'écran, et
-    utiliser les animations CSS (pas de librairie). Le design de ce loader n’est pas défini,
-    toute proposition est donc la bienvenue tant qu’elle est cohérente avec la charte
-    graphique du site.
-
-*Pages de menu :
-    ● À l’arrivée sur la page, les plats devront apparaître progressivement avec un léger
-        décalage dans le temps. Ils pourront soit apparaître un par un, soit par groupe
-        “Entrée”, “Plat” et “Dessert”. Un exemple de l’effet attendu est fourni.
-    ● Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant dessus.
-        Cela fait apparaître une petite coche à droite du plat. Cette coche devra coulisser de
-        la droite vers la gauche. Pour cette première version, l’effet peut apparaître au survol
-        sur desktop au lieu du clic. Si l’intitulé du plat est trop long, il devra être rogné avec
-        des points de suspension. Un exemple de l’effet attendu est fourni.
-
-*/
-
+/***********************************************************
+=========================== COLOR ==========================
+***********************************************************/
 @font-face {
-    font-family: 'Roboto-Medium';
-    src: url(../fonts/Roboto-Medium.ttf) format('truetype');
+  font-family: "Roboto-Light";
+  src: url(../../Fonts/Roboto/Roboto-Light.ttf) format("truetype");
 }
-
 @font-face {
-    font-family: 'Roboto-Bold';
-    src: url(../fonts/Roboto-Bold.ttf) format('truetype');
+  font-family: "Roboto-Medium";
+  src: url(../../Fonts/Roboto/Roboto-Medium.ttf) format("truetype");
 }
-
 @font-face {
-    font-family: 'Roboto-Light';
-    src: url(../fonts/Roboto-Light.ttf) format('truetype');
+  font-family: "Roboto-Bold";
+  src: url(../../Fonts/Roboto/Roboto-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Black";
+  src: url(../../Fonts/Roboto/Roboto-Black.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url(../../Fonts/Shrikhand/Shrikhand-Regular.ttf) format("truetype");
+}
+h1 {
+  font-family: "Shrikhand";
+  font-size: 1.5em;
 }
 
-.logo{
-    text-align: center;
-    align-items: center;
+h2 {
+  font-family: "Roboto-Black", "sans-serif";
+  font-size: 1.4em;
 }
 
-.logo img{
-    width: 50%;
-    margin: auto;
-    padding: 15px;
+h3 {
+  font-family: "Roboto-Black";
+  font-size: 1em;
 }
 
-.markerBack {
-    width: 100%;
-    margin: auto;
-    height: 50px;
-    background-color: #ebebeb;
-    box-shadow: inset -5px 10px 10px -10px #b3b3b3;
+.light {
+  font-family: "Roboto-Light";
+  font-size: 1em;
 }
 
-.markerBack .marker {
-    display: flex;
-    justify-content: space-between;
-    width: 38%;
-    margin: auto;
-    padding: 17px;
+.medium {
+  font-family: "Roboto-Medium", "sans-serif";
+  font-size: 0.9em;
 }
 
-.marker img {
-    width: 12px;
+.dish {
+  font-family: "Roboto-Medium", "sans-serif";
 }
-.marker p {
-    font-family : 'Roboto-Medium';
-    font-size: 1em;
-}
-
-.titleTxtBack {
-    width: 100%;
-    margin: auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: #f3f3f3;
+.dish__flex--side {
+  font-family: "Roboto-Light";
 }
 
-.titleTxt1 {
-    font-family: 'Roboto-Bold';
-    font-size: 1.5em;
-    width: 75%;
-    margin: auto;
-    text-align: center;
-    line-height: 1.1em;
+.header {
+  display: flex;
+  padding: 15px;
+  text-align: center;
+  align-items: center;
+}
+.header img {
+  width: 15px;
+}
+.header h1 {
+  display: block;
+  width: 175px;
+  margin: auto;
 }
 
-.titleTxt2 {
-    font-family: 'Roboto-Light';
-    font-size: 1.1em;
-    text-align: center;
-    line-height: 1.2em;
-    margin-top: 17px;
-    margin-bottom: 30px;
+body {
+  position: relative;
 }
 
-.titleTxt a {
-    text-decoration: none;
+.local {
+  display: flex;
+  justify-content: center;
+  background-color: #eeeeee;
+  padding: 18px;
+  box-shadow: inset 0px 2px 5px 2px #b1b1b1;
 }
 
-.titleTxt button {
-    display: block;
-    margin: auto;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 35px;
-    width: 220px;
-    height: 50px;
-    background: linear-gradient(#FF79DA , #9356DC);
-    color: #fff;
-    font-family: 'Roboto-Medium';
-    font-size: 0.95em;
+.explor {
+  background-color: #f6f6f6;
+  padding: 25px 10px 25px 10px;
+}
+.explor h2 {
+  text-align: center;
+  padding: 25px 20px 5px 20px;
+}
+.explor .light {
+  display: block;
+  text-align: center;
+  padding: 10px 0px 35px 0px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-header .position{
-    display: flex;
-    justify-content: center;
-    background-color: #EAEAEA;
+.working {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 25px;
 }
-header .titleTxt{
-    background-color: #F6F6F6;
+.working .number {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  font-family: "Roboto-Bold";
+  font-size: 0.9em;
+  border-radius: 50%;
+  padding: 7px 0px 0px 8px;
+  background-color: #9356DC;
+  color: #fff;
 }
-header .title{
-    text-align: center;
+.working h2 {
+  width: 100%;
+  margin: auto;
+  padding: 50px 0px 25px 25px;
 }
-header .title2{
-    text-align: center;
+.working__list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-header button{
-    display: block;
-    margin: auto;
-    border: none;
-    border-radius: 25px;
-    width: 230px;
-    height: 50px;
-    background: linear-gradient(pink, purple);
-}   
-header.bouton{
-    align-self: center;
+.working__list--grey {
+  position: relative;
+  border-radius: 15px;
+  align-items: center;
+  width: 375px;
+  height: 65px;
+  margin: auto 25px 25px;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Roboto-Bold";
+  font-size: 0.9em;
+  box-shadow: 0px 5px 10px 1px #e2e2e2;
+  background-color: #eeeeee;
 }
-nav ul{
-    list-style: none;
+.working__list--purple {
+  position: relative;
+  border-radius: 15px;
+  align-items: center;
+  width: 375px;
+  height: 65px;
+  margin: auto 25px 25px;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Roboto-Bold";
+  font-size: 0.9em;
+  box-shadow: 0px 5px 10px 1px #e2e2e2;
+  background-color: #f7ecff;
 }
-nav .link{
-    display: flex;
-    text-decoration: none;
-    width: 250px;
-    height: 50px;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    box-shadow: 1px 10px 10px 5px #EAEAEA;
-    color: #000;
-}
-nav .link .bulle{
-    margin-right: 15px;
-    background-color: #9356DC;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    text-align: center;
-    position: relative;
-    margin-top: 13px;
-    color: #fff;
-}
-nav .link .imgFlex{
-    display: flex;
-    width: 15px;
-}
-.imgFlex .points{
-    width: 7px;
-}
-nav .link p{
-    margin-left: 15px;
+.working span {
+  margin-right: 20px;
 }
 
-.select{
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 25px 10px 25px 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-.select .resto{
-    width: 100%;
+.restaurants a {
+  text-decoration: none;
+  color: #000;
+}
+.restaurants h2 {
+  padding: 50px 0px 25px 25px;
+  width: 95%;
+  margin: auto;
+}
+.restaurants__title {
+  font-family: "Roboto-Bold", "sans-serif";
+  font-size: 0.8em;
+}
+.restaurants__card {
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  height: 190px;
+  margin: auto;
+  margin-bottom: 50px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px 1px #e2e2e2;
+  transition: transform cubic-bezier(0.6, -0.59, 0.29, 1.68) 0.5s;
+}
+.restaurants__card .medium {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 100px;
+  text-align: center;
+  background-color: #abf7e0;
+  padding: 7px;
+  color: #38ad8a;
+  border-radius: 3px;
+  transition: 1s;
+}
+.restaurants__card .medium:hover {
+  transform: scale(1.2);
+}
+.restaurants__card:hover {
+  transform: scale(1.03);
+}
+.restaurants .blocTxt {
+  position: relative;
+  height: 50px;
+  padding: 10px;
+  line-height: 1.3em;
 }
 
-.zone{
-    display: flex;
+.menu {
+  width: 100%;
+  background-color: #f6f6f6;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
 }
-.photo img{
-    width: 100%;
-    height: 175px;
-    object-fit: cover;
+.menu h1 {
+  position: relative;
+  padding: 25px 10px 10px 25px;
 }
-.link .txt{
+.menu h1 .ImgHeart {
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
 }
-.heart img{
-    width: 25px;
-} */
+
+.start, .plats, .course {
+  margin-top: 25px;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+.start hr, .plats hr, .course hr {
+  width: 50px;
+  height: 4px;
+  margin-top: 5px;
+  margin-left: 0;
+  background-color: #99E2D0;
+  border: none;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.list__bloc {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.dish {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+  width: 340px;
+  max-width: 90%;
+  height: 65px;
+  margin: 10px auto;
+  line-height: 1.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dish__flex {
+  display: flex;
+  flex-direction: column;
+}
+.dish__flex--name {
+  font-size: 1.2em;
+}
+.dish__price {
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-sizing: border-box;
+  width: 50px;
+  height: 100%;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.footer {
+  top: 100%;
+  width: 100%;
+  max-height: 200px;
+  margin: auto;
+  padding: 30px;
+  background-color: #383838;
+}
+.footer h1 {
+  font-family: "Shrikhand";
+  font-size: 1.2em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.footer__flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__flex li {
+  min-width: 250px;
+  margin: 0px 50px 10px 0px;
+  font-family: "Roboto-Medium";
+  font-size: 1.1em;
+}
+.footer__flex li a {
+  color: #fff;
+  text-decoration: none;
+  width: 25%;
+}
+.footer__flex img {
+  width: 15px;
+}
+
+.explor button {
+  display: block;
+  width: 70%;
+  max-width: 500px;
+  height: auto;
+  min-height: 50px;
+  margin: auto;
+  border: none;
+  border-radius: 25px;
+  padding: 12px;
+  background: linear-gradient(#9356DC, #FF79DA);
+  box-shadow: 0px 2px 5px 2px #cccccc;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Roboto-Medium";
+  font-size: 1em;
+}
+.explor__btn:hover {
+  box-shadow: 2px 0px 5px 2px #cccccc;
+  background: linear-gradient(#c091fa, #ffa9e7);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate2 {
+  0% {
+    transform: rotate(0deg);
+    border-top-color: #9356DC;
+  }
+  50% {
+    transform: rotate(180deg);
+    border-top-color: #FF79DA;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-top-color: #99E2D0;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  width: 250px;
+  height: 250px;
+  display: block;
+  overflow: hidden;
+}
+.loader div {
+  height: 100%;
+}
+
+.loader, .loader div {
+  border-radius: 50%;
+  padding: 15px;
+  border: 3px solid transparent;
+  animation: rotate linear 3.5s;
+  border-radius: 50%;
+  padding: 7px;
+  animation: rotate2 2.5s;
+}
+
+.local__img {
+  width: 10px;
+  margin-right: 10px;
+}
+
+.working__list img {
+  width: 18px;
+  height: 20px;
+  margin-left: 25px;
+}
+
+.restaurants__card--bg {
+  object-fit: cover;
+  object-position: center 60%;
+  width: 100%;
+  height: 130px;
+}
+
+.ImgHeart {
+  position: absolute;
+  width: 25px;
+  bottom: 15%;
+  right: 5%;
+  cursor: pointer;
+  transition: transform cubic-bezier(0.74, -1.66, 0.22, 2.66) 0.2s;
+}
+.ImgHeart:hover {
+  transform: scale(1.2);
+  background: linear-gradient(#9356DC, #FF79DA);
+}
+.ImgHeart:active {
+  background: linear-gradient(#9356DC, #FF79DA);
+}
+.ImgHeart:focus {
+  background: linear-gradient(#9356DC, #FF79DA);
+}
+
+.imgBg {
+  position: relative;
+}
+.imgBg img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.block-page {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

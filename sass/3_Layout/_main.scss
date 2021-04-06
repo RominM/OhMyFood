@@ -1,0 +1,210 @@
+body {
+    position: relative;
+}
+
+.local {
+    display: flex;
+    justify-content: center;
+    background-color: $color_dark-grey;
+    padding: 18px;
+    box-shadow: inset 0px 2px 5px 2px #b1b1b1;
+}
+
+.explor {
+    background-color: $color_clear-grey;
+    padding: 25px 10px 25px 10px;
+    h2 {
+        text-align: center;
+        padding: 25px 20px 5px 20px;
+    }
+    .light {
+        display: block;
+        text-align: center;
+        padding: 10px 0px 35px 0px;
+    }
+}
+
+.working {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 25px;
+    .number{
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(-50%,-50%);
+        width: 25px;
+        height: 25px;
+        font-family: 'Roboto-Bold';
+        font-size: 0.9em;
+        border-radius: 50%;
+        padding: 7px 0px 0px 8px;
+        background-color: $color-primary;
+        color: #fff;
+    }
+    h2 {
+        width: 100%;
+        margin: auto;
+        padding: 50px 0px 25px 25px;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    &__list--grey {
+        @include WorkList;
+        background-color: $color_dark-grey;
+    }
+    &__list--purple {
+        @include WorkList;
+        background-color: $color_clear-purple;
+    }
+    span {
+        margin-right: 20px;
+    }
+}
+
+.restaurants {
+    background-color: $color_clear-grey;
+    padding: 25px 10px 25px 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    h2 {
+        padding: 50px 0px 25px 25px;
+        width: 95%;
+        margin: auto;
+    }
+    &__title {
+        font-family: 'Roboto-Bold','sans-serif';
+        font-size: 0.8em;
+    }
+    &__card {
+        position: relative;
+        width: 90%;
+        max-width: 600px;
+        height: 190px;
+        margin: auto;
+        margin-bottom: 50px;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 0px 5px 10px 1px rgb(226, 226, 226);
+        transition: transform cubic-bezier(0.6, -0.59, 0.29, 1.68) .5s;
+        .medium { //sticker//
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            width: 100px;
+            text-align: center;
+            background-color: rgb(171, 247, 224);
+            padding: 7px;
+            color: rgb(56, 173, 138);
+            border-radius: 3px;
+            transition: 1s;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+    .blocTxt {
+        position: relative;
+        height: 50px;
+        padding: 10px;
+        line-height: 1.3em;
+    }
+}
+
+.menu {
+    width: 100%;
+    background-color: $color_clear-grey;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    h1 {
+        position: relative;
+        padding: 25px 10px 10px 25px;
+        .ImgHeart {
+            top: 50%;
+            left: 90%;
+            transform: translate(-50%,-50%);
+        }
+    }
+}
+
+.start, .plats, .course {
+    margin-top: 25px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    hr {
+        width: 50px;
+        height: 4px;
+        margin-top: 5px;
+        margin-left: 0;
+        background-color: $color-tertiary;
+        border: none;
+    }
+}
+
+
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    &__bloc {
+        display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+    }
+}
+
+ul {
+    // max-width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.dish {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    width: 340px;
+    max-width: 90%;
+    height: 65px;
+    margin: 10px auto;
+    line-height: 1.5em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    &__flex {
+        display: flex;
+        flex-direction: column;
+        &--name {
+            font-size: 1.2em;
+        }      
+    }
+    &__price {
+        position: absolute;
+        top: 50%;
+        left: 95%;
+        transform: translate(-50%,-50%);
+        background-color: #fff;
+        box-sizing: border-box;
+        width: 50px;
+        height: 100%;
+        margin: auto;
+        padding-top: 30px;
+    }
+}
