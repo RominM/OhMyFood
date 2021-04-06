@@ -41,3 +41,19 @@
         la droite vers la gauche. Pour cette première version, l’effet peut apparaître au survol
         sur desktop au lieu du clic. Si l’intitulé du plat est trop long, il devra être rogné avec
         des points de suspension. Un exemple de l’effet attendu est fourni.
+
+
+
+        <!--CARD-->
+                            <li>
+                                <label for="select" class="dish__flex">
+                                    <div>
+                                        <span class="dish__flex--name">Title</span>
+                                        <span class="dish__flex--side">Subtitle</span>
+                                    </div>
+                                    <div>
+                                        <span class="dish__price">Aside</span>
+                                    </div>
+                                </label>
+                                <input type="checkbox">
+                            </li>
