@@ -404,15 +404,24 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  width: 100%;
+  margin: auto;
   border: solid green;
 }
 .list .formStart, .list .formMain, .list .formCourse {
-  border: solid;
-  flex-wrap: wrap;
-  width: 300px;
+  border: solid palevioletred;
+  width: 325px;
 }
 
-ul {
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.card__li {
+  border: solid yellowgreen;
+  display: flex;
+}
+.card__li__flex {
   display: flex;
 }
 
