@@ -49,20 +49,20 @@
             <img src="../IMAGES/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="assiette repas">
         </div>
 
-        <main class="menu">
+        <section class="menu">
 
-            <h1>À la française<img src="../IMAGES/logo/heart-regular.svg" alt="coeur" class="ImgHeart">
-            </h1>
+            <h1>À la française<img src="../IMAGES/logo/heart-regular.svg" alt="coeur" class="ImgHeart"></h1>
 
             <div class="list">
-                <div class="list__bloc">
 
+                <!--START-->
+                <form action="" method="POST" class="formStart">
                     <div class="start">
-                        <span class="light">Entrées</span class="light">
+                        <span class="light">Entrées</span>
                         <hr />
                     </div>
-                    
-                    <!-- Entrées
+
+                    <!-- Entrées 1.0
 Tartare de poulpe acidulé
 Aux zestes d'orange
 25€
@@ -75,41 +75,60 @@ Soupe à l'oignon
 Revisitée
 20€ -->
 
-                    <ul>
-                        <li class="dish">
-                            <div class="dish__flex">
-                                <span class="dish__flex--name">Tartare de poulpe acidulé</span>
-                                <span class="dish__flex--side">Aux zestes d'orange</span>
-                            </div>
-                            <span class="dish__price">25€</span>
+                    <ul class="card">
+                        <!--CARD 1.1-->
+                        <li class="cardLi">
+                            <label for="check" class="cardLi__flex">
+                                <div>
+                                    <span class="cardLi__flex--title">Tartare de thon</span>
+                                    <span class="cardLi__flex--subtitle">Assaisonné au yuzu</span>
+                                </div>
+                                <div>
+                                    <span class="cardLi__flex--side">25€</span>
+                                </div>
+                            </label>
+                            <input type="checkbox" name="check" id="check" class="box">
                         </li>
 
-                        <li class="dish">
-                            <div class="dish__flex">
-                                <span class="dish__flex--name">Velouté de légumes d'antan</span>
-                                <span class="dish__flex--side">Carotte, panais, topinambour</span>
-                            </div>
-                            <span class="dish__price">35€</span>
+                        <!--CARD 1.2-->
+                        <li class="cardLi">
+                            <label for="check" class="cardLi__flex">
+                                <div>
+                                    <span class="cardLi__flex--title">Bouchée de homard croustillant</span>
+                                    <span class="cardLi__flex--subtitle">Et sa farandole de petits légumes</span>
+                                </div>
+                                <div>
+                                    <span class="cardLi__flex--side">35€</span>
+                                </div>
+                            </label>
+                            <input type="checkbox" name="check" id="check" class="box">
                         </li>
 
-                        <li class="dish">
-                            <div class="dish__flex">
-                                <span class="dish__flex--name">Soupe à l'oignon</span>
-                                <span class="dish__flex--side">Revisitée</span>
-                            </div>
-                            <span class="dish__price">20€</span>
+                        <!--CARD 1.3-->
+                        <li class="cardLi">
+                            <label for="check" class="cardLi__flex">
+                                <div>
+                                    <span class="cardLi__flex--title">Velouté de cèpes</span>
+                                    <span class="cardLi__flex--subtitle">Aux truffes</span>
+                                </div>
+                                <div>
+                                    <span class="cardLi__flex--side">20€</span>
+                                </div>
+                            </label>
+                            <input type="checkbox" name="check" id="check" class="box">
                         </li>
-
                     </ul>
-                </div>
+                </form>
 
-                <div class="list__bloc">
-                    <div class="plats">
-                        <span class="light">Plats</span class="light">
+                <!--MAIN-->
+                <form action="" method="POST" class="formMain">
+                    <div class="main">
+                        <span class="light">Plats</span>
                         <hr />
                     </div>
-                    
-<!-- Plats
+
+
+                    <!-- Plats 2.0
 Coquilles Saint-Jacques
 Accompagnées d'une purée de panais
 40€
@@ -122,40 +141,59 @@ Pigeonneau d’Ille-et-Vilaine
 Sur son lit de gnocchis aux légumes
 44€ -->
 
-                    <ul>
-                        <li class="dish">
-                            <div class="dish__flex">
-                                <span class="dish__flex--name">Coquilles Saint-Jacques</span>
-                                <span class="dish__flex--side">Accompagnées d'une purée de panais</span>
-                            </div>
-                            <span class="dish__price">40€</span>
+                    <ul class="card">
+                        <!--CARD 2.1-->
+                        <li class="cardLi">
+                            <label for="check" class="cardLi__flex">
+                                <div>
+                                    <span class="cardLi__flex--title">Title</span>
+                                    <span class="cardLi__flex--subtitle">Subtitle</span>
+                                </div>
+                                <div>
+                                    <span class="cardLi__flex--side">Side</span>
+                                </div>
+                            </label>
+                            <input type="checkbox" name="check" id="check" class="box">
                         </li>
 
-                        <li class="dish">
-                            <div class="dish__flex">
-                                <span class="dish__flex--name">Magret de canard</span>
-                                <span class="dish__flex--side">Et parmentier de pommes de terre</span>
-                            </div>
-                            <span class="dish__price">35€</span>
+                        <!--CARD 2.2-->
+                        <li class="cardLi">
+                            <label for="check" class="cardLi__flex">
+                                <div>
+                                    <span class="cardLi__flex--title">Title</span>
+                                    <span class="cardLi__flex--subtitle">Subtitle</span>
+                                </div>
+                                <div>
+                                    <span class="cardLi__flex--side">Side</span>
+                                </div>
+                            </label>
+                            <input type="checkbox" name="check" id="check" class="box">
                         </li>
 
-                        <li class="dish">
-                            <div class="dish__flex">
-                                <span class="dish__flex--name">Pigeonneau d’Ille-et-Vilaine</span>
-                                <span class="dish__flex--side">Sur son lit de gnocchis aux légumes</span>
-                            </div>
-                            <span class="dish__price">44€</span>
+                        <!--CARD 2.3-->
+                        <li class="cardLi">
+                            <label for="check" class="cardLi__flex">
+                                <div>
+                                    <span class="cardLi__flex--title">Title</span>
+                                    <span class="cardLi__flex--subtitle">Subtitle</span>
+                                </div>
+                                <div>
+                                    <span class="cardLi__flex--side">Side</span>
+                                </div>
+                            </label>
+                            <input type="checkbox" name="check" id="check" class="box">
                         </li>
                     </ul>
-                </div>
+                </form>
 
-                <div class="list__bloc">
+                <!--COURSE-->
+                <form action="" method="POST" class="formCourse">
                     <div class="course">
-                        <span class="light">Desserts</span class="light">
+                        <span class="light">Desserts</span>
                         <hr />
                     </div>
 
-                    <!-- Desserts
+                    <!-- Desserts 3.0
 Pétales de violettes glacés
 Et purée de noisettes
 18€
@@ -168,34 +206,52 @@ Millefeuille croustillant
 Myrtilles et pâte d’amande
 23€ -->
 
-                    <ul>
-                        <li class="dish">
-                            <div class="dish__flex">
-                                <span class="dish__flex--name">Pétales de violettes glacés</span>
-                                <span class="dish__flex--side">Et purée de noisettes</span>
-                            </div>
-                            <span class="dish__price">18€</span>
+                    <ul class="card">
+                        <!--CARD 3.1-->
+                        <li class="cardLi">
+                            <label for="check" class="cardLi__flex">
+                                <div>
+                                    <span class="cardLi__flex--title">Title</span>
+                                    <span class="cardLi__flex--subtitle">Subtitle</span>
+                                </div>
+                                <div>
+                                    <span class="cardLi__flex--side">Side</span>
+                                </div>
+                            </label>
+                            <input type="checkbox" name="check" id="check" class="box">
                         </li>
 
-                        <li class="dish">
-                            <div class="dish__flex">
-                                <span class="dish__flex--name">Fondant au chocolat</span>
-                                <span class="dish__flex--side">Revisitée</span>
-                            </div>
-                            <span class="dish__price">22€</span>
+                        <!--CARD 3.2-->
+                        <li class="cardLi">
+                            <label for="check" class="cardLi__flex">
+                                <div>
+                                    <span class="cardLi__flex--title">Title</span>
+                                    <span class="cardLi__flex--subtitle">Subtitle</span>
+                                </div>
+                                <div>
+                                    <span class="cardLi__flex--side">Side</span>
+                                </div>
+                            </label>
+                            <input type="checkbox" name="check" id="check" class="box">
                         </li>
 
-                        <li class="dish">
-                            <div class="dish__flex">
-                                <span class="dish__flex--name">Millefeuille croustillant</span>
-                                <span class="dish__flex--side">Myrtilles et pâte d’amande</span>
-                            </div>
-                            <span class="dish__price">23€</span>
+                        <!--CARD 3.3-->
+                        <li class="cardLi">
+                            <label for="check" class="cardLi__flex">
+                                <div>
+                                    <span class="cardLi__flex--title">Title</span>
+                                    <span class="cardLi__flex--subtitle">Subtitle</span>
+                                </div>
+                                <div>
+                                    <span class="cardLi__flex--side">Side</span>
+                                </div>
+                            </label>
+                            <input type="checkbox" name="check" id="check" class="box">
                         </li>
                     </ul>
-                </div>
+                </form>
             </div>
-        </main>
+        </section>
 
         <footer class="footer">
             <h1>ohmyfood</h1>
