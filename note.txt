@@ -43,6 +43,10 @@
         des points de suspension. Un exemple de l’effet attendu est fourni.
 
 
+/////////////////////////////////////////////////////
+--------------------- QUESTION ----------------------
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
         <!-- WORKING -->
 
         <ol>
@@ -50,6 +54,12 @@
             <li>utiliser les numéros attribué ?</li>
             <li>utiliser les numéros attribué ?</li>
         </ol> 
+
+        Numero decalé depuis l'ajout du <button> ??
+
+        html index + _button.scss
+
+-----------------------------------------------------
 
         <!--CARD-->
 
@@ -66,4 +76,27 @@
             <input type="checkbox">
         </li>
 
+        html page + _main.scss
+
+----------------------------------------------------
+
+        <!--ImgHeart-->
+
+        focus ??? 
+
+        _img.scss
+
+----------------------------------------------------
+
+        <!--FOOTER-->
+
+        block-page / body {
+            position: relative;
+        }
+
+        footer {
+            position: absolute;
+        }
+
+        _footer.scss
 

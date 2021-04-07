@@ -15,11 +15,27 @@
         box-shadow: 0px 2px 5px 2px #cccccc;
         color: #fff;
         cursor: pointer;
-        font-family: 'Roboto-Medium';
-        font-size: 1em;
     }
     &__btn:hover {
         box-shadow: 2px 0px 5px 2px #cccccc;
         background: linear-gradient($color-clear_primary, $color-clear_secondary);
+    }
+    &__btn:focus {
+        outline: 0 !important;
+    }
+}
+
+.working {
+    button {
+        width: 100%;
+        height: 100%;
+        border: none;
+        cursor: pointer;
+        border-radius: 15px;
+    }
+    button:focus {
+        background-color:  $color_clear-purple;
+        outline: 0 !important;
+        border: none;
     }
 }

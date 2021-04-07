@@ -53,6 +53,11 @@ h3 {
   font-family: "Roboto-Light", "sans-serif";
 }
 
+button {
+  font-family: "Roboto-Medium";
+  font-size: 1em;
+}
+
 .header {
   display: flex;
   padding: 15px;
@@ -152,7 +157,7 @@ body {
   background-color: #f7ecff;
 }
 .working span {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .restaurants {
@@ -278,12 +283,26 @@ body {
   box-shadow: 0px 2px 5px 2px #cccccc;
   color: #fff;
   cursor: pointer;
-  font-family: "Roboto-Medium";
-  font-size: 1em;
 }
 .explor__btn:hover {
   box-shadow: 2px 0px 5px 2px #cccccc;
   background: linear-gradient(#c091fa, #ffa9e7);
+}
+.explor__btn:focus {
+  outline: 0 !important;
+}
+
+.working button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.working button:focus {
+  background-color: #f7ecff;
+  outline: 0 !important;
+  border: none;
 }
 
 @keyframes rotate {
@@ -348,7 +367,8 @@ body {
 .working__list img {
   width: 18px;
   height: 20px;
-  margin-left: 25px;
+  margin-left: -10px;
+  margin-right: 15px;
 }
 
 .restaurants__card--bg {
@@ -368,7 +388,6 @@ body {
 }
 .ImgHeart:hover {
   transform: scale(1.2);
-  background: linear-gradient(#9356DC, #FF79DA);
 }
 .ImgHeart:active {
   background: linear-gradient(#9356DC, #FF79DA);

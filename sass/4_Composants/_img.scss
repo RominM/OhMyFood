@@ -11,7 +11,8 @@
     &__list img{
         width: 18px;
         height: 20px;
-        margin-left: 25px;
+        margin-left: -10px;
+        margin-right: 15px;
     }
 }
 
@@ -36,7 +37,6 @@
     transition: transform cubic-bezier(0.74, -1.66, 0.22, 2.66) .2s;
     &:hover {
         transform: scale(1.2);
-        background: linear-gradient($color-primary, $color-secondary);
     }
     &:active {
         background: linear-gradient($color-primary, $color-secondary);
@@ -45,6 +45,9 @@
         background: linear-gradient($color-primary, $color-secondary);
     }
 }
+
+
+
 
 
 .imgBg {
