@@ -78,6 +78,10 @@
 
         html page + _main.scss
 
+
+        FAIRE UN SEUL FORMULAIRE !!!
+        FOR ET ID UNIQUE !!!
+
 ----------------------------------------------------
 
         <!--ImgHeart-->
@@ -85,6 +89,8 @@
         focus ??? 
 
         _img.scss
+
+        CHECKBOX / BUTTON
 
 ----------------------------------------------------
 
@@ -100,3 +106,10 @@
 
         _footer.scss
 
+----------------------------------------------------
+
+UI : User Interface 
+ *Graphiste
+
+UX : User Experience
+ *Chef du Graphiste

@@ -28,7 +28,7 @@ body {
     width: 90%;
     margin: auto;
     padding-bottom: 25px;
-    .number{
+    .number {
         position: absolute;
         top: 50%;
         left: 0%;
@@ -38,9 +38,9 @@ body {
         font-family: 'Roboto-Bold';
         font-size: 0.9em;
         border-radius: 50%;
-        padding: 7px 0px 0px 8px;
         background-color: $color-primary;
         color: #fff;
+        line-height: 25px;
     }
     h2 {
         width: 100%;
@@ -123,15 +123,16 @@ body {
 }
 
 .menu {
-    position: absolute;
-    top: 90%;
-    width: 100%;
+    margin-top: -40px;
+    padding-bottom: 40px;
     background-color: $color_clear-grey;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
+    overflow: hidden;
     h1 {
         position: relative;
         padding: 25px 10px 10px 25px;
+        background-color: $color_clear-grey;
         .ImgHeart {
             top: 50%;
             left: 90%;
