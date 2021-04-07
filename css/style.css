@@ -406,10 +406,8 @@ body {
   justify-content: space-around;
   width: 100%;
   margin: auto;
-  border: solid green;
 }
 .list .formStart, .list .formMain, .list .formCourse {
-  border: solid palevioletred;
   width: 325px;
 }
 
@@ -419,13 +417,11 @@ body {
 }
 
 .cardLi {
-  border: solid yellowgreen;
   display: flex;
 }
 .cardLi__flex {
   display: flex;
   justify-content: space-between;
-  border: solid;
   width: 100%;
 }
 .cardLi__flex--title {
@@ -438,31 +434,6 @@ body {
 }
 .cardLi__flex--side {
   display: block;
-}
-
-input[type=checkbox].check {
-  display: none;
-}
-
-input[type=checkbox].check + label {
-  padding: 0.5rem 1rem;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  border-radius: 0.3rem;
-  color: #fff;
-  background-color: #6c757d;
-  border: 1px solid transparent;
-  transition: all 0.5s ease-in-out;
-}
-
-input[type=checkbox].check.box:hover + label {
-  background-color: #c82333;
-  border-color: #bd2130;
-}
-
-input[type=checkbox].check.box:checked + label {
-  background-color: #dc3545;
-  border-color: #dc3545;
 }
 
 .block-page {
