@@ -43,17 +43,27 @@
         des points de suspension. Un exemple de l’effet attendu est fourni.
 
 
+        <!-- WORKING -->
+
+        <ol>
+            <li>utiliser les numéros attribué ?</li>
+            <li>utiliser les numéros attribué ?</li>
+            <li>utiliser les numéros attribué ?</li>
+        </ol> 
 
         <!--CARD-->
-                            <li>
-                                <label for="select" class="dish__flex">
-                                    <div>
-                                        <span class="dish__flex--name">Title</span>
-                                        <span class="dish__flex--side">Subtitle</span>
-                                    </div>
-                                    <div>
-                                        <span class="dish__price">Aside</span>
-                                    </div>
-                                </label>
-                                <input type="checkbox">
-                            </li>
+
+        <li>
+            <label for="select" class="dish__flex">
+                <div>
+                    <span class="dish__flex--name">Title</span>
+                    <span class="dish__flex--side">Subtitle</span>
+                </div>
+                <div>
+                    <span class="dish__price">Aside</span>
+                </div>
+            </label>
+            <input type="checkbox">
+        </li>
+
+
