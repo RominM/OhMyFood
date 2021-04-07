@@ -54,11 +54,11 @@ h3 {
     font-size: 0.9em;
 }
 
-.dish {
-    font-family: 'Roboto-Medium', 'sans-serif';
+.cardLi {
     &__flex {
-        &--side {
-            font-family: 'Roboto-Light';
+        font-family: 'Roboto-Medium', 'sans-serif';
+        &--subtitle {
+            font-family: 'Roboto-Light','sans-serif';
         }
     }
 }
