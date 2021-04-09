@@ -2,9 +2,9 @@
 
 
 .start, .main, .course {
-    width: 30%;
-    min-width: 350px;
-    margin-top: 25px;
+    width: 350px;
+    min-width: 150px;
+    margin: 25px 20px 25px 0px;
     padding-left: 20px;
     .light {
         text-transform: uppercase;
@@ -22,44 +22,59 @@
 #list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-    margin: auto;
+    justify-content: center;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 
 .cardLi {
     position: relative;
     display: flex;
     overflow: hidden;
-    height: 50px;
-    margin: 5px;
+    height: 60px;
+    margin: 7px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 3px 2px 8px 3px rgb(212, 212, 212);
+    transition: 0.3s;
+    line-height: 25px;
+    cursor: pointer;
     &__flex {
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        width: 95%;
+        margin: 7px 0px 7px 7px;
         cursor: pointer;
         &--title {
             display: block;
             width: 100%;
             margin: auto;
+            white-space: nowrap;
             text-overflow: ellipsis;
         }
         &--subtitle {
             display: block;
+            width: 100%;
+            margin: auto;
+            white-space: nowrap;
             text-overflow: ellipsis;
 
         }
         &--side {
-            white-space: nowrap;
-            overflow: hidden;
+            position: absolute;
+            height: 100%;
+            top: 50%;
+            right: 5%;
         }
     }
+}
+
+.cardLi:hover {
+    transform: scale(1.03);
+    box-shadow: -3px -2px 8px 3px rgb(212, 212, 212);
 }
 
 .box {
@@ -70,7 +85,7 @@
 
 .tick {
     position: relative;
-    width: 40px;
+    width: 60px;
     height: 100%;
     text-align: center;
     img {
@@ -82,7 +97,7 @@
     }
 }
 
-.box:hover ~ .tick {
+.box:checked ~ .tick {
     right: 0;
 }
 
@@ -92,7 +107,7 @@
 
 .tick {
     position: absolute;
-    right: -40px;
+    right: -60px;
     transition: 0.3s;
     background-color: $color-tertiary;
 }
