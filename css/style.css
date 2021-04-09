@@ -299,60 +299,46 @@ a {
   border: none;
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotate2 {
-  0% {
-    transform: rotate(0deg);
-    border-top-color: #9356DC;
-  }
-  50% {
-    transform: rotate(180deg);
-    border-top-color: #FF79DA;
-  }
-  100% {
-    transform: rotate(360deg);
-    border-top-color: #99E2D0;
-  }
-}
 * {
   box-sizing: border-box;
 }
 
+@keyframes opacity {
+  from {
+    opacity: 0.05;
+  }
+  90% {
+    opacity: 0.05;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .loader {
   position: absolute;
-  top: 50%;
-  left: 15%;
+  top: 20%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  margin: auto;
-  width: 250px;
-  height: 250px;
-  display: block;
-  overflow: hidden;
 }
 .loader div {
-  height: 100%;
+  border: solid 2px;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: #9356DC;
+  border-right-color: #FF79DA;
+  padding: 6px;
+  border-radius: 100%;
+  animation: rotate 4s;
 }
 
-.loader, .loader div {
-  border-radius: 50%;
-  padding: 15px;
-  border: 3px solid transparent;
-  animation: rotate linear 3.5s;
-  border-radius: 50%;
-  padding: 7px;
-  animation: rotate2 2.5s;
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-
 .local__img {
   width: 10px;
   margin-right: 10px;
@@ -382,10 +368,17 @@ a {
 .ImgHeart:hover {
   transform: scale(1.2);
 }
-.ImgHeart:active {
-  background: linear-gradient(#9356DC, #FF79DA);
+
+.heartBox {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  bottom: 15%;
+  right: 4%;
+  opacity: 0;
 }
-.ImgHeart:focus {
+
+.heartBox:checked ~ .ImgHeart {
   background: linear-gradient(#9356DC, #FF79DA);
 }
 
@@ -509,6 +502,7 @@ a {
 }
 
 .block-page {
+  animation: opacity 3s;
   position: relative;
   margin: 0;
   padding: 0;

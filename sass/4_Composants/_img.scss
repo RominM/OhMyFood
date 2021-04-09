@@ -39,14 +39,21 @@
     &:hover {
         transform: scale(1.2);
     }
-    &:active {
-        background: linear-gradient($color-primary, $color-secondary);
-    }
-    &:focus {
-        background: linear-gradient($color-primary, $color-secondary);
-    }
 }
 
+.heartBox {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    bottom: 15%;
+    right: 4%;
+    opacity: 0;
+}
+
+
+.heartBox:checked ~ .ImgHeart {
+    background: linear-gradient($color-primary, $color-secondary);
+}
 
 
 
