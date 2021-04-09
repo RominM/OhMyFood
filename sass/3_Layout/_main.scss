@@ -52,20 +52,17 @@ body {
         justify-content: space-around;
         flex-wrap: wrap;
     }
-    &__list--grey {
+    &__list--btn {
         @include WorkList;
         background-color: $color_dark-grey;
     }
-    &__list--purple {
-        @include WorkList;
-        background-color: $color_clear-purple;
-    }
     span {
         margin-right: 10px;
+        color: #000;
     }
 }
 
-.restaurants {
+#restaurants {
     background-color: $color_clear-grey;
     padding: 25px 10px 25px 10px;
     display: flex;

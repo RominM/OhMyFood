@@ -53,9 +53,11 @@ h3 {
   font-family: "Roboto-Light", "sans-serif";
 }
 
-button {
+.explor a {
   font-family: "Roboto-Medium";
   font-size: 1em;
+  color: #fff;
+  text-align: center;
 }
 
 .header {
@@ -128,7 +130,7 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.working__list--grey {
+.working__list--btn {
   position: relative;
   border-radius: 15px;
   align-items: center;
@@ -142,45 +144,32 @@ body {
   box-shadow: 0px 5px 10px 1px #e2e2e2;
   background-color: #eeeeee;
 }
-.working__list--purple {
-  position: relative;
-  border-radius: 15px;
-  align-items: center;
-  width: 375px;
-  height: 65px;
-  margin: auto 25px 25px;
-  display: flex;
-  justify-content: space-around;
-  font-family: "Roboto-Bold";
-  font-size: 0.9em;
-  box-shadow: 0px 5px 10px 1px #e2e2e2;
-  background-color: #f7ecff;
-}
 .working span {
   margin-right: 10px;
+  color: #000;
 }
 
-.restaurants {
+#restaurants {
   background-color: #f6f6f6;
   padding: 25px 10px 25px 10px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.restaurants a {
+#restaurants a {
   text-decoration: none;
   color: #000;
 }
-.restaurants h2 {
+#restaurants h2 {
   padding: 50px 0px 25px 25px;
   width: 95%;
   margin: auto;
 }
-.restaurants__title {
+#restaurants__title {
   font-family: "Roboto-Bold", "sans-serif";
   font-size: 0.8em;
 }
-.restaurants__card {
+#restaurants__card {
   position: relative;
   width: 90%;
   max-width: 600px;
@@ -192,7 +181,7 @@ body {
   box-shadow: 0px 5px 10px 1px #e2e2e2;
   transition: transform cubic-bezier(0.6, -0.59, 0.29, 1.68) 0.5s;
 }
-.restaurants__card .medium {
+#restaurants__card .medium {
   position: absolute;
   top: 5%;
   right: 5%;
@@ -204,13 +193,13 @@ body {
   border-radius: 3px;
   transition: 1s;
 }
-.restaurants__card .medium:hover {
+#restaurants__card .medium:hover {
   transform: scale(1.2);
 }
-.restaurants__card:hover {
+#restaurants__card:hover {
   transform: scale(1.03);
 }
-.restaurants .blocTxt {
+#restaurants .blocTxt {
   position: relative;
   height: 50px;
   padding: 10px;
@@ -269,7 +258,11 @@ body {
   width: 15px;
 }
 
-.explor button {
+a {
+  text-decoration: none;
+}
+
+.explor a {
   display: block;
   width: 70%;
   max-width: 500px;
@@ -278,10 +271,9 @@ body {
   margin: auto;
   border: none;
   border-radius: 25px;
-  padding: 12px;
+  padding: 17px;
   background: linear-gradient(#9356DC, #FF79DA);
   box-shadow: 0px 2px 5px 2px #cccccc;
-  color: #fff;
   cursor: pointer;
 }
 .explor__btn:hover {
@@ -292,14 +284,16 @@ body {
   outline: 0 !important;
 }
 
-.working button {
+.working a {
   width: 100%;
   height: 100%;
   border: none;
   cursor: pointer;
   border-radius: 15px;
+  text-align: center;
+  padding-top: 15px;
 }
-.working button:focus {
+.working a:focus {
   background-color: #f7ecff;
   outline: 0 !important;
   border: none;
@@ -366,12 +360,11 @@ body {
 
 .working__list img {
   width: 18px;
-  height: 20px;
-  margin-left: -10px;
-  margin-right: 15px;
+  height: 18px;
+  margin: 10px 15px -3px -10px;
 }
 
-.restaurants__card--bg {
+#restaurants__card--bg {
   object-fit: cover;
   object-position: center 60%;
   width: 100%;
