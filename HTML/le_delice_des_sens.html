@@ -56,205 +56,190 @@
         <section class="menu">
             <h1>Le délice des sens<img src="../IMAGES/logo/heart-regular.svg" alt="coeur" class="ImgHeart"></h1>
 
-            <div class="list">
+            <form action="" method="POST" id="list">
 
-                <!--START-->
-                <form action="" method="POST" class="formStart">
-                    <div class="start">
-                        <span class="light">Entrées</span>
-                        <hr />
-                    </div>
+                <!--START 1.0-->
+                <div class="start">
+                    <span class="light">Entrées</span>
+                    <hr />
+                </div>
+                <ul class="card">
 
-                    <!-- Entrées 1.0
-Tartare de thon
-Assaisonné au yuzu
-25€
+                    <!--CARD 1.1-->
+                    <!--Tartare de thon
+                            Assaisonné au yuzu
+                            25€-->
+                    <li class="cardLi">
+                        <label for="start1" class="cardLi__flex">
+                            <div>
+                                <span class="cardLi__flex--title">Tartare de thon</span>
+                                <span class="cardLi__flex--subtitle">Assaisonné au yuzu</span>
+                            </div>
+                            <div>
+                                <span class="cardLi__flex--side">25€</span>
+                            </div>
+                        </label>
+                        <input type="checkbox" name="check" id="start1" class="box">
+                    </li>
 
-Bouchée de homard croustillant 
-Et sa farandole de petits légumes
-35€
+                    <!--CARD 2.1-->
+                    <!-- Bouchée de homard croustillant 
+                            Et sa farandole de petits légumes
+                            35€ -->
+                    <li class="cardLi">
+                        <label for="start2" class="cardLi__flex">
+                            <div>
+                                <span class="cardLi__flex--title">Bouchée de homard croustillant</span>
+                                <span class="cardLi__flex--subtitle">Et sa farandole de petits légumes</span>
 
-Velouté de cèpes 
-Aux truffes
-20€ -->
+                            </div>
+                            <div>
+                                <span class="cardLi__flex--side">35€</span>
+                            </div>
+                        </label>
+                        <input type="checkbox" name="check" id="start2" class="box">
+                        <div class="tick">
+                            <img src="../IMAGES/logo/check-circle-solid.svg" alt="">
+                        </div>
+                    </li>
 
-                    <ul class="card">
-                        <!--CARD 1.1-->
-                        <li class="cardLi">
-                            <label for="check" class="cardLi__flex">
-                                <div>
-                                    <span class="cardLi__flex--title">Tartare de thon</span>
-                                    <span class="cardLi__flex--subtitle">Assaisonné au yuzu</span>
-                                </div>
-                                <div>
-                                    <span class="cardLi__flex--side">25€</span>
-                                </div>
-                            </label>
-                            <input type="checkbox" name="check" id="check" class="box">
-                        </li>
+                    <!--CARD 3.1-->
+                    <!-- Velouté de cèpes 
+                            Aux truffes
+                            20€ -->
+                    <li class="cardLi">
+                        <label for="start3" class="cardLi__flex">
+                            <div>
+                                <span class="cardLi__flex--title">Velouté de cèpes</span>
+                                <span class="cardLi__flex--subtitle">Aux truffes</span>
+                            </div>
+                            <div>
+                                <span class="cardLi__flex--side">20€</span>
+                            </div>
+                        </label>
+                        <input type="checkbox" name="check" id="start3" class="box">
+                    </li>
+                </ul>
 
-                        <!--CARD 2.1-->
-                        <li class="cardLi">
-                            <label for="check2" class="cardLi__flex">
-                                <div>
-                                    <span class="cardLi__flex--title">Bouchée de homard croustillant</span>
-                                    <span class="cardLi__flex--subtitle">Et sa farandole de petits légumes</span>
 
-                                </div>
-                                <div>
-                                    <span class="cardLi__flex--side">35€</span>
-                                </div>
-                            </label>
-                            <input type="checkbox" name="check" id="check2" class="box">
-                            <div class="greenTick">v</div>
-                        </li>
+                <!--MAIN 2.0-->
+                <div class="main">
+                    <span class="light">Plats</span>
+                    <hr />
+                </div>
+                <ul class="card">
 
-                        <!--CARD 3.1-->
-                        <li class="cardLi">
-                            <label for="check" class="cardLi__flex">
-                                <div>
-                                    <span class="cardLi__flex--title">Velouté de cèpes</span>
-                                    <span class="cardLi__flex--subtitle">Aux truffes</span>
-                                </div>
-                                <div>
-                                    <span class="cardLi__flex--side">20€</span>
-                                </div>
-                            </label>
-                            <input type="checkbox"  name="check" id="check" class="box">
-                        </li>
-                    </ul>
-                </form>
+                    <!--CARD 2.1-->
+                    <!-- Poulet rôti aux herbes de Provence 
+                            Et sa crème de truffe
+                            40€ -->
+                    <li class="cardLi">
+                        <label for="main1" class="cardLi__flex">
+                            <div>
+                                <span class="cardLi__flex--title">Title</span>
+                                <span class="cardLi__flex--subtitle">Subtitle</span>
+                            </div>
+                            <div>
+                                <span class="cardLi__flex--side">Side</span>
+                            </div>
+                        </label>
+                        <input type="checkbox" name="check" id="main1" class="box">
+                    </li>
 
-                <!--MAIN-->
-                <form action="" method="POST" class="formMain">
-                    <div class="main">
-                        <span class="light">Plats</span>
-                        <hr />
-                    </div>
+                    <!--CARD 2.2-->
+                    <!-- Langouste rôtie 
+                            Et ses légumes de saison
+                            35€ -->
+                    <li class="cardLi">
+                        <label for="main2" class="cardLi__flex">
+                            <div>
+                                <span class="cardLi__flex--title">Title</span>
+                                <span class="cardLi__flex--subtitle">Subtitle</span>
+                            </div>
+                            <div>
+                                <span class="cardLi__flex--side">Side</span>
+                            </div>
+                        </label>
+                        <input type="checkbox" name="check" id="main2" class="box">
+                    </li>
 
-                    <!-- Plats 2.0
-Poulet rôti aux herbes de Provence 
-Et sa crème de truffe
-40€
+                    <!--CARD 2.3-->
+                    <!-- Côte de boeuf Angus 
+                            Et sa purée de panais
+                            44€ -->
+                    <li class="cardLi">
+                        <label for="main3" class="cardLi__flex">
+                            <div>
+                                <span class="cardLi__flex--title">Title</span>
+                                <span class="cardLi__flex--subtitle">Subtitle</span>
+                            </div>
+                            <div>
+                                <span class="cardLi__flex--side">Side</span>
+                            </div>
+                        </label>
+                        <input type="checkbox" name="check" id="main3" class="box">
+                    </li>
+                </ul>
 
-Langouste rôtie 
-Et ses légumes de saison
-35€
+                <!--COURSE 3.0-->
+                <div class="course">
+                    <span class="light">Desserts</span>
+                    <hr />
+                </div>
+                <ul class="card">
 
-Côte de boeuf Angus 
-Et sa purée de panais
-44€ -->
+                    <!--CARD 3.1-->
+                    <!-- Farandole de desserts
+                            Du chef
+                            18€ -->
+                    <li class="cardLi">
+                        <label for="course1" class="cardLi__flex">
+                            <div>
+                                <span class="cardLi__flex--title">Title</span>
+                                <span class="cardLi__flex--subtitle">Subtitle</span>
+                            </div>
+                            <div>
+                                <span class="cardLi__flex--side">Side</span>
+                            </div>
+                        </label>
+                        <input type="checkbox" name="check" id="course1" class="box">
+                    </li>
 
-                    <ul class="card">
-                        <!--CARD 2.1-->
-                        <li class="cardLi">
-                            <label for="check" class="cardLi__flex">
-                                <div>
-                                    <span class="cardLi__flex--title">Title</span>
-                                    <span class="cardLi__flex--subtitle">Subtitle</span>
-                                </div>
-                                <div>
-                                    <span class="cardLi__flex--side">Side</span>
-                                </div>
-                            </label>
-                            <input type="checkbox" name="check" id="check" class="box">
-                        </li>
+                    <!--CARD 3.2-->
+                    <!-- Crème brulée 
+                            Revisitée
+                            22€ -->
+                    <li class="cardLi">
+                        <label for="course2" class="cardLi__flex">
+                            <div>
+                                <span class="cardLi__flex--title">Title</span>
+                                <span class="cardLi__flex--subtitle">Subtitle</span>
+                            </div>
+                            <div>
+                                <span class="cardLi__flex--side">Side</span>
+                            </div>
+                        </label>
+                        <input type="checkbox" name="check" id="course2" class="box">
+                    </li>
 
-                        <!--CARD 2.2-->
-                        <li class="cardLi">
-                            <label for="check" class="cardLi__flex">
-                                <div>
-                                    <span class="cardLi__flex--title">Title</span>
-                                    <span class="cardLi__flex--subtitle">Subtitle</span>
-                                </div>
-                                <div>
-                                    <span class="cardLi__flex--side">Side</span>
-                                </div>
-                            </label>
-                            <input type="checkbox" name="check" id="check" class="box">
-                        </li>
-
-                        <!--CARD 2.3-->
-                        <li class="cardLi">
-                            <label for="check" class="cardLi__flex">
-                                <div>
-                                    <span class="cardLi__flex--title">Title</span>
-                                    <span class="cardLi__flex--subtitle">Subtitle</span>
-                                </div>
-                                <div>
-                                    <span class="cardLi__flex--side">Side</span>
-                                </div>
-                            </label>
-                            <input type="checkbox" name="check" id="check" class="box">
-                        </li>
-                    </ul>
-                </form>
-
-                <!--COURSE-->
-                <form action="" method="POST" class="formCourse">
-                    <div class="course">
-                        <span class="light">Desserts</span>
-                        <hr />
-                    </div>
-
-                    <!-- Desserts 3.0
-Farandole de desserts
-Du chef
-18€
-
-Crème brulée 
-Revisitée
-22€
-
-Tiramisu 
-À la noisette
-23€ -->
-
-                    <ul class="card">
-                        <!--CARD 3.1-->
-                        <li class="cardLi">
-                            <label for="check" class="cardLi__flex">
-                                <div>
-                                    <span class="cardLi__flex--title">Title</span>
-                                    <span class="cardLi__flex--subtitle">Subtitle</span>
-                                </div>
-                                <div>
-                                    <span class="cardLi__flex--side">Side</span>
-                                </div>
-                            </label>
-                            <input type="checkbox" name="check" id="check" class="box">
-                        </li>
-
-                        <!--CARD 3.2-->
-                        <li class="cardLi">
-                            <label for="check" class="cardLi__flex">
-                                <div>
-                                    <span class="cardLi__flex--title">Title</span>
-                                    <span class="cardLi__flex--subtitle">Subtitle</span>
-                                </div>
-                                <div>
-                                    <span class="cardLi__flex--side">Side</span>
-                                </div>
-                            </label>
-                            <input type="checkbox" name="check" id="check" class="box">
-                        </li>
-
-                        <!--CARD 3.3-->
-                        <li class="cardLi">
-                            <label for="check" class="cardLi__flex">
-                                <div>
-                                    <span class="cardLi__flex--title">Title</span>
-                                    <span class="cardLi__flex--subtitle">Subtitle</span>
-                                </div>
-                                <div>
-                                    <span class="cardLi__flex--side">Side</span>
-                                </div>
-                            </label>
-                            <input type="checkbox" name="check" id="check" class="box">
-                        </li>
-                    </ul>
-                </form>
-            </div>
+                    <!--CARD 3.3-->
+                    <!-- Tiramisu 
+                            À la noisette
+                            23€ -->
+                    <li class="cardLi">
+                        <label for="course3" class="cardLi__flex">
+                            <div>
+                                <span class="cardLi__flex--title">Title</span>
+                                <span class="cardLi__flex--subtitle">Subtitle</span>
+                            </div>
+                            <div>
+                                <span class="cardLi__flex--side">Side</span>
+                            </div>
+                        </label>
+                        <input type="checkbox" name="check" id="course3" class="box">
+                    </li>
+                </ul>
+            </form>
         </section>
 
         <footer class="footer">

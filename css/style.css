@@ -412,31 +412,34 @@ a {
   border: none;
 }
 
-.list {
+#list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
   width: 100%;
   margin: auto;
-}
-.list .formStart, .list .formMain, .list .formCourse {
-  width: 325px;
+  border: solid #000;
 }
 
 .card {
   display: flex;
   flex-direction: column;
+  border: solid purple;
+  width: 30%;
 }
 
 .cardLi {
   position: relative;
   display: flex;
   overflow: hidden;
+  height: 50px;
+  margin: 5px;
 }
 .cardLi__flex {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  cursor: pointer;
 }
 .cardLi__flex--title {
   display: block;
@@ -459,7 +462,21 @@ a {
   height: 0px;
 }
 
-.box:checked ~ .greenTick {
+.tick {
+  position: relative;
+  width: 40px;
+  height: 100%;
+  text-align: center;
+}
+.tick img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+}
+
+.box:hover ~ .tick {
   right: 0;
 }
 
@@ -467,10 +484,11 @@ a {
   width: 100px;
 }
 
-.greenTick {
+.tick {
   position: absolute;
-  right: -30px;
+  right: -40px;
   transition: 0.3s;
+  background-color: #99E2D0;
 }
 
 .block-page {

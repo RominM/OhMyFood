@@ -15,33 +15,34 @@
     }
 }
 
-.list {
+#list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    // justify-content: space-around;
     width: 100%;
     margin: auto;
-    .formStart, .formMain, .formCourse {
-        width: 325px;
-    }
+    border: solid #000;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    
+    border: solid purple;
+    width: 30%;
 }
 
 .cardLi {
     position: relative;
     display: flex;
     overflow: hidden;
-    
+    height: 50px;
+    margin: 5px;
     &__flex {
         display: flex;
         justify-content: space-between;
         width: 100%;
-
+        cursor: pointer;
         &--title {
             display: block;
             width: 100%;
@@ -64,10 +65,23 @@
     opacity: 0;
     width: 0px;
     height: 0px;
-    // display: none;
 }
 
-.box:checked ~ .greenTick {
+.tick {
+    position: relative;
+    width: 40px;
+    height: 100%;
+    text-align: center;
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 20px;
+    }
+}
+
+.box:hover ~ .tick {
     right: 0;
 }
 
@@ -75,10 +89,11 @@
     width: 100px;
 }
 
-.greenTick {
+.tick {
     position: absolute;
-    right: -30px;
+    right: -40px;
     transition: 0.3s;
+    background-color: $color-tertiary;
 }
 // .dish {
 //     position: relative;
