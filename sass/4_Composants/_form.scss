@@ -2,9 +2,13 @@
 
 
 .start, .main, .course {
+    width: 30%;
+    min-width: 350px;
     margin-top: 25px;
     padding-left: 20px;
-    text-transform: uppercase;
+    .light {
+        text-transform: uppercase;
+    }
     hr {
         width: 50px;
         height: 4px;
@@ -18,18 +22,15 @@
 #list {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    // justify-content: space-around;
+    justify-content: space-around;
     width: 100%;
     margin: auto;
-    border: solid #000;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    border: solid purple;
-    width: 30%;
+    width: 100%;
 }
 
 .cardLi {

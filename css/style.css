@@ -399,8 +399,12 @@ a {
 }
 
 .start, .main, .course {
+  width: 30%;
+  min-width: 350px;
   margin-top: 25px;
   padding-left: 20px;
+}
+.start .light, .main .light, .course .light {
   text-transform: uppercase;
 }
 .start hr, .main hr, .course hr {
@@ -415,17 +419,15 @@ a {
 #list {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  justify-content: space-around;
   width: 100%;
   margin: auto;
-  border: solid #000;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  border: solid purple;
-  width: 30%;
+  width: 100%;
 }
 
 .cardLi {
