@@ -54,32 +54,20 @@
         <section class="menu">
             <h1>La palette du goût<img src="../IMAGES/logo/heart-regular.svg" alt="coeur" class="ImgHeart"></h1>
 
-            <div class="list">
+            <form action="" method="POST" id="list">
 
-                <!--START-->
-                <form action="" method="POST" class="formStart">
-                    <div class="start">
-                        <span class="light">Entrées</span>
-                        <hr />
-                    </div>
-
-                    <!-- Entrées 1.0
-Fricassée d'escargot
-Au piment d'Espelette 
-25€
-
-Foie gras de canard mi-cuit
-Et ses copeaux de truffe noire
-35€
-
-Oeuf au plat
-Assaisonné à la truffe sur lit de caviar
-20€ -->
-
+                <!--START 1.0-->
+                <div class="start">
+                    <span class="light">Entrées</span>
+                    <hr />
                     <ul class="card">
+
                         <!--CARD 1.1-->
+                        <!--Fricassée d'escargot
+                            Au piment d'Espelette 
+                            25€-->
                         <li class="cardLi">
-                            <label for="check" class="cardLi__flex">
+                            <label for="start1" class="cardLi__flex">
                                 <div>
                                     <span class="cardLi__flex--title">Tartare de thon</span>
                                     <span class="cardLi__flex--subtitle">Assaisonné au yuzu</span>
@@ -88,26 +76,39 @@ Assaisonné à la truffe sur lit de caviar
                                     <span class="cardLi__flex--side">25€</span>
                                 </div>
                             </label>
-                            <input type="checkbox" name="check" id="check" class="box">
+                            <input type="checkbox" name="check" id="start1" class="box">
+                            <div class="tick">
+                                <img src="../IMAGES/logo/check-circle-solid.svg" alt="">
+                            </div>
                         </li>
 
-                        <!--CARD 1.2-->
+                        <!--CARD 2.1-->
+                        <!--Foie gras de canard mi-cuit
+                            Et ses copeaux de truffe noire
+                            35€-->
                         <li class="cardLi">
-                            <label for="check" class="cardLi__flex">
+                            <label for="start2" class="cardLi__flex">
                                 <div>
                                     <span class="cardLi__flex--title">Bouchée de homard croustillant</span>
                                     <span class="cardLi__flex--subtitle">Et sa farandole de petits légumes</span>
+
                                 </div>
                                 <div>
                                     <span class="cardLi__flex--side">35€</span>
                                 </div>
                             </label>
-                            <input type="checkbox" name="check" id="check" class="box">
+                            <input type="checkbox" name="check" id="start2" class="box">
+                            <div class="tick">
+                                <img src="../IMAGES/logo/check-circle-solid.svg" alt="">
+                            </div>
                         </li>
 
-                        <!--CARD 1.3-->
+                        <!--CARD 3.1-->
+                        <!--Oeuf au plat
+                            Assaisonné à la truffe sur lit de caviar
+                            20€ -->
                         <li class="cardLi">
-                            <label for="check" class="cardLi__flex">
+                            <label for="start3" class="cardLi__flex">
                                 <div>
                                     <span class="cardLi__flex--title">Velouté de cèpes</span>
                                     <span class="cardLi__flex--subtitle">Aux truffes</span>
@@ -116,35 +117,26 @@ Assaisonné à la truffe sur lit de caviar
                                     <span class="cardLi__flex--side">20€</span>
                                 </div>
                             </label>
-                            <input type="checkbox" name="check" id="check" class="box">
+                            <input type="checkbox" name="check" id="start3" class="box">
+                            <div class="tick">
+                                <img src="../IMAGES/logo/check-circle-solid.svg" alt="">
+                            </div>
                         </li>
                     </ul>
-                </form>
+                </div>
 
-                <!--MAIN-->
-                <form action="" method="POST" class="formMain">
-                    <div class="main">
-                        <span class="light">Plats</span>
-                        <hr />
-                    </div>
-
-                    <!-- Plats 2.0
-Filet de boeuf aux herbes
-Accompagné de sa ribambelle de légumes
-40€
-
-Parmentier de queue de boeuf
-À la truffe noire sur sa purée de panais
-35€
-
-Filet de turbot
-Aux agrumes
-44€ -->
-
+                <!--MAIN 2.0-->
+                <div class="main">
+                    <span class="light">Plats</span>
+                    <hr />
                     <ul class="card">
+
                         <!--CARD 2.1-->
+                        <!--Filet de boeuf aux herbes
+                            Accompagné de sa ribambelle de légumes
+                            40€-->
                         <li class="cardLi">
-                            <label for="check" class="cardLi__flex">
+                            <label for="main1" class="cardLi__flex">
                                 <div>
                                     <span class="cardLi__flex--title">Title</span>
                                     <span class="cardLi__flex--subtitle">Subtitle</span>
@@ -153,12 +145,18 @@ Aux agrumes
                                     <span class="cardLi__flex--side">Side</span>
                                 </div>
                             </label>
-                            <input type="checkbox" name="check" id="check" class="box">
+                            <input type="checkbox" name="check" id="main1" class="box">
+                            <div class="tick">
+                                <img src="../IMAGES/logo/check-circle-solid.svg" alt="">
+                            </div>
                         </li>
 
                         <!--CARD 2.2-->
+                        <!--Parmentier de queue de boeuf
+                            À la truffe noire sur sa purée de panais
+                            35€-->
                         <li class="cardLi">
-                            <label for="check" class="cardLi__flex">
+                            <label for="main2" class="cardLi__flex">
                                 <div>
                                     <span class="cardLi__flex--title">Title</span>
                                     <span class="cardLi__flex--subtitle">Subtitle</span>
@@ -167,12 +165,18 @@ Aux agrumes
                                     <span class="cardLi__flex--side">Side</span>
                                 </div>
                             </label>
-                            <input type="checkbox" name="check" id="check" class="box">
+                            <input type="checkbox" name="check" id="main2" class="box">
+                            <div class="tick">
+                                <img src="../IMAGES/logo/check-circle-solid.svg" alt="">
+                            </div>
                         </li>
 
                         <!--CARD 2.3-->
+                        <!--Filet de turbot
+                            Aux agrumes
+                            44€ -->
                         <li class="cardLi">
-                            <label for="check" class="cardLi__flex">
+                            <label for="main3" class="cardLi__flex">
                                 <div>
                                     <span class="cardLi__flex--title">Title</span>
                                     <span class="cardLi__flex--subtitle">Subtitle</span>
@@ -181,35 +185,27 @@ Aux agrumes
                                     <span class="cardLi__flex--side">Side</span>
                                 </div>
                             </label>
-                            <input type="checkbox" name="check" id="check" class="box">
+                            <input type="checkbox" name="check" id="main3" class="box">
+                            <div class="tick">
+                                <img src="../IMAGES/logo/check-circle-solid.svg" alt="">
+                            </div>
                         </li>
                     </ul>
-                </form>
+                </div>
 
-                <!--COURSE-->
-                <form action="" method="POST" class="formCourse">
-                    <div class="course">
-                        <span class="light">Desserts</span>
-                        <hr />
-                    </div>
 
-                    <!-- Desserts 3.0
-Paris-Brest
-Revisité
-18€
-
-Macaron au chocolat d'exception 
-Et glace à la vanille de Madagascar
-22€
-
-Mousse au chocolat 
-Au piment d'Espelette et à la truffe noire
-23€   -->
-
+                <!--COURSE 3.0-->
+                <div class="course">
+                    <span class="light">Desserts</span>
+                    <hr />
                     <ul class="card">
+
                         <!--CARD 3.1-->
+                        <!--Paris-Brest
+                            Revisité
+                            18€-->
                         <li class="cardLi">
-                            <label for="check" class="cardLi__flex">
+                            <label for="course1" class="cardLi__flex">
                                 <div>
                                     <span class="cardLi__flex--title">Title</span>
                                     <span class="cardLi__flex--subtitle">Subtitle</span>
@@ -218,11 +214,59 @@ Au piment d'Espelette et à la truffe noire
                                     <span class="cardLi__flex--side">Side</span>
                                 </div>
                             </label>
-                            <input type="checkbox" name="check" id="check" class="box">
+                            <input type="checkbox" name="check" id="course1" class="box">
+                            <div class="tick">
+                                <img src="../IMAGES/logo/check-circle-solid.svg" alt="">
+                            </div>
                         </li>
 
                         <!--CARD 3.2-->
+                        <!--Macaron au chocolat d'exception 
+                            Et glace à la vanille de Madagascar
+                            22€-->
                         <li class="cardLi">
+                            <label for="course2" class="cardLi__flex">
+                                <div>
+                                    <span class="cardLi__flex--title">Title</span>
+                                    <span class="cardLi__flex--subtitle">Subtitle</span>
+                                </div>
+                                <div>
+                                    <span class="cardLi__flex--side">Side</span>
+                                </div>
+                            </label>
+                            <input type="checkbox" name="check" id="course2" class="box">
+                            <div class="tick">
+                                <img src="../IMAGES/logo/check-circle-solid.svg" alt="">
+                            </div>
+                        </li>
+
+                        <!--CARD 3.3-->
+                        <!--Mousse au chocolat 
+                            Au piment d'Espelette et à la truffe noire
+                            23€-->
+                        <li class="cardLi">
+                            <label for="course3" class="cardLi__flex">
+                                <div>
+                                    <span class="cardLi__flex--title">Title</span>
+                                    <span class="cardLi__flex--subtitle">Subtitle</span>
+                                </div>
+                                <div>
+                                    <span class="cardLi__flex--side">Side</span>
+                                </div>
+                            </label>
+                            <input type="checkbox" name="check" id="course3" class="box">
+                            <div class="tick">
+                                <img src="../IMAGES/logo/check-circle-solid.svg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+                    <!-- Desserts 3.0
+
+                    <!-- <ul class="card"> -->
+                        <!--CARD 3.1-->
+                        <!-- <li class="cardLi">
                             <label for="check" class="cardLi__flex">
                                 <div>
                                     <span class="cardLi__flex--title">Title</span>
@@ -234,9 +278,23 @@ Au piment d'Espelette et à la truffe noire
                             </label>
                             <input type="checkbox" name="check" id="check" class="box">
                         </li>
+ -->
+                        <!--CARD 3.2-->
+                        <!-- <li class="cardLi">
+                            <label for="check" class="cardLi__flex">
+                                <div>
+                                    <span class="cardLi__flex--title">Title</span>
+                                    <span class="cardLi__flex--subtitle">Subtitle</span>
+                                </div>
+                                <div>
+                                    <span class="cardLi__flex--side">Side</span>
+                                </div>
+                            </label>
+                            <input type="checkbox" name="check" id="check" class="box">
+                        </li> -->
 
                         <!--CARD 3.3-->
-                        <li class="cardLi">
+                        <!-- <li class="cardLi">
                             <label for="check" class="cardLi__flex">
                                 <div>
                                     <span class="cardLi__flex--title">Title</span>
@@ -250,7 +308,7 @@ Au piment d'Espelette et à la truffe noire
                         </li>
                     </ul>
                 </form>
-            </div>
+            </div> -->
         </section>
 
         <footer class="footer">
