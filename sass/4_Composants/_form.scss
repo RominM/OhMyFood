@@ -1,0 +1,117 @@
+//__form.scss__//
+
+
+.start, .main, .course {
+    margin-top: 25px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    hr {
+        width: 50px;
+        height: 4px;
+        margin-top: 5px;
+        margin-left: 0;
+        background-color: $color-tertiary;
+        border: none;
+    }
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+    .formStart, .formMain, .formCourse {
+        width: 325px;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.cardLi {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        &--title {
+            display: block;
+            width: 100%;
+            margin: auto;
+            text-overflow: ellipsis;
+        }
+        &--subtitle {
+            display: block;
+            text-overflow: ellipsis;
+
+        }
+        &--side {
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+}
+
+.box {
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    // display: none;
+}
+
+.box:checked ~ .greenTick {
+    right: 0;
+}
+
+.box:checked ~ .cardLi>div>.cardLi__flex--title {
+    width: 100px;
+}
+
+.greenTick {
+    position: absolute;
+    right: -30px;
+    transition: 0.3s;
+}
+// .dish {
+//     position: relative;
+    // display: flex;
+    // border: solid;
+//     justify-content: space-between;
+//     padding: 10px;
+//     background-color: #fff;
+//     border-radius: 15px;
+//     width: 340px;
+//     max-width: 90%;
+//     height: 65px;
+//     margin: 10px auto;
+//     line-height: 1.5em;
+//      
+    // &__flex {
+    //     display: flex;
+    //     flex-direction: column;
+    //     &--name {
+    //         font-size: 1.2em;
+    //     }      
+    // }
+//     &__price {
+//         position: absolute;
+//         top: 50%;
+//         left: 95%;
+//         transform: translate(-50%,-50%);
+//         background-color: #fff;
+//         box-sizing: border-box;
+//         width: 50px;
+//         height: 100%;
+//         margin: auto;
+//         padding-top: 30px;
+//     }
+// }
+
