@@ -331,14 +331,6 @@ a {
   animation: rotate 4s;
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .local__img {
   width: 10px;
   margin-right: 10px;
@@ -359,6 +351,7 @@ a {
 
 .ImgHeart {
   position: absolute;
+  font-weight: bold;
   width: 25px;
   bottom: 15%;
   right: 5%;
@@ -376,6 +369,7 @@ a {
   bottom: 15%;
   right: 4%;
   opacity: 0;
+  background: linear-gradient();
 }
 
 .heartBox:checked ~ .ImgHeart {
@@ -501,6 +495,14 @@ a {
   background-color: #99E2D0;
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .block-page {
   animation: opacity 3s;
   position: relative;
