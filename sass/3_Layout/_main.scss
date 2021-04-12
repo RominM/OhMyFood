@@ -62,7 +62,7 @@ body {
     }
 }
 
-#restaurants {
+.restaurants {
     background-color: $color_clear-grey;
     padding: 25px 10px 25px 10px;
     display: flex;
@@ -130,10 +130,5 @@ body {
         position: relative;
         padding: 25px 10px 10px 25px;
         background-color: $color_clear-grey;
-        .ImgHeart {
-            top: 50%;
-            left: 90%;
-            transform: translate(-50%,-50%);
-        }
     }
 }

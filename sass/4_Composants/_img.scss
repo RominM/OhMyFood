@@ -1,5 +1,8 @@
 //__img.scss__//
 
+
+//_index.html_//
+
 .local {
     &__img {
         width: 10px;
@@ -17,7 +20,7 @@
     }
 }
 
-#restaurants{
+.restaurants{
     &__card {
         &--bg {
             object-fit: cover;
@@ -28,29 +31,7 @@
     }
 }
 
-.ImgHeart {
-    position: absolute;
-    font-weight: bold;
-    width: 25px;
-    bottom: 15%;
-    right: 5%;
-    cursor: pointer;
-
-    // transition: transform cubic-bezier(0.74, -1.66, 0.22, 2.66) .2s;
-    // &:hover {
-    //     transform: scale(1.2);
-    // }
-}
-
-.heartBox {
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    bottom: 15%;
-    right: 4%;
-    opacity: 1;
-}
-
+//_pages.html_//
 .imgBg {
     position: relative;
     img {

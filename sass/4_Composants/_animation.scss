@@ -1,5 +1,6 @@
 //__animation.scss__//
 
+//__keyframes__//
 
 // @keyframes opacity {
 // 	from {
@@ -25,4 +26,20 @@
 // 	}
 // }
 
+//__action click coeur__//
+
+.ImgHeart { //label//
+    position: absolute;
+    width: 25px;
+    bottom: 5%;
+    right: 5%;
+    cursor: pointer;
+}
+
+.heartBox { //input//
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
 
