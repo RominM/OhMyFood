@@ -47,66 +47,19 @@
 --------------------- QUESTION ----------------------
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-        <!-- WORKING -->
+--LOADER--
 
-        <ol>
-            <li>utiliser les numéros attribué ?</li>
-            <li>utiliser les numéros attribué ?</li>
-            <li>utiliser les numéros attribué ?</li>
-        </ol> 
+Pas de classe menu dans index > Loader rest visible ?
 
-        Numero decalé depuis l'ajout du <button> ??
+--ELLIPSIS--
 
-        html index + _button.scss
+Toujours le probleme d'ELLIPSIS
 
------------------------------------------------------
+--BG SVG--
 
-        <!--CARD-->
+Essai de cjanger le Bg du SVG 
 
-        <li>
-            <label for="select" class="dish__flex">
-                <div>
-                    <span class="dish__flex--name">Title</span>
-                    <span class="dish__flex--side">Subtitle</span>
-                </div>
-                <div>
-                    <span class="dish__price">Aside</span>
-                </div>
-            </label>
-            <input type="checkbox">
-        </li>
-
-        html page + _main.scss
-
-
-        FAIRE UN SEUL FORMULAIRE !!!
-        FOR ET ID UNIQUE !!!
-
-----------------------------------------------------
-
-        <!--ImgHeart-->
-
-        focus ??? 
-
-        _img.scss
-
-        CHECKBOX / BUTTON
-
-----------------------------------------------------
-
-        <!--FOOTER-->
-
-        block-page / body {
-            position: relative;
-        }
-
-        footer {
-            position: absolute;
-        }
-
-        _footer.scss
-
-----------------------------------------------------
+_________________________________
 
 UI : User Interface 
  *Graphiste

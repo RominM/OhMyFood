@@ -400,6 +400,7 @@ a {
   display: flex;
   overflow: hidden;
   height: 60px;
+  min-width: 250px;
   margin: 7px;
   border-radius: 10px;
   background-color: #fff;
@@ -414,23 +415,22 @@ a {
   width: 95%;
   margin: 7px 0px 7px 7px;
   cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .cardLi__flex--title {
   display: block;
   width: 100%;
   margin: auto;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .cardLi__flex--subtitle {
   display: block;
   width: 100%;
   margin: auto;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .cardLi__flex--side {
   position: absolute;
+  display: inline;
   height: 100%;
   top: 50%;
   right: 5%;
@@ -476,25 +476,6 @@ a {
   background-color: #99E2D0;
 }
 
-@keyframes opacity {
-  from {
-    opacity: 0.02;
-  }
-  90% {
-    opacity: 0.02;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .block-page {
   position: relative;
   margin: 0;
