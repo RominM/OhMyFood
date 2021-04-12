@@ -341,10 +341,6 @@ a {
   bottom: 15%;
   right: 5%;
   cursor: pointer;
-  transition: transform cubic-bezier(0.74, -1.66, 0.22, 2.66) 0.2s;
-}
-.ImgHeart:hover {
-  transform: scale(1.2);
 }
 
 .heartBox {
@@ -353,8 +349,7 @@ a {
   height: 25px;
   bottom: 15%;
   right: 4%;
-  opacity: 0;
-  background: linear-gradient();
+  opacity: 1;
 }
 
 .imgBg {
