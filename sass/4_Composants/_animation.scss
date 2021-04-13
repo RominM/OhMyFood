@@ -31,15 +31,24 @@
 .ImgHeart { //label//
     position: absolute;
     width: 25px;
-    bottom: 5%;
-    right: 5%;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
     cursor: pointer;
 }
 
 .heartBox { //input//
     position: absolute;
-    width: 1px;
-    height: 1px;
-    opacity: 0;
+    width: 25px;
+    height: 25px;
+    opacity: 1;
+}
+
+.emptyHeart {
+
+}
+
+.favHeart {
+    
 }
 
