@@ -202,7 +202,8 @@ body {
 .restaurants .blocTxt {
   position: relative;
   height: 50px;
-  padding: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
   line-height: 1.3em;
 }
 
@@ -424,6 +425,7 @@ a {
   width: 60px;
   height: 100%;
   text-align: center;
+  background-color: #99E2D0;
 }
 .tick img {
   position: absolute;
@@ -437,33 +439,65 @@ a {
   right: 0;
 }
 
-.box:checked ~ .cardLi > div > .cardLi__flex--title {
-  width: 100px;
+.box:checked ~ .tick img {
+  text-align: center;
+  animation: rotate2 0.5s;
 }
 
 .tick {
   position: absolute;
   right: -60px;
-  transition: 0.3s;
-  background-color: #99E2D0;
+  transition: 0.5s;
+}
+
+.ImgHeart img {
+  position: absolute;
+  width: 25px;
+  top: 90%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 .ImgHeart {
   position: absolute;
   width: 25px;
-  bottom: 50%;
-  right: 50%;
+  top: 85%;
+  left: 88%;
   transform: translate(-50%, -50%);
-  cursor: pointer;
 }
 
 .heartBox {
   position: absolute;
-  width: 25px;
-  height: 25px;
-  opacity: 1;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
 }
 
+.emptyHeart {
+  display: block;
+}
+
+.favHeart {
+  display: none;
+}
+
+.heartBox:checked ~ .ImgHeart .favHeart {
+  display: block;
+}
+
+.heartBox:checked ~ .ImgHeart .emptyHeart {
+  display: none;
+}
+
+@keyframes rotate2 {
+  from {
+    transform: rotate(-200deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
 .block-page {
   position: relative;
   margin: 0;

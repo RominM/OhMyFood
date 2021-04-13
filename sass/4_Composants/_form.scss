@@ -88,6 +88,8 @@
     width: 60px;
     height: 100%;
     text-align: center;
+    background-color: $color-tertiary;
+
     img {
         position: absolute;
         top: 50%;
@@ -101,13 +103,13 @@
     right: 0;
 }
 
-.box:checked ~ .cardLi>div>.cardLi__flex--title {
-    width: 100px;
+.box:checked ~ .tick img {
+    text-align: center;
+    animation: rotate2 0.5s;
 }
 
 .tick {
     position: absolute;
     right: -60px;
-    transition: 0.3s;
-    background-color: $color-tertiary;
+    transition: 0.5s;
 }

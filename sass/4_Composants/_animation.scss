@@ -28,27 +28,54 @@
 
 //__action click coeur__//
 
-.ImgHeart { //label//
+.ImgHeart img { //label//
     position: absolute;
     width: 25px;
-    bottom: 50%;
-    right: 50%;
+    top: 90%;
+    left: 90%;
     transform: translate(-50%,-50%);
     cursor: pointer;
 }
 
-.heartBox { //input//
+.ImgHeart { //label//
     position: absolute;
     width: 25px;
-    height: 25px;
-    opacity: 1;
+    top: 85%;
+    left: 88%;
+    transform: translate(-50%,-50%);
+    // cursor: pointer;
+}
+
+.heartBox { //input//
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
 }
 
 .emptyHeart {
-
+    display: block;
 }
 
 .favHeart {
-    
+    display: none;
+}
+
+.heartBox:checked ~ .ImgHeart .favHeart {
+    display: block;
+}
+
+.heartBox:checked ~ .ImgHeart .emptyHeart{
+    display: none;
+}
+
+@keyframes rotate2 {
+    from {
+        transform: rotate(-200deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
 }
 
