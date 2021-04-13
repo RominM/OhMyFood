@@ -26,21 +26,19 @@
 // 	}
 // }
 
-//__action click coeur__//
+//__Green-Tick__//
 
-.icon {
-    /* gradient and fallback color */
-    fill: url(#my-cool-gradient);
-  }
-  
-.ImgHeart img { //label//
-    position: absolute;
-    width: 25px;
-    top: 90%;
-    left: 90%;
-    transform: translate(-50%,-50%);
-    cursor: pointer;
+@keyframes rotate2 {
+    0% {
+        transform: rotate(-200deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
 }
+
+//__action click coeur__//
 
 .ImgHeart { //label//
     position: absolute;
@@ -48,7 +46,7 @@
     top: 85%;
     left: 88%;
     transform: translate(-50%,-50%);
-    // cursor: pointer;
+    cursor: pointer;
 }
 
 .heartBox { //input//
@@ -58,57 +56,73 @@
     opacity: 0;
 }
 
-.emptyHeart {
-    display: block;
-}
-
-.favHeart {
-    display: none;
-
-}
-
-.heartBox:checked ~ .ImgHeart .favHeart {
-    display: block;
-    
-}
-
-.heartBox:checked ~ .ImgHeart .emptyHeart{
-    display: none;
-}
-
-@keyframes rotate2 {
-    from {
-        transform: rotate(-200deg);
-    }
-
-    to {
-        transform: rotate(-360deg);
-    }
-}
 
 // SVG gradient heart
 
-.favoris {
-    width: 250px;
-    border: solid;
+.colorized, .empty {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 25px;
+    transition: 0.5s;
 }
 
-#stop-1 {
+.stop-1 {
     stop-color: $color-primary;
 }
 
-#stop-2 {
+.stop-2 {
     stop-color: $color-secondary;
 }
 
 .FavIn {
     stroke: url(#heart-gradient) $color-primary;
-    stroke-width: 5;
+    stroke-width: 0;
     fill: url(#heart-gradient) $color-primary;
 }
 
 .stroke{
     stroke:#000;
-    stroke-width: 5;
+    stroke-width: 10;
     fill: #000;
+}
+
+.white {
+    stroke: #000;
+    stroke-width: 5;
+    fill:#fff
+}
+
+.colorized {
+    display: none;
+    // animation: size 0.3s;
+}
+
+.empty {
+    display: block;
+    // animation: size 0.3s;
+}
+
+// @keyframes size {
+//     0% {
+//         transform: scale(1);
+//     }
+
+//     50%{
+//         transform: scale(1.2);
+//     }
+
+//     100% {
+//         transform: scale(1);
+//     }
+// }
+
+
+.heartBox:checked ~ .ImgHeart .colorized {
+    display: block;
+}
+
+.heartBox:checked ~ .ImgHeart .empty {
+    display: none;
 }
