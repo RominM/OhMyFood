@@ -49,7 +49,6 @@
         width: 95%;
         margin: 7px 0px 7px 7px;
         cursor: pointer;
-        white-space: nowrap;
         text-overflow: ellipsis;
         &--title {
             display: block;
@@ -59,15 +58,16 @@
         &--subtitle {
             display: block;
             width: 100%;
-            margin: auto;
-
+            margin: auto;        
         }
         &--side {
             position: absolute;
-            display: inline;
             height: 100%;
             top: 50%;
             right: 5%;
+            display: block;
+            background-color: #fff;
+            
         }
     }
 }

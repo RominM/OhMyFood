@@ -53,11 +53,14 @@ Pas de classe menu dans index > Loader rest visible ?
 
 --ELLIPSIS--
 
-Toujours le probleme d'ELLIPSIS
+incomprhension de la fonction ELLIPSIS
 
---BG SVG--
+--SVG--
 
-Essai de cjanger le Bg du SVG 
+Essai de changer le Bg du SVG
+Creation d'un autre SVG
+__autre methode__
+https://fvsch.com/svg-gradient-fill
 
 _________________________________
 

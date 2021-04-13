@@ -388,7 +388,6 @@ a {
   width: 95%;
   margin: 7px 0px 7px 7px;
   cursor: pointer;
-  white-space: nowrap;
   text-overflow: ellipsis;
 }
 .cardLi__flex--title {
@@ -403,10 +402,11 @@ a {
 }
 .cardLi__flex--side {
   position: absolute;
-  display: inline;
   height: 100%;
   top: 50%;
   right: 5%;
+  display: block;
+  background-color: #fff;
 }
 
 .cardLi:hover {
@@ -450,25 +450,11 @@ a {
   transition: 0.5s;
 }
 
-@keyframes opacity {
-  from {
-    opacity: 0.02;
-  }
-  90% {
-    opacity: 0.02;
-  }
-  to {
-    opacity: 1;
-  }
+.icon {
+  /* gradient and fallback color */
+  fill: url(#my-cool-gradient);
 }
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+
 .ImgHeart img {
   position: absolute;
   width: 25px;
@@ -517,6 +503,31 @@ a {
     transform: rotate(-360deg);
   }
 }
+.favoris {
+  width: 250px;
+  border: solid;
+}
+
+#stop-1 {
+  stop-color: #9356DC;
+}
+
+#stop-2 {
+  stop-color: #FF79DA;
+}
+
+.FavIn {
+  stroke: url(#heart-gradient) #9356DC;
+  stroke-width: 5;
+  fill: url(#heart-gradient) #9356DC;
+}
+
+.stroke {
+  stroke: #000;
+  stroke-width: 5;
+  fill: #000;
+}
+
 .block-page {
   position: relative;
   margin: 0;
