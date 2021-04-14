@@ -28,9 +28,11 @@
                 color: #fff;
                 text-decoration: none;
                 width: 25%;
+                text-decoration: underline transparent;
+                transition: 0.2s;
             }
             a:hover {
-                text-decoration: underline;
+                text-decoration: underline #fff;
             }
         }
         img {

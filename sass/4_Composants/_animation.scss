@@ -18,7 +18,7 @@
 
 @keyframes rotate {
 	0% {
-		transform: rotate(0deg);
+		transform: rotate(50deg);
 	}
 
 	100% {
@@ -30,11 +30,11 @@
 
 @keyframes rotate2 {
     0% {
-        transform: rotate(0deg);
+        transform: rotate(-360deg);
     }
 
     100% {
-        transform: rotate(-360deg);
+        transform: rotate(360deg);
     }
 }
 
@@ -55,7 +55,6 @@
     height: 1px;
     opacity: 0;
 }
-
 
 // SVG gradient heart
 
@@ -82,7 +81,6 @@
     fill: url(#heart-gradient) $color-primary;
 }
 
-
 .stroke{
     stroke:#000;
     stroke-width: 10;
@@ -105,6 +103,14 @@
     // animation: size 0.3s;
 }
 
+.heartBox:checked ~ .ImgHeart .colorized {
+    display: block;
+}
+
+.heartBox:checked ~ .ImgHeart .empty {
+    display: none;
+}
+
 // @keyframes size {
 //     0% {
 //         transform: scale(1);
@@ -120,10 +126,3 @@
 // }
 
 
-.heartBox:checked ~ .ImgHeart .colorized {
-    display: block;
-}
-
-.heartBox:checked ~ .ImgHeart .empty {
-    display: none;
-}

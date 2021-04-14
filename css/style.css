@@ -253,9 +253,11 @@ body {
   color: #fff;
   text-decoration: none;
   width: 25%;
+  text-decoration: underline transparent;
+  transition: 0.2s;
 }
 .footer__flex li a:hover {
-  text-decoration: underline;
+  text-decoration: underline #fff;
 }
 .footer__flex img {
   width: 15px;
@@ -321,11 +323,11 @@ a {
   border: solid 2px;
   border-top-color: transparent;
   border-bottom-color: transparent;
-  border-left-color: #9356DC;
-  border-right-color: #FF79DA;
-  padding: 6px;
+  border-left-color: #c091fa;
+  border-right-color: #ffa9e7;
+  padding: 10px;
   border-radius: 100%;
-  animation: rotate 4s;
+  animation: rotate 7s;
 }
 
 .heartLog {
@@ -487,7 +489,7 @@ a {
 }
 @keyframes rotate {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(50deg);
   }
   100% {
     transform: rotate(360deg);
@@ -495,10 +497,10 @@ a {
 }
 @keyframes rotate2 {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(-360deg);
   }
   100% {
-    transform: rotate(-360deg);
+    transform: rotate(360deg);
   }
 }
 .ImgHeart {

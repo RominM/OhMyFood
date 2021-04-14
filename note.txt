@@ -47,10 +47,6 @@
 --------------------- QUESTION ----------------------
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
---LOADER--
-
-Pas de classe menu dans index > Loader rest visible
-
 --ELLIPSIS--
 
 ELLIPSIS ne fonctionne pas
