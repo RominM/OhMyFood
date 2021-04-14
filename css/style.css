@@ -3,7 +3,7 @@
 ***********************************************************/
 @font-face {
   font-family: "Roboto-Light";
-  src: url(../../Fonts/Roboto/Roboto-Light.ttf) format("truetype");
+  src: url(../Fonts/Roboto/Roboto-Light.ttf) format("truetype");
 }
 @font-face {
   font-family: "Roboto-Medium";
@@ -53,7 +53,7 @@ h3 {
   font-family: "Roboto-Light", "sans-serif";
 }
 
-.explor a {
+.explor a, .select a {
   font-family: "Roboto-Medium";
   font-size: 1em;
   color: #fff;
@@ -258,13 +258,22 @@ a {
   text-decoration: none;
 }
 
-.explor a {
+.select {
+  margin: -20px auto;
+  padding: 35px;
+  background-color: #f6f6f6;
+}
+.select__btn {
+  background-color: #f6f6f6;
+}
+
+.explor a, .select a {
   display: block;
   width: 70%;
-  max-width: 500px;
+  max-width: 400px;
   min-width: 225px;
   height: 20px;
-  margin: auto;
+  margin: 20px auto;
   border: none;
   border-radius: 25px;
   padding: 17px;
@@ -272,11 +281,11 @@ a {
   box-shadow: 0px 2px 5px 2px #cccccc;
   cursor: pointer;
 }
-.explor__btn:hover {
+.explor__btn:hover, .select__btn:hover {
   box-shadow: 2px 0px 5px 2px #cccccc;
   background: linear-gradient(#c091fa, #ffa9e7);
 }
-.explor__btn:focus {
+.explor__btn:focus, .select__btn:focus {
   outline: 0 !important;
 }
 
@@ -342,7 +351,7 @@ a {
 .start, .main, .course {
   width: 350px;
   min-width: 150px;
-  margin: 25px 20px 25px 0px;
+  margin: 25px 20px 0px 0px;
   padding-left: 20px;
 }
 .start .light, .main .light, .course .light {
@@ -450,9 +459,28 @@ a {
   transition: 0.5s;
 }
 
+@keyframes opacity {
+  from {
+    opacity: 0.02;
+  }
+  90% {
+    opacity: 0.02;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @keyframes rotate2 {
   0% {
-    transform: rotate(-200deg);
+    transform: rotate(0deg);
   }
   100% {
     transform: rotate(-360deg);

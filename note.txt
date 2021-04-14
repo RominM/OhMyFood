@@ -49,23 +49,18 @@
 
 --LOADER--
 
-Pas de classe menu dans index > Loader rest visible ?
+Pas de classe menu dans index > Loader rest visible
 
 --ELLIPSIS--
 
-incomprhension de la fonction ELLIPSIS
+ELLIPSIS ne fonctionne pas
+
+--TICK--
+
+animation du GreenTick déconne
 
 --SVG--
+//coeur//
 
-Essai de changer le Bg du SVG
-Creation d'un autre SVG
-__autre methode__
 https://fvsch.com/svg-gradient-fill
 
-_________________________________
-
-UI : User Interface 
- *Graphiste
-
-UX : User Experience
- *Chef du Graphiste

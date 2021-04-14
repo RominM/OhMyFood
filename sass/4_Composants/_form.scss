@@ -1,10 +1,9 @@
 //__form.scss__//
 
-
 .start, .main, .course {
     width: 350px;
     min-width: 150px;
-    margin: 25px 20px 25px 0px;
+    margin: 25px 20px 0px 0px;
     padding-left: 20px;
     .light {
         text-transform: uppercase;
@@ -67,7 +66,6 @@
             right: 5%;
             display: block;
             background-color: #fff;
-            
         }
     }
 }

@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Roboto-Light';
-    src: url(../../Fonts/Roboto/Roboto-Light.ttf) format('truetype');
+    src: url(../Fonts/Roboto/Roboto-Light.ttf) format('truetype');
 }
 
 @font-face {
@@ -63,7 +63,7 @@ h3 {
     }
 }
 
-.explor {
+.explor, .select {
     a {
     font-family: 'Roboto-Medium';
     font-size: 1em;

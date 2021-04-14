@@ -4,14 +4,23 @@ a {
     text-decoration: none;
 }
 
-.explor {
+.select {
+    margin: -20px auto;
+    padding: 35px;
+    background-color: $color_clear-grey;
+    &__btn {
+        background-color: $color_clear-grey;
+    }
+}
+
+.explor, .select {
     a {
         display: block;
         width: 70%;
-        max-width: 500px;
+        max-width: 400px;
         min-width: 225px;
         height: 20px;
-        margin: auto;
+        margin: 20px auto;
         border: none;
         border-radius: 25px;
         padding: 17px;
