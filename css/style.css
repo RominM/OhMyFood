@@ -333,7 +333,7 @@ a {
 .heartLog {
   position: absolute;
   width: 25px;
-  top: 85%;
+  top: 60%;
   left: 88%;
   transform: translate(-50%, -50%);
 }
@@ -568,6 +568,124 @@ a {
 
 .heartBox:checked ~ .ImgHeart .empty {
   display: none;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeInUp-1 {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-delay: 0.1s;
+  animation-fill-mode: both;
+}
+
+.fadeInUp-2 {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+}
+
+.fadeInUp-3 {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
+}
+
+.fadeInUp-4 {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-delay: 0.4s;
+  animation-fill-mode: both;
+}
+
+.fadeInUp-5 {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+.fadeInUp-6 {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-delay: 0.6s;
+  animation-fill-mode: both;
+}
+
+.fadeInUp-7 {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-delay: 0.7s;
+  animation-fill-mode: both;
+}
+
+.fadeInUp-8 {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-delay: 0.8s;
+  animation-fill-mode: both;
+}
+
+.fadeInUp-9 {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-delay: 0.9s;
+  animation-fill-mode: both;
+}
+
+.ellipsis {
+  width: calc(100% - 35px);
+}
+
+.cardLi label p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.box:hover ~ label .ellipsis {
+  width: calc(100% - 85px);
+  transition: 0.3s;
+}
+
+.box:checked ~ label .ellipsis {
+  width: calc(100% - 85px);
+  transition: 0.3s;
+}
+
+.box:hover ~ label .ellipsis {
+  width: calc(100% - 85px);
+  transition: 0.3s;
+}
+
+.box:checked ~ label .ellipsis {
+  width: calc(100% - 85px);
+  transition: 0.3s;
+}
+
+.box:checked ~ label:nth-child(2) .cardLi__flex--side {
+  right: calc(5% + 50px);
+  transition: 0.3s;
+}
+
+.box:hover ~ label:nth-child(2) .cardLi__flex--side {
+  right: calc(5% + 50px);
+  transition: 0.3s;
+}
+
+.box:checked ~ label:nth-child(2) .cardLi__flex--side {
+  right: calc(5% + 50px);
+  transition: 0.3s;
 }
 
 .block-page {
