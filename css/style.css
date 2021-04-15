@@ -46,10 +46,10 @@ h3 {
   font-size: 0.9em;
 }
 
-.cardLi__flex {
+.cardLi__global {
   font-family: "Roboto-Medium", "sans-serif";
 }
-.cardLi__flex--subtitle {
+.cardLi__global--subtitle {
   font-family: "Roboto-Light", "sans-serif";
 }
 
@@ -620,25 +620,24 @@ a {
   line-height: 25px;
   cursor: pointer;
 }
-.cardLi__flex {
-  display: flex;
+.cardLi__global {
   justify-content: space-between;
   width: 95%;
   margin: 7px 0px 7px 7px;
   cursor: pointer;
   text-overflow: ellipsis;
 }
-.cardLi__flex--title {
+.cardLi__global--title {
   display: block;
   width: 100%;
   margin: auto;
 }
-.cardLi__flex--subtitle {
+.cardLi__global--subtitle {
   display: block;
   width: 100%;
   margin: auto;
 }
-.cardLi__flex--side {
+.cardLi__global--side {
   position: absolute;
   height: 100%;
   top: 50%;
