@@ -1,13 +1,6 @@
 /***********************************************************
 =========================== COLOR ==========================
 ***********************************************************/
-@media screen and (max-width: 950px) {
-  .working__list {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
 @font-face {
   font-family: "Roboto-Light";
   src: url(../Fonts/Roboto/Roboto-Light.ttf) format("truetype");
@@ -292,10 +285,6 @@ h3 {
   display: block;
   width: 175px;
   margin: auto;
-}
-
-body {
-  position: relative;
 }
 
 .local {
@@ -693,6 +682,10 @@ a {
   transition: 0.5s;
 }
 
+body {
+  position: relative;
+}
+
 .block-page, .block-Rest {
   position: relative;
   margin: 0;
@@ -702,6 +695,14 @@ a {
 
 .block-page {
   animation: opacity 3s;
+}
+
+@media screen and (max-width: 950px) {
+  .working__list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
