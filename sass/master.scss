@@ -5,6 +5,7 @@
 @import "./1_Base/mixins";
 //** 2.UTILS **\\
 @import "./2_Utils/typographie";
+@import "./2_Utils/animation";
 //** 3.LAYOUT **\\
 @import "./3_Layout/header";
 @import "./3_Layout/main";
@@ -14,6 +15,5 @@
 @import "./4_Composants/loader";
 @import "./4_Composants/img";
 @import "./4_Composants/form";
-@import "./4_Composants/animation";
 //** 5.PAGE **\\
 @import "./5_Pages/home";

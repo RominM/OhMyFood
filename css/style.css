@@ -60,6 +60,218 @@ h3 {
   text-align: center;
 }
 
+@keyframes opacity {
+  from {
+    opacity: 0.02;
+  }
+  90% {
+    opacity: 0.02;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(50deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate2 {
+  0% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.ImgHeart {
+  position: absolute;
+  width: 25px;
+  top: 85%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.heartBox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.colorized, .empty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  transition: 0.5s;
+}
+
+.stop-1 {
+  stop-color: #9356DC;
+}
+
+.stop-2 {
+  stop-color: #FF79DA;
+}
+
+.FavIn {
+  stroke: url(#heart-gradient) #9356DC;
+  stroke-width: 0;
+  fill: url(#heart-gradient) #9356DC;
+}
+
+.stroke {
+  stroke: #000;
+  stroke-width: 10;
+  fill: #000;
+}
+
+.white {
+  stroke: #000;
+  stroke-width: 5;
+  fill: #fff;
+}
+
+.colorized {
+  display: none;
+}
+
+.empty {
+  display: block;
+}
+
+.heartBox:checked ~ .ImgHeart .colorized {
+  display: block;
+}
+
+.heartBox:checked ~ .ImgHeart .empty {
+  display: none;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeInUp-1 {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-delay: 0.1s;
+  animation-fill-mode: both;
+}
+
+.fadeInUp-2 {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+}
+
+.fadeInUp-3 {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
+}
+
+.fadeInUp-4 {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-delay: 0.4s;
+  animation-fill-mode: both;
+}
+
+.fadeInUp-5 {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+.fadeInUp-6 {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-delay: 0.6s;
+  animation-fill-mode: both;
+}
+
+.fadeInUp-7 {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-delay: 0.7s;
+  animation-fill-mode: both;
+}
+
+.fadeInUp-8 {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-delay: 0.8s;
+  animation-fill-mode: both;
+}
+
+.fadeInUp-9 {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-delay: 0.9s;
+  animation-fill-mode: both;
+}
+
+.ellipsis {
+  width: calc(100% - 35px);
+}
+
+.cardLi label p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.box:hover ~ label .ellipsis {
+  width: calc(100% - 85px);
+  transition: 0.3s;
+}
+
+.box:checked ~ label .ellipsis {
+  width: calc(100% - 85px);
+  transition: 0.3s;
+}
+
+.box:hover ~ label .ellipsis {
+  width: calc(100% - 85px);
+  transition: 0.3s;
+}
+
+.box:checked ~ label .ellipsis {
+  width: calc(100% - 85px);
+  transition: 0.3s;
+}
+
+.box:checked ~ label:nth-child(2) .cardLi__flex--side {
+  right: calc(5% + 50px);
+  transition: 0.3s;
+}
+
+.box:hover ~ label:nth-child(2) .cardLi__flex--side {
+  right: calc(5% + 50px);
+  transition: 0.3s;
+}
+
+.box:checked ~ label:nth-child(2) .cardLi__flex--side {
+  right: calc(5% + 50px);
+  transition: 0.3s;
+}
+
 .header {
   display: flex;
   padding: 15px;
@@ -314,8 +526,8 @@ a {
 }
 
 .loader {
-  position: absolute;
-  top: 20%;
+  position: fixed;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -476,223 +688,14 @@ a {
   transition: 0.5s;
 }
 
-@keyframes opacity {
-  from {
-    opacity: 0.02;
-  }
-  90% {
-    opacity: 0.02;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(50deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotate2 {
-  0% {
-    transform: rotate(-360deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.ImgHeart {
-  position: absolute;
-  width: 25px;
-  top: 85%;
-  left: 88%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-}
-
-.heartBox {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-}
-
-.colorized, .empty {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 25px;
-  transition: 0.5s;
-}
-
-.stop-1 {
-  stop-color: #9356DC;
-}
-
-.stop-2 {
-  stop-color: #FF79DA;
-}
-
-.FavIn {
-  stroke: url(#heart-gradient) #9356DC;
-  stroke-width: 0;
-  fill: url(#heart-gradient) #9356DC;
-}
-
-.stroke {
-  stroke: #000;
-  stroke-width: 10;
-  fill: #000;
-}
-
-.white {
-  stroke: #000;
-  stroke-width: 5;
-  fill: #fff;
-}
-
-.colorized {
-  display: none;
-}
-
-.empty {
-  display: block;
-}
-
-.heartBox:checked ~ .ImgHeart .colorized {
-  display: block;
-}
-
-.heartBox:checked ~ .ImgHeart .empty {
-  display: none;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-.fadeInUp-1 {
-  animation-name: fadeInUp;
-  animation-duration: 1s;
-  animation-delay: 0.1s;
-  animation-fill-mode: both;
-}
-
-.fadeInUp-2 {
-  animation-name: fadeInUp;
-  animation-duration: 1s;
-  animation-delay: 0.2s;
-  animation-fill-mode: both;
-}
-
-.fadeInUp-3 {
-  animation-name: fadeInUp;
-  animation-duration: 1s;
-  animation-delay: 0.3s;
-  animation-fill-mode: both;
-}
-
-.fadeInUp-4 {
-  animation-name: fadeInUp;
-  animation-duration: 1s;
-  animation-delay: 0.4s;
-  animation-fill-mode: both;
-}
-
-.fadeInUp-5 {
-  animation-name: fadeInUp;
-  animation-duration: 1s;
-  animation-delay: 0.5s;
-  animation-fill-mode: both;
-}
-
-.fadeInUp-6 {
-  animation-name: fadeInUp;
-  animation-duration: 1s;
-  animation-delay: 0.6s;
-  animation-fill-mode: both;
-}
-
-.fadeInUp-7 {
-  animation-name: fadeInUp;
-  animation-duration: 1s;
-  animation-delay: 0.7s;
-  animation-fill-mode: both;
-}
-
-.fadeInUp-8 {
-  animation-name: fadeInUp;
-  animation-duration: 1s;
-  animation-delay: 0.8s;
-  animation-fill-mode: both;
-}
-
-.fadeInUp-9 {
-  animation-name: fadeInUp;
-  animation-duration: 1s;
-  animation-delay: 0.9s;
-  animation-fill-mode: both;
-}
-
-.ellipsis {
-  width: calc(100% - 35px);
-}
-
-.cardLi label p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.box:hover ~ label .ellipsis {
-  width: calc(100% - 85px);
-  transition: 0.3s;
-}
-
-.box:checked ~ label .ellipsis {
-  width: calc(100% - 85px);
-  transition: 0.3s;
-}
-
-.box:hover ~ label .ellipsis {
-  width: calc(100% - 85px);
-  transition: 0.3s;
-}
-
-.box:checked ~ label .ellipsis {
-  width: calc(100% - 85px);
-  transition: 0.3s;
-}
-
-.box:checked ~ label:nth-child(2) .cardLi__flex--side {
-  right: calc(5% + 50px);
-  transition: 0.3s;
-}
-
-.box:hover ~ label:nth-child(2) .cardLi__flex--side {
-  right: calc(5% + 50px);
-  transition: 0.3s;
-}
-
-.box:checked ~ label:nth-child(2) .cardLi__flex--side {
-  right: calc(5% + 50px);
-  transition: 0.3s;
-}
-
-.block-page {
+.block-page, .block-Rest {
   position: relative;
   margin: 0;
   padding: 0;
   height: 100%;
+}
+
+.block-page {
   animation: opacity 3s;
 }
 

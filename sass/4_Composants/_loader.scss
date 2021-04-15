@@ -1,10 +1,11 @@
 //__LOADER__//
 
 .loader {
-	position: absolute;
-	top: 20%;
+	position: fixed;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+	//fonctionne mais pas avec le 100vw, 100vh
 	div {
 		border: solid 2px;
 		border-top-color: transparent;

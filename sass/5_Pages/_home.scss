@@ -1,10 +1,13 @@
 // __home.scss__//
 
 
-.block-page {
+.block-page, .block-Rest {
     position: relative;
     margin: 0;
     padding: 0;
     height: 100%;
+}
+
+.block-page {
     animation: opacity 3s;
 }
