@@ -1,6 +1,13 @@
 /***********************************************************
 =========================== COLOR ==========================
 ***********************************************************/
+@media screen and (max-width: 950px) {
+  .working__list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 @font-face {
   font-family: "Roboto-Light";
   src: url(../Fonts/Roboto/Roboto-Light.ttf) format("truetype");
@@ -341,17 +348,17 @@ body {
 .working__list {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .working__list--btn {
   position: relative;
-  border-radius: 15px;
-  align-items: center;
-  width: 375px;
-  height: 65px;
-  margin: auto 25px 25px;
   display: flex;
   justify-content: space-around;
+  border-radius: 15px;
+  align-items: center;
+  width: 250px;
+  height: 65px;
+  margin: auto 25px 25px;
   font-family: "Roboto-Bold";
   font-size: 0.9em;
   box-shadow: 0px 5px 10px 1px #e2e2e2;
@@ -621,7 +628,6 @@ a {
   cursor: pointer;
 }
 .cardLi__global {
-  justify-content: space-between;
   width: 95%;
   margin: 7px 0px 7px 7px;
   cursor: pointer;

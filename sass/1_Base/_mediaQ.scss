@@ -1,0 +1,11 @@
+//__mediaQ.scss// 
+
+@media screen and (max-width: 950px) {
+    .working {
+        &__list {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

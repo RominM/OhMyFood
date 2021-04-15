@@ -9,13 +9,13 @@
 
 @mixin WorkList {
 	position: relative;
-	border-radius: 15px;
-	align-items: center;
-	width: 375px;
-	height: 65px;
-	margin: auto 25px 25px;
 	display: flex;
 	justify-content: space-around;
+	border-radius: 15px;
+	align-items: center;
+	width: 250px;
+	height: 65px;
+	margin: auto 25px 25px;
 	font-family: 'Roboto-Bold';
 	font-size: 0.9em;
 	box-shadow: 0px 5px 10px 1px rgb(226, 226, 226);
