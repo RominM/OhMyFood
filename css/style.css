@@ -87,73 +87,6 @@ h3 {
     transform: rotate(360deg);
   }
 }
-.ImgHeart {
-  position: absolute;
-  width: 25px;
-  top: 85%;
-  left: 88%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-}
-
-.heartBox {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-}
-
-.colorized, .empty {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 25px;
-  transition: 0.5s;
-}
-
-.stop-1 {
-  stop-color: #9356DC;
-}
-
-.stop-2 {
-  stop-color: #FF79DA;
-}
-
-.FavIn {
-  stroke: url(#heart-gradient) #9356DC;
-  stroke-width: 0;
-  fill: url(#heart-gradient) #9356DC;
-}
-
-.stroke {
-  stroke: #000;
-  stroke-width: 10;
-  fill: #000;
-}
-
-.white {
-  stroke: #000;
-  stroke-width: 5;
-  fill: #fff;
-}
-
-.colorized {
-  display: none;
-}
-
-.empty {
-  display: block;
-}
-
-.heartBox:checked ~ .ImgHeart .colorized {
-  display: block;
-}
-
-.heartBox:checked ~ .ImgHeart .empty {
-  display: none;
-}
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -227,49 +160,81 @@ h3 {
   animation-fill-mode: both;
 }
 
+.ImgHeart {
+  position: absolute;
+  width: 25px;
+  top: 85%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.heartBox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.colorized, .empty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  transition: 0.5s;
+}
+
+.stop-1 {
+  stop-color: #9356DC;
+}
+
+.stop-2 {
+  stop-color: #FF79DA;
+}
+
+.FavIn {
+  stroke: url(#heart-gradient) #9356DC;
+  stroke-width: 0;
+  fill: url(#heart-gradient) #9356DC;
+}
+
+.stroke {
+  stroke: #000;
+  stroke-width: 10;
+  fill: #000;
+}
+
+.white {
+  stroke: #000;
+  stroke-width: 5;
+  fill: #fff;
+}
+
+.colorized {
+  display: none;
+}
+
+.empty {
+  display: block;
+}
+
+.heartBox:checked ~ .ImgHeart .colorized {
+  display: block;
+}
+
+.heartBox:checked ~ .ImgHeart .empty {
+  display: none;
+}
+
 .ellipsis {
-  width: calc(100% - 35px);
+  width: calc(100% - 40px);
 }
 
 .cardLi label p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.box:hover ~ label .ellipsis {
-  width: calc(100% - 85px);
-  transition: 0.3s;
-}
-
-.box:checked ~ label .ellipsis {
-  width: calc(100% - 85px);
-  transition: 0.3s;
-}
-
-.box:hover ~ label .ellipsis {
-  width: calc(100% - 85px);
-  transition: 0.3s;
-}
-
-.box:checked ~ label .ellipsis {
-  width: calc(100% - 85px);
-  transition: 0.3s;
-}
-
-.box:checked ~ label:nth-child(2) .cardLi__flex--side {
-  right: calc(5% + 50px);
-  transition: 0.3s;
-}
-
-.box:hover ~ label:nth-child(2) .cardLi__flex--side {
-  right: calc(5% + 50px);
-  transition: 0.3s;
-}
-
-.box:checked ~ label:nth-child(2) .cardLi__flex--side {
-  right: calc(5% + 50px);
-  transition: 0.3s;
 }
 
 .header {

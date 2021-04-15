@@ -38,6 +38,28 @@
     }
 }
 
+//animation FadeIn//
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@for $i from 1 through 9 {
+    .fadeInUp-#{$i} {
+        animation-name: fadeInUp;
+        animation-duration: 1s;
+        animation-delay: 0.1s*$i;
+        animation-fill-mode: both;
+    }
+}
+
 //__action click coeur__//
 
 .ImgHeart { //label//
@@ -129,63 +151,41 @@
 
 //SESSION MENTORA//
 
-//animation FadeIn//
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translate3d(0, 100%, 0);
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-@for $i from 1 through 9 {
-    .fadeInUp-#{$i} {
-        animation-name: fadeInUp;
-        animation-duration: 1s;
-        animation-delay: 0.1s*$i;
-        animation-fill-mode: both;
-    }
-}
-
 //ellipsis//
 .ellipsis {
-    width: calc(100% - 35px);
+    width: calc(100% - 40px);
 }
+
 .cardLi label p {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
-.box:hover ~ label .ellipsis {
-    width: calc(100% - 85px);
-    transition: 0.3s;
-}
-.box:checked ~ label .ellipsis {
-    width: calc(100% - 85px);
-    transition: 0.3s;
-}
-.box:hover ~ label .ellipsis {
-    width: calc(100% - 85px);
-    transition: 0.3s;
-}
-.box:checked ~ label .ellipsis {
-    width: calc(100% - 85px);
-    transition: 0.3s;
-}
-.box:checked~label:nth-child(2) .cardLi__flex--side {
-    right: calc(5% + 50px);
-    transition: 0.3s;
-}
-.box:hover~label:nth-child(2) .cardLi__flex--side {
-    right: calc(5% + 50px);
-    transition: 0.3s;
-}
-.box:checked~label:nth-child(2) .cardLi__flex--side {
-    right: calc(5% + 50px);
-    transition: 0.3s;
-}
+// .box:hover ~ label .ellipsis {
+//     width: calc(100% - 85px);
+//     transition: 0.3s;
+// }
+// .box:hover ~ label .ellipsis {
+//     width: calc(100% - 85px);
+//     transition: 0.3s;
+// }
+
+// .box:checked ~ label .ellipsis {
+//     width: calc(100% - 85px);
+//     transition: 0.3s;
+// }
+// .box:checked ~ label .ellipsis {
+//     width: calc(100% - 85px);
+//     transition: 0.3s;
+// }
+
+// .box:checked~label:nth-child(2) .cardLi__global--side {
+//     right: calc(5% + 50px);
+//     transition: 0.3s;
+// }
+
+// .box:hover~label:nth-child(2) .cardLi__global--side {
+//     right: calc(5% + 50px);
+//     transition: 0.3s;
+// }
