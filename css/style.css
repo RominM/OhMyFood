@@ -468,6 +468,12 @@ a {
   height: 200px;
 }
 
+#list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .start, .main, .course {
   width: 350px;
   min-width: 150px;
@@ -484,12 +490,6 @@ a {
   margin-left: 0;
   background-color: #99E2D0;
   border: none;
-}
-
-#list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .card {
@@ -515,6 +515,11 @@ a {
   width: 95%;
   margin: 7px 0px 7px 7px;
   cursor: pointer;
+}
+.cardLi__global p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .cardLi__global--title {
   display: block;

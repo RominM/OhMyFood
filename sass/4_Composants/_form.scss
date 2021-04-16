@@ -1,5 +1,12 @@
 //__form.scss__//
 
+//formulaire//
+#list { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .start, .main, .course {
     width: 350px;
     min-width: 150px;
@@ -16,12 +23,6 @@
         background-color: $color-tertiary;
         border: none;
     }
-}
-
-#list { //formulaire//
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .card {
@@ -46,7 +47,11 @@
         width: 95%;
         margin: 7px 0px 7px 7px;
         cursor: pointer;
-        // text-overflow: ellipsis;
+        p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
         &--title {
             display: block;
             width: 100%;
@@ -83,7 +88,6 @@
     height: 100%;
     text-align: center;
     background-color: $color-tertiary;
-
     img {
         position: absolute;
         top: 50%;
