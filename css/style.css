@@ -100,141 +100,64 @@ h3 {
 .fadeInUp-1 {
   animation-name: fadeInUp;
   animation-duration: 1s;
-  animation-delay: 0.1s;
+  animation-delay: 0.07s;
   animation-fill-mode: both;
 }
 
 .fadeInUp-2 {
   animation-name: fadeInUp;
   animation-duration: 1s;
-  animation-delay: 0.2s;
+  animation-delay: 0.14s;
   animation-fill-mode: both;
 }
 
 .fadeInUp-3 {
   animation-name: fadeInUp;
   animation-duration: 1s;
-  animation-delay: 0.3s;
+  animation-delay: 0.21s;
   animation-fill-mode: both;
 }
 
 .fadeInUp-4 {
   animation-name: fadeInUp;
   animation-duration: 1s;
-  animation-delay: 0.4s;
+  animation-delay: 0.28s;
   animation-fill-mode: both;
 }
 
 .fadeInUp-5 {
   animation-name: fadeInUp;
   animation-duration: 1s;
-  animation-delay: 0.5s;
+  animation-delay: 0.35s;
   animation-fill-mode: both;
 }
 
 .fadeInUp-6 {
   animation-name: fadeInUp;
   animation-duration: 1s;
-  animation-delay: 0.6s;
+  animation-delay: 0.42s;
   animation-fill-mode: both;
 }
 
 .fadeInUp-7 {
   animation-name: fadeInUp;
   animation-duration: 1s;
-  animation-delay: 0.7s;
+  animation-delay: 0.49s;
   animation-fill-mode: both;
 }
 
 .fadeInUp-8 {
   animation-name: fadeInUp;
   animation-duration: 1s;
-  animation-delay: 0.8s;
+  animation-delay: 0.56s;
   animation-fill-mode: both;
 }
 
 .fadeInUp-9 {
   animation-name: fadeInUp;
   animation-duration: 1s;
-  animation-delay: 0.9s;
+  animation-delay: 0.63s;
   animation-fill-mode: both;
-}
-
-.ImgHeart {
-  position: absolute;
-  width: 25px;
-  top: 85%;
-  left: 88%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-}
-
-.heartBox {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-}
-
-.colorized, .empty {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 25px;
-  transition: 0.5s;
-}
-
-.stop-1 {
-  stop-color: #9356DC;
-}
-
-.stop-2 {
-  stop-color: #FF79DA;
-}
-
-.FavIn {
-  stroke: url(#heart-gradient) #9356DC;
-  stroke-width: 0;
-  fill: url(#heart-gradient) #9356DC;
-}
-
-.stroke {
-  stroke: #000;
-  stroke-width: 10;
-  fill: #000;
-}
-
-.white {
-  stroke: #000;
-  stroke-width: 5;
-  fill: #fff;
-}
-
-.colorized {
-  display: none;
-}
-
-.empty {
-  display: block;
-}
-
-.heartBox:checked ~ .ImgHeart .colorized {
-  display: block;
-}
-
-.heartBox:checked ~ .ImgHeart .empty {
-  display: none;
-}
-
-.ellipsis {
-  width: calc(100% - 40px);
-}
-
-.cardLi label p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .header {
@@ -585,7 +508,6 @@ a {
   width: 95%;
   margin: 7px 0px 7px 7px;
   cursor: pointer;
-  text-overflow: ellipsis;
 }
 .cardLi__global--title {
   display: block;
@@ -599,7 +521,6 @@ a {
 }
 .cardLi__global--side {
   position: absolute;
-  height: 100%;
   top: 50%;
   right: 5%;
   display: block;
@@ -607,7 +528,6 @@ a {
 }
 
 .cardLi:hover {
-  transform: scale(1.03);
   box-shadow: -3px -2px 8px 3px #d4d4d4;
 }
 
@@ -632,6 +552,15 @@ a {
   width: 20px;
 }
 
+.box:hover ~ .tick {
+  right: 0;
+}
+
+.box:hover ~ .tick img {
+  text-align: center;
+  animation: rotate2 0.5s;
+}
+
 .box:checked ~ .tick {
   right: 0;
 }
@@ -645,6 +574,131 @@ a {
   position: absolute;
   right: -60px;
   transition: 0.5s;
+}
+
+.ImgHeart {
+  position: absolute;
+  width: 25px;
+  top: 85%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.heartBox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.colorized, .empty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  transition: 0.5s;
+}
+
+.colorized {
+  display: none;
+}
+
+.empty {
+  display: block;
+}
+
+.stop-1 {
+  stop-color: #9356DC;
+}
+
+.stop-2 {
+  stop-color: #FF79DA;
+}
+
+.FavIn1 {
+  stroke: url(#heart-gradient1) #9356DC;
+  stroke-width: 10;
+  fill: url(#heart-gradient1) #9356DC;
+}
+
+.FavIn2 {
+  stroke: url(#heart-gradient2) #9356DC;
+  stroke-width: 10;
+  fill: url(#heart-gradient2) #9356DC;
+}
+
+.FavIn3 {
+  stroke: url(#heart-gradient3) #9356DC;
+  stroke-width: 10;
+  fill: url(#heart-gradient3) #9356DC;
+}
+
+.FavIn4 {
+  stroke: url(#heart-gradient4) #9356DC;
+  stroke-width: 10;
+  fill: url(#heart-gradient4) #9356DC;
+}
+
+.stroke {
+  stroke: #000;
+  stroke-width: 10;
+  fill: #000;
+}
+
+.white {
+  stroke: #000;
+  stroke-width: 5;
+  fill: #fff;
+}
+
+.heartBox:checked ~ .ImgHeart .colorized {
+  display: block;
+}
+
+.heartBox:checked ~ .ImgHeart .empty {
+  display: none;
+}
+
+.ellipsis {
+  width: calc(100% - 40px);
+}
+
+.cardLi label p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.box:hover ~ label .ellipsis {
+  width: calc(100% - 85px);
+  transition: 0.3s;
+}
+
+.box:hover ~ label .ellipsis {
+  width: calc(100% - 85px);
+  transition: 0.3s;
+}
+
+.box:checked ~ label .ellipsis {
+  width: calc(100% - 85px);
+  transition: 0.3s;
+}
+
+.box:checked ~ label .ellipsis {
+  width: calc(100% - 85px);
+  transition: 0.3s;
+}
+
+.box:checked ~ label:nth-child(2) .cardLi__global--side {
+  right: calc(5% + 50px);
+  transition: 0.3s;
+}
+
+.box:hover ~ label:nth-child(2) .cardLi__global--side {
+  right: calc(5% + 50px);
+  transition: 0.3s;
 }
 
 body {

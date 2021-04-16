@@ -42,12 +42,11 @@
     transition: 0.3s;
     line-height: 25px;
     cursor: pointer;
-    // opacity: 0;
     &__global {
         width: 95%;
         margin: 7px 0px 7px 7px;
         cursor: pointer;
-        text-overflow: ellipsis;
+        // text-overflow: ellipsis;
         &--title {
             display: block;
             width: 100%;
@@ -60,7 +59,6 @@
         }
         &--side {
             position: absolute;
-            height: 100%;
             top: 50%;
             right: 5%;
             display: block;
@@ -70,7 +68,6 @@
 }
 
 .cardLi:hover {
-    transform: scale(1.03);
     box-shadow: -3px -2px 8px 3px rgb(212, 212, 212);
 }
 
@@ -94,6 +91,15 @@
         transform: translate(-50%,-50%);
         width: 20px;
     }
+}
+
+.box:hover ~ .tick {
+    right: 0;
+}
+
+.box:hover ~ .tick img {
+    text-align: center;
+    animation: rotate2 0.5s;
 }
 
 .box:checked ~ .tick {

@@ -1,0 +1,43 @@
+
+
+//_ELLIPSIS ON CARD_//
+
+//ellipsis//
+.ellipsis {
+    width: calc(100% - 40px);
+}
+
+.cardLi label p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.box:hover ~ label .ellipsis {
+    width: calc(100% - 85px);
+    transition: 0.3s;
+}
+
+.box:hover ~ label .ellipsis {
+    width: calc(100% - 85px);
+    transition: 0.3s;
+}
+
+.box:checked ~ label .ellipsis {
+    width: calc(100% - 85px);
+    transition: 0.3s;
+}
+.box:checked ~ label .ellipsis {
+    width: calc(100% - 85px);
+    transition: 0.3s;
+}
+
+.box:checked~label:nth-child(2) .cardLi__global--side {
+    right: calc(5% + 50px);
+    transition: 0.3s;
+}
+
+.box:hover~label:nth-child(2) .cardLi__global--side {
+    right: calc(5% + 50px);
+    transition: 0.3s;
+}

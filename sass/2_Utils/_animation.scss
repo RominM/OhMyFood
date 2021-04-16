@@ -1,6 +1,8 @@
 //__animation.scss__//
 
-//__keyframes__//
+  //************************************//
+ //-------------KEYFRAMES-------------//
+//**********************************//
 
 @keyframes opacity {
 	from {
@@ -38,7 +40,7 @@
     }
 }
 
-//animation FadeIn//
+//animation FadeInUp//
 
 @keyframes fadeInUp {
     from {
@@ -51,141 +53,28 @@
     }
 }
 
+//loop//
 @for $i from 1 through 9 {
     .fadeInUp-#{$i} {
         animation-name: fadeInUp;
         animation-duration: 1s;
-        animation-delay: 0.1s*$i;
+        animation-delay: 0.07s*$i;
         animation-fill-mode: both;
     }
 }
 
-//__action click coeur__//
-
-.ImgHeart { //label//
-    position: absolute;
-    width: 25px;
-    top: 85%;
-    left: 88%;
-    transform: translate(-50%,-50%);
-    cursor: pointer;
-}
-
-.heartBox { //input//
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    opacity: 0;
-}
-
-// SVG gradient heart
-
-.colorized, .empty {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 25px;
-    transition: 0.5s;
-}
-
-.stop-1 {
-    stop-color: $color-primary;
-}
-
-.stop-2 {
-    stop-color: $color-secondary;
-}
-
-.FavIn {
-    stroke: url(#heart-gradient) $color-primary;
-    stroke-width: 0;
-    fill: url(#heart-gradient) $color-primary;
-}
-
-.stroke{
-    stroke:#000;
-    stroke-width: 10;
-    fill: #000;
-}
-
-.white {
-    stroke: #000;
-    stroke-width: 5;
-    fill:#fff
-}
-
-.colorized {
-    display: none;
-    // animation: size 0.3s;
-}
-
-.empty {
-    display: block;
-    // animation: size 0.3s;
-}
-
-.heartBox:checked ~ .ImgHeart .colorized {
-    display: block;
-}
-
-.heartBox:checked ~ .ImgHeart .empty {
-    display: none;
-}
-
 // @keyframes size {
-//     0% {
-//         transform: scale(1);
-//     }
+    //     0% {
+    //         transform: scale(1);
+    //     }
+    
+    //     50%{
+    //         transform: scale(1.2);
+    //     }
+    
+    //     100% {
+    //         transform: scale(1);
+    //     }
+    // }
 
-//     50%{
-//         transform: scale(1.2);
-//     }
 
-//     100% {
-//         transform: scale(1);
-//     }
-// }
-
-
-
-//SESSION MENTORA//
-
-//ellipsis//
-.ellipsis {
-    width: calc(100% - 40px);
-}
-
-.cardLi label p {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-// .box:hover ~ label .ellipsis {
-//     width: calc(100% - 85px);
-//     transition: 0.3s;
-// }
-// .box:hover ~ label .ellipsis {
-//     width: calc(100% - 85px);
-//     transition: 0.3s;
-// }
-
-// .box:checked ~ label .ellipsis {
-//     width: calc(100% - 85px);
-//     transition: 0.3s;
-// }
-// .box:checked ~ label .ellipsis {
-//     width: calc(100% - 85px);
-//     transition: 0.3s;
-// }
-
-// .box:checked~label:nth-child(2) .cardLi__global--side {
-//     right: calc(5% + 50px);
-//     transition: 0.3s;
-// }
-
-// .box:hover~label:nth-child(2) .cardLi__global--side {
-//     right: calc(5% + 50px);
-//     transition: 0.3s;
-// }
