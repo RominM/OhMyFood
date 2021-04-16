@@ -1,8 +1,5 @@
+//__ellipsis.scss__//
 
-
-//_ELLIPSIS ON CARD_//
-
-//ellipsis//
 .ellipsis {
     width: calc(100% - 40px);
 }
@@ -11,33 +8,26 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    transition: 0.5s;
 }
 
 .box:hover ~ label .ellipsis {
-    width: calc(100% - 85px);
-    transition: 0.3s;
-}
-
-.box:hover ~ label .ellipsis {
-    width: calc(100% - 85px);
-    transition: 0.3s;
+    width: calc(100% - 105px);
+    transition: 0.5s;
 }
 
 .box:checked ~ label .ellipsis {
-    width: calc(100% - 85px);
-    transition: 0.3s;
-}
-.box:checked ~ label .ellipsis {
-    width: calc(100% - 85px);
-    transition: 0.3s;
-}
-
-.box:checked~label:nth-child(2) .cardLi__global--side {
-    right: calc(5% + 50px);
-    transition: 0.3s;
+    width: calc(100% - 105px);
+    transition: 0.5s;
 }
 
 .box:hover~label:nth-child(2) .cardLi__global--side {
-    right: calc(5% + 50px);
-    transition: 0.3s;
+    right: calc(5% + 60px);
+    transition: 0.5s;
 }
+
+.box:checked~label:nth-child(2) .cardLi__global--side {
+    right: calc(5% + 60px);
+    transition: 0.5s;
+}
+
