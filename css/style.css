@@ -160,6 +160,13 @@ h3 {
   animation-fill-mode: both;
 }
 
+.fadeInUp-10 {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-delay: 0.7s;
+  animation-fill-mode: both;
+}
+
 .header {
   display: flex;
   padding: 15px;

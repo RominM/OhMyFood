@@ -54,7 +54,7 @@
 }
 
 //loop//
-@for $i from 1 through 9 {
+@for $i from 1 through 10 {
     .fadeInUp-#{$i} {
         animation-name: fadeInUp;
         animation-duration: 1s;
@@ -76,5 +76,3 @@
     //         transform: scale(1);
     //     }
     // }
-
-
