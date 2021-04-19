@@ -98,10 +98,16 @@
 }
 
 .box:hover ~ .tick {
+    position: absolute;
     right: 0;
 }
 
 .box:hover ~ .tick img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 20px;
     animation: rotate2 0.5s;
 }
 
