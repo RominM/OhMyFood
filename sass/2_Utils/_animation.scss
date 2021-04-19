@@ -4,13 +4,14 @@
  //-------------KEYFRAMES-------------//
 //**********************************//
 
+//__bloc page__//
 @keyframes opacity {
 	from {
-		opacity: 0.02;
+		opacity: 0;
 	}
 
-	90% {
-		opacity: 0.02;
+	95% {
+		opacity: 0;
 	}
 
 	to {
@@ -18,6 +19,7 @@
 	}
 }
 
+//__loader__//
 @keyframes rotate {
 	0% {
 		transform: rotate(50deg);
@@ -33,10 +35,11 @@
 @keyframes rotate2 {
     0% {
         transform: rotate(-360deg);
+        transform: translate(-50%,-50%);
     }
-
     100% {
         transform: rotate(360deg);
+        transform: translate(-50%,-50%);
     }
 }
 

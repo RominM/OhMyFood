@@ -62,10 +62,10 @@ h3 {
 
 @keyframes opacity {
   from {
-    opacity: 0.02;
+    opacity: 0;
   }
-  90% {
-    opacity: 0.02;
+  95% {
+    opacity: 0;
   }
   to {
     opacity: 1;
@@ -82,9 +82,11 @@ h3 {
 @keyframes rotate2 {
   0% {
     transform: rotate(-360deg);
+    transform: translate(-50%, -50%);
   }
   100% {
     transform: rotate(360deg);
+    transform: translate(-50%, -50%);
   }
 }
 @keyframes fadeInUp {
@@ -569,7 +571,6 @@ a {
 }
 
 .box:hover ~ .tick img {
-  text-align: center;
   animation: rotate2 0.5s;
 }
 
