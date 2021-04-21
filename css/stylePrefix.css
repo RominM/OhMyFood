@@ -1,0 +1,68 @@
+/* 
+*Identité :
+    Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux
+    utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les
+    restaurants car leur menu est préparé à l’avance. Plus de perte de temps à consulter la carte
+    !
+
+* Couleurs :
+    ● Primaire: #9356DC
+    ● Secondaire: #FF79DA
+    ● Tertiaire: #99E2D0
+
+*Polices :
+    ● Logo et titres: Shrikhand
+    ● Texte: Roboto
+
+*Footer :
+    ● Le footer est identique sur toutes les pages.
+    ● Au clic sur “Contact”, un renvoi vers une adresse mail est effectué.
+
+*Header :
+    ● Le header est présent sur toutes les pages.
+    ● Sur la page d’accueil, il contient le logo du site.
+    ● Sur les pages de menu, il contient en plus un bouton de retour vers la page d’accueil
+
+*Boutons :
+    ● Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir.
+        L’ombre portée devra également être plus visible.
+    ● À terme, les visiteurs pourront sauvegarder leurs menus préférés. Pour ça, un
+        bouton "J’aime" en forme de cœur est présent sur la maquette. Au clic, il devra se
+        remplir progressivement. Pour cette première version, l’effet peut être apparaître au
+        survol sur desktop au lieu du clic.
+
+*Page d’accueil :
+    ● Quand l’application aura plus de menus, un “loading spinner” sera nécessaire. Sur
+    cette maquette, nous souhaitons en avoir un aperçu. Il devra apparaître pendant 1 à
+    3 secondes quand on arrive sur la page d'accueil, couvrir l'intégralité de l'écran, et
+    utiliser les animations CSS (pas de librairie). Le design de ce loader n’est pas défini,
+    toute proposition est donc la bienvenue tant qu’elle est cohérente avec la charte
+    graphique du site.
+
+*Pages de menu :
+    ● À l’arrivée sur la page, les plats devront apparaître progressivement avec un léger
+        décalage dans le temps. Ils pourront soit apparaître un par un, soit par groupe
+        “Entrée”, “Plat” et “Dessert”. Un exemple de l’effet attendu est fourni.
+    ● Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant dessus.
+        Cela fait apparaître une petite coche à droite du plat. Cette coche devra coulisser de
+        la droite vers la gauche. Pour cette première version, l’effet peut apparaître au survol
+        sur desktop au lieu du clic. Si l’intitulé du plat est trop long, il devra être rogné avec
+        des points de suspension. Un exemple de l’effet attendu est fourni.
+
+*/
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url(../fonts/Roboto-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(../fonts/Roboto-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url(../fonts/Roboto-Light.ttf) format('truetype');
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0NBbURDOztBQUVEO0lBQ0ksNEJBQTRCO0lBQzVCLHVEQUF1RDtBQUMzRDs7QUFFQTtJQUNJLDBCQUEwQjtJQUMxQixxREFBcUQ7QUFDekQ7O0FBRUE7SUFDSSwyQkFBMkI7SUFDM0Isc0RBQXNEO0FBQzFEIiwiZmlsZSI6InN0eWxlUHJlZml4LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIFxyXG4qSWRlbnRpdMOpIDpcclxuICAgIE9obXlmb29kISBlc3QgdW5lIGVudHJlcHJpc2UgZGUgY29tbWFuZGUgZGUgcmVwYXMgZW4gbGlnbmUuIE5vdHJlIGNvbmNlcHQgcGVybWV0IGF1eFxyXG4gICAgdXRpbGlzYXRldXJzIGRlIGNvbXBvc2VyIGxldXIgcHJvcHJlIG1lbnUgZXQgcsOpZHVpcmUgbGV1ciB0ZW1wcyBk4oCZYXR0ZW50ZSBkYW5zIGxlc1xyXG4gICAgcmVzdGF1cmFudHMgY2FyIGxldXIgbWVudSBlc3QgcHLDqXBhcsOpIMOgIGzigJlhdmFuY2UuIFBsdXMgZGUgcGVydGUgZGUgdGVtcHMgw6AgY29uc3VsdGVyIGxhIGNhcnRlXHJcbiAgICAhXHJcblxyXG4qIENvdWxldXJzIDpcclxuICAgIOKXjyBQcmltYWlyZTogIzkzNTZEQ1xyXG4gICAg4pePIFNlY29uZGFpcmU6ICNGRjc5REFcclxuICAgIOKXjyBUZXJ0aWFpcmU6ICM5OUUyRDBcclxuXHJcbipQb2xpY2VzIDpcclxuICAgIOKXjyBMb2dvIGV0IHRpdHJlczogU2hyaWtoYW5kXHJcbiAgICDil48gVGV4dGU6IFJvYm90b1xyXG5cclxuKkZvb3RlciA6XHJcbiAgICDil48gTGUgZm9vdGVyIGVzdCBpZGVudGlxdWUgc3VyIHRvdXRlcyBsZXMgcGFnZXMuXHJcbiAgICDil48gQXUgY2xpYyBzdXIg4oCcQ29udGFjdOKAnSwgdW4gcmVudm9pIHZlcnMgdW5lIGFkcmVzc2UgbWFpbCBlc3QgZWZmZWN0dcOpLlxyXG5cclxuKkhlYWRlciA6XHJcbiAgICDil48gTGUgaGVhZGVyIGVzdCBwcsOpc2VudCBzdXIgdG91dGVzIGxlcyBwYWdlcy5cclxuICAgIOKXjyBTdXIgbGEgcGFnZSBk4oCZYWNjdWVpbCwgaWwgY29udGllbnQgbGUgbG9nbyBkdSBzaXRlLlxyXG4gICAg4pePIFN1ciBsZXMgcGFnZXMgZGUgbWVudSwgaWwgY29udGllbnQgZW4gcGx1cyB1biBib3V0b24gZGUgcmV0b3VyIHZlcnMgbGEgcGFnZSBk4oCZYWNjdWVpbFxyXG5cclxuKkJvdXRvbnMgOlxyXG4gICAg4pePIEF1IHN1cnZvbCwgbGEgY291bGV1ciBkZSBmb25kIGRlcyBib3V0b25zIHByaW5jaXBhdXggZGV2cmEgbMOpZ8OocmVtZW50IHPigJnDqWNsYWlyY2lyLlxyXG4gICAgICAgIEzigJlvbWJyZSBwb3J0w6llIGRldnJhIMOpZ2FsZW1lbnQgw6p0cmUgcGx1cyB2aXNpYmxlLlxyXG4gICAg4pePIMOAIHRlcm1lLCBsZXMgdmlzaXRldXJzIHBvdXJyb250IHNhdXZlZ2FyZGVyIGxldXJzIG1lbnVzIHByw6lmw6lyw6lzLiBQb3VyIMOnYSwgdW5cclxuICAgICAgICBib3V0b24gXCJK4oCZYWltZVwiIGVuIGZvcm1lIGRlIGPFk3VyIGVzdCBwcsOpc2VudCBzdXIgbGEgbWFxdWV0dGUuIEF1IGNsaWMsIGlsIGRldnJhIHNlXHJcbiAgICAgICAgcmVtcGxpciBwcm9ncmVzc2l2ZW1lbnQuIFBvdXIgY2V0dGUgcHJlbWnDqHJlIHZlcnNpb24sIGzigJllZmZldCBwZXV0IMOqdHJlIGFwcGFyYcOudHJlIGF1XHJcbiAgICAgICAgc3Vydm9sIHN1ciBkZXNrdG9wIGF1IGxpZXUgZHUgY2xpYy5cclxuXHJcbipQYWdlIGTigJlhY2N1ZWlsIDpcclxuICAgIOKXjyBRdWFuZCBs4oCZYXBwbGljYXRpb24gYXVyYSBwbHVzIGRlIG1lbnVzLCB1biDigJxsb2FkaW5nIHNwaW5uZXLigJ0gc2VyYSBuw6ljZXNzYWlyZS4gU3VyXHJcbiAgICBjZXR0ZSBtYXF1ZXR0ZSwgbm91cyBzb3VoYWl0b25zIGVuIGF2b2lyIHVuIGFwZXLDp3UuIElsIGRldnJhIGFwcGFyYcOudHJlIHBlbmRhbnQgMSDDoFxyXG4gICAgMyBzZWNvbmRlcyBxdWFuZCBvbiBhcnJpdmUgc3VyIGxhIHBhZ2UgZCdhY2N1ZWlsLCBjb3V2cmlyIGwnaW50w6lncmFsaXTDqSBkZSBsJ8OpY3JhbiwgZXRcclxuICAgIHV0aWxpc2VyIGxlcyBhbmltYXRpb25zIENTUyAocGFzIGRlIGxpYnJhaXJpZSkuIExlIGRlc2lnbiBkZSBjZSBsb2FkZXIgbuKAmWVzdCBwYXMgZMOpZmluaSxcclxuICAgIHRvdXRlIHByb3Bvc2l0aW9uIGVzdCBkb25jIGxhIGJpZW52ZW51ZSB0YW50IHF14oCZZWxsZSBlc3QgY29ow6lyZW50ZSBhdmVjIGxhIGNoYXJ0ZVxyXG4gICAgZ3JhcGhpcXVlIGR1IHNpdGUuXHJcblxyXG4qUGFnZXMgZGUgbWVudSA6XHJcbiAgICDil48gw4AgbOKAmWFycml2w6llIHN1ciBsYSBwYWdlLCBsZXMgcGxhdHMgZGV2cm9udCBhcHBhcmHDrnRyZSBwcm9ncmVzc2l2ZW1lbnQgYXZlYyB1biBsw6lnZXJcclxuICAgICAgICBkw6ljYWxhZ2UgZGFucyBsZSB0ZW1wcy4gSWxzIHBvdXJyb250IHNvaXQgYXBwYXJhw650cmUgdW4gcGFyIHVuLCBzb2l0IHBhciBncm91cGVcclxuICAgICAgICDigJxFbnRyw6ll4oCdLCDigJxQbGF04oCdIGV0IOKAnERlc3NlcnTigJ0uIFVuIGV4ZW1wbGUgZGUgbOKAmWVmZmV0IGF0dGVuZHUgZXN0IGZvdXJuaS5cclxuICAgIOKXjyBMZSB2aXNpdGV1ciBwZXV0IGFqb3V0ZXIgbGVzIHBsYXRzIHF1J2lsIHNvdWhhaXRlIMOgIHNhIGNvbW1hbmRlIGVuIGNsaXF1YW50IGRlc3N1cy5cclxuICAgICAgICBDZWxhIGZhaXQgYXBwYXJhw650cmUgdW5lIHBldGl0ZSBjb2NoZSDDoCBkcm9pdGUgZHUgcGxhdC4gQ2V0dGUgY29jaGUgZGV2cmEgY291bGlzc2VyIGRlXHJcbiAgICAgICAgbGEgZHJvaXRlIHZlcnMgbGEgZ2F1Y2hlLiBQb3VyIGNldHRlIHByZW1pw6hyZSB2ZXJzaW9uLCBs4oCZZWZmZXQgcGV1dCBhcHBhcmHDrnRyZSBhdSBzdXJ2b2xcclxuICAgICAgICBzdXIgZGVza3RvcCBhdSBsaWV1IGR1IGNsaWMuIFNpIGzigJlpbnRpdHVsw6kgZHUgcGxhdCBlc3QgdHJvcCBsb25nLCBpbCBkZXZyYSDDqnRyZSByb2duw6kgYXZlY1xyXG4gICAgICAgIGRlcyBwb2ludHMgZGUgc3VzcGVuc2lvbi4gVW4gZXhlbXBsZSBkZSBs4oCZZWZmZXQgYXR0ZW5kdSBlc3QgZm91cm5pLlxyXG5cclxuKi9cclxuXHJcbkBmb250LWZhY2Uge1xyXG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8tTWVkaXVtJztcclxuICAgIHNyYzogdXJsKC4uL2ZvbnRzL1JvYm90by1NZWRpdW0udHRmKSBmb3JtYXQoJ3RydWV0eXBlJyk7XHJcbn1cclxuXHJcbkBmb250LWZhY2Uge1xyXG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8tQm9sZCc7XHJcbiAgICBzcmM6IHVybCguLi9mb250cy9Sb2JvdG8tQm9sZC50dGYpIGZvcm1hdCgndHJ1ZXR5cGUnKTtcclxufVxyXG5cclxuQGZvbnQtZmFjZSB7XHJcbiAgICBmb250LWZhbWlseTogJ1JvYm90by1MaWdodCc7XHJcbiAgICBzcmM6IHVybCguLi9mb250cy9Sb2JvdG8tTGlnaHQudHRmKSBmb3JtYXQoJ3RydWV0eXBlJyk7XHJcbn0iXX0= */
