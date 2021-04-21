@@ -1,0 +1,25 @@
+//__master.sass__\\
+
+//** 1.BASE **\\
+@import "./1_Base/variables";
+@import "./1_Base/mixins";
+//** 2.UTILS **\\
+@import "./2_Utils/typographie";
+@import "./2_Utils/animation";
+//** 3.LAYOUT **\\
+@import "./3_Layout/header";
+@import "./3_Layout/part-1";
+@import "./3_Layout/part-2";
+@import "./3_Layout/footer";
+//** 4.COMPOSANTS **\\
+@import "./4_Composants/link";
+@import "./4_Composants/loader";
+@import "./4_Composants/img";
+@import "./4_Composants/form";
+@import "./4_Composants/heart";
+@import "./4_Composants/ellipsis";
+//** 5.PAGE **\\
+@import "./5_Pages/home";
+//** 6.THEMES **//
+@import "./6_Themes/mediaQ";
+

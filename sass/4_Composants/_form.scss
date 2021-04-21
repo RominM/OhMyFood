@@ -1,0 +1,113 @@
+//__form.scss__//
+
+//formulaire//
+#list { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.start, .main, .course {
+    width: 350px;
+    min-width: 150px;
+    margin: 25px 20px 0px 0px;
+    padding-left: 20px;
+    .light {
+        text-transform: uppercase;
+    }
+    hr {
+        width: 50px;
+        height: 4px;
+        margin-top: 5px;
+        margin-left: 0;
+        background-color: $color-tertiary;
+        border: none;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardLi {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    height: 60px;
+    min-width: 250px;
+    margin: 7px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 3px 2px 8px 3px rgb(212, 212, 212);
+    transition: 0.3s;
+    line-height: 25px;
+    cursor: pointer;
+    &__global {
+        width: 95%;
+        margin: 7px 0px 7px 7px;
+        cursor: pointer;
+        p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        &--title {
+            display: block;
+            width: 100%;
+            margin: auto;
+        }
+        &--subtitle {
+            display: block;
+            width: 100%;
+            margin: auto;        
+        }
+        &--side {
+            position: absolute;
+            top: 50%;
+            right: 5%;
+            display: block;
+            background-color: #fff;
+        }
+    }
+}
+
+.cardLi:hover {
+    box-shadow: -3px -2px 8px 3px rgb(212, 212, 212);
+}
+
+.box {
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+}
+
+.tick {
+    position: relative;
+    width: 60px;
+    height: 100%;
+    text-align: center;
+    background-color: $color-tertiary;
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 20px;
+    }
+}
+
+.box:checked ~ .tick {
+    right: 0;
+}
+
+.box:checked ~ .tick img {
+    text-align: center;
+    animation: rotate2 0.5s;
+}
+
+.tick {
+    position: absolute;
+    right: -60px;
+    transition: 0.5s;
+}

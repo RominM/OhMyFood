@@ -1,0 +1,22 @@
+//__ellipsis.scss__//
+
+.ellipsis {
+    width: calc(100% - 40px);
+}
+
+.cardLi label p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: 0.5s;
+}
+
+.box:checked ~ label .ellipsis {
+    width: calc(100% - 105px);
+    transition: 0.5s;
+}
+
+.box:checked~label:nth-child(2) .cardLi__global--side {
+    right: calc(5% + 60px);
+    transition: 0.5s;
+}

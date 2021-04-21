@@ -1,0 +1,16 @@
+//__header.scss__//
+
+.header {
+    display: flex;
+    padding: 15px;
+    text-align: center;
+    align-items: center;
+    img {
+        width: 15px;
+    }
+    h1 {
+        display: block;
+        width: 175px;
+        margin: auto;
+    }
+}

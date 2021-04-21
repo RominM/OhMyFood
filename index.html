@@ -1,363 +1,329 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux
+    <meta name="description" content="Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux
         utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les
         restaurants car leur menu est préparé à l’avance. Plus de perte de temps à consulter la carte
         !">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reset.css">
-    
-    <title>Acceuil - Ohmyfood!</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="logo/svg" href="./images/logo/utensils-solidFAV.svg">
+
+    <title>Accueil - Ohmyfood!</title>
 </head>
 
 <body>
-    <header>
-        <i></i>
-    </header>
-
-        <div class="local">
-            <i></i>
-            <p></p>
-        </div>
-
-        <div class="explor">
-            <h2></h2>
-            <h3></h3>
-            <a href="#"></a>
+    <!--LOADER-->
+    <div class="loader">
         <div>
-
-        <div class="working">
-            <div class="workingTitle">
-                <h2></h2>
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <ol>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ol>
-
         </div>
-        <main>
+    </div>
 
+    <!--BLOCK PAGE-->
+    <div class="block-page">
+        <!-- HEADER -->
+        <header class="header">
+            <h1>ohmyfood</h1>
+        </header>
+
+        <!--PART N°1-->
+        <section>
+            <!-- LOCAL -->
+            <div class="local">
+                <div class="local__img">
+                    <img src="./images/logo/map-marker-alt-solid.svg" alt="icon marker">
+                </div>
+                <!--MARKER-->
+                <span class="medium">Paris, Belleville</span>
+            </div>
+            <!--<div class="local">
+            <div class="local__img">
+                <img src="images/logo/map-marker-alt-solid.svg" alt="icon marker">
+            </div>
+            <input type="text" placeholder="Paris, Belleville" name="search" class="local__txt"/>-->
+
+            <!-- EXPLOR -->
+            <div class="explor">
+                <h2>Réservez le menu qui vous convient</h2>
+                <span class="light">Découvrez des restaurants d'exception, séléctionnés par nos soins.</span>
+                <a href="#ancreRestaurant" class="explor__btn">
+                    <span class="explor__btn--txt">Explorer nos restaurants</span>
+                </a>
+            </div>
+
+            <!-- WORKING -->
+            <div class="working">
+                <h2>Fonctionnement</h2>
+                <ol class="working__list">
+                    <li class="working__list--btn">
+                        <a href="#" class="link">
+                            <!--LIEN-->
+                            <span class="number">1</span>
+                            <img src="./images/logo/mobile-alt-solid.svg" alt="icon telephone">
+                            <span>Choisissez un restaurant</span>
+                        </a>
+                    </li>
+                    <li class="working__list--btn">
+                        <a href="#" class="link">
+                            <!--LIEN-->
+                            <span class="number">2</span>
+                            <img src="./images/logo/list-ul-solid.svg" alt="icon menu">
+                            <span>Composez votre menu</span>
+                        </a>
+                    </li>
+                    <li class="working__list--btn">
+                        <a href="#" class="link">
+                            <!--LIEN-->
+                            <span class="number">3</span>
+                            <img src="./images/logo/store-solid.svg" alt="icon store">
+                            <span>Dégustez au restaurant</span>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!--PART N°2-->
         <section class="restaurants">
-            <div class="restaurantTitle">
-                <h2></h2>
+            <h2 id="ancreRestaurant">Restaurants</h2>
+
+            <!-- CARD N°1 -->
+            <div class="restaurants__card">
+                <a href="HTML/la_palette_du_gout.html">
+                    <div class="restaurants__card--img">
+                        <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="assiette repas 1"
+                            class="restaurants__card--bg">
+
+                        <!--STICKER-->
+                        <span class="medium">Nouveau</span>
+                    </div>
+                    <div class="blocTxt">
+                        <h3>La palette du goût</h3>
+                        <span class="light">Ménilmontant</span>
+                    </div>
+                </a>
+
+                <!--CHECKBOX SVG-->
+                <input type="checkbox" name="check" id="heart1" class="heartBox">
+                <label for="heart1" class="ImgHeart">
+
+                    <!--HEART NEAT-->
+                    <svg class="empty" viewBox="-5 0 135 128" xmlns="http://www.w3.org/2000/svg">
+                        <path class="stroke"
+                            d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
+                        </path>
+                        <path class="white"
+                            d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
+                        </path>
+                    </svg>
+
+                    <!--HEART COLOR-->
+                    <svg class="colorized" viewBox="-5 0 135 128" xmlns="http://www.w3.org/2000/svg">
+                        <linearGradient id="heart-gradient1" x2="0" y2="1">
+                            <stop offset="0%" class="stop-1" />
+                            <stop offset="100%" class="stop-2" />
+                        </linearGradient>
+                        <path class="stroke"
+                            d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
+                        </path>
+                        <path class="FavIn1"
+                            d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
+                        </path>
+                    </svg>
+
+                    <!--SVG IMPORT BY IMG-->
+                    <!-- <img src="./IMAGES/logo/heart-regular.svg" class="emptyHeart" alt="coeur vide"> -->
+                    <!-- <img src="./IMAGES/logo/heart-solid.svg" class="favHeart" alt="coeur favoris"> -->
+                </label>
             </div>
 
-            <div class="card">
-                <img src="" alt="">
-                <h4></h4>
-                <p></p>
-                <i></i>
+            <!-- CARD N°2 -->
+            <div class="restaurants__card">
+                <a href="HTML/la_note_enchantee.html">
+                    <div class="restaurants__card--img">
+                        <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="assiette repas 2"
+                            class="restaurants__card--bg">
+
+                        <!--STICKER-->
+                        <span class="medium">Nouveau</span>
+                    </div>
+                    <div class="blocTxt">
+                        <h3>La note enchantée</h3>
+                        <span class="light">charonne</span>
+                    </div>
+                </a>
+
+                <!--CHECKBOX SVG-->
+                <input type="checkbox" name="check" id="heart2" class="heartBox">
+                <label for="heart2" class="ImgHeart">
+
+                    <!--HEART NEAT-->
+                    <svg class="empty" viewBox="-5 0 135 128" xmlns="http://www.w3.org/2000/svg">
+                        <path class="stroke"
+                            d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
+                        </path>
+                        <path class="white"
+                            d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
+                        </path>
+                    </svg>
+
+                    <!--HEART COLOR-->
+                    <svg class="colorized" viewBox="-5 0 135 128" xmlns="http://www.w3.org/2000/svg">
+                        <linearGradient id="heart-gradient2" x2="0" y2="1">
+                            <stop offset="0%" class="stop-1" />
+                            <stop offset="100%" class="stop-2" />
+                        </linearGradient>
+                        <path class="stroke"
+                            d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
+                        </path>
+                        <path class="FavIn2"
+                            d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
+                        </path>
+                    </svg>
+                    <!-- <img src="./IMAGES/logo/heart-regular.svg" class="emptyHeart" alt="coeur vide">
+                    <img src="./IMAGES/logo/heart-solid.svg" class="favHeart" alt="coeur favoris"> -->
+                </label>
             </div>
 
-            <div class="card">
-                <img src="" alt="">
-                <h4></h4>
-                <p></p>
-                <i></i>
+            <!-- CARD N°3 -->
+            <div class="restaurants__card">
+                <a href="HTML/a_la_francaise.html">
+                    <div class="restaurants__card--img">
+                        <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="assiette repas 3"
+                            class="restaurants__card--bg">
+                    </div>
+                    <div class="blocTxt">
+                        <h3>À la française</h3>
+                        <span class="light">Cité rouge</span>
+                    </div>
+                </a>
+
+                <!--CHECKBOX SVG-->
+                <input type="checkbox" name="check" id="heart3" class="heartBox">
+                <label for="heart3" class="ImgHeart">
+
+                    <!--HEART NEAT-->
+                    <svg class="empty" viewBox="-5 0 135 128" xmlns="http://www.w3.org/2000/svg">
+                        <path class="stroke"
+                            d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
+                        </path>
+                        <path class="white"
+                            d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
+                        </path>
+                    </svg>
+
+                    <!--HEART COLOR-->
+                    <svg class="colorized" viewBox="-5 0 135 128" xmlns="http://www.w3.org/2000/svg">
+                        <linearGradient id="heart-gradient3" x2="0" y2="1">
+                            <stop offset="0%" class="stop-1" />
+                            <stop offset="100%" class="stop-2" />
+                        </linearGradient>
+                        <path class="stroke"
+                            d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
+                        </path>
+                        <path class="FavIn3"
+                            d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
+                        </path>
+                    </svg>
+                    <!-- <img src="./IMAGES/logo/heart-regular.svg" class="emptyHeart" alt="coeur vide">
+                    <img src="./IMAGES/logo/heart-solid.svg" class="favHeart" alt="coeur favoris"> -->
+                </label>
             </div>
 
-            <div class="card">
-                <img src="" alt="">
-                <h4></h4>
-                <p></p>
-                <i></i>
-            </div>
+            <!-- CARD N°4 -->
+            <div class="restaurants__card">
+                <a href="HTML/le_delice_des_sens.html">
+                    <div class="restaurants__card--img">
+                        <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                            alt="assiette repas 4" class="restaurants__card--bg">
+                    </div>
+                    <div class="blocTxt">
 
-            <div class="card">
-                <img src="" alt="">
-                <h4></h4>
-                <p></p>
-                <i></i>
+                        <h3>Le délice des sens</h3>
+                        <span class="light">Folie-Méricourt</span>
+                    </div>
+                </a>
+
+                <!--CHECKBOX SVG-->
+                <input type="checkbox" name="check" id="heart4" class="heartBox">
+                <label for="heart4" class="ImgHeart">
+
+                    <!--HEART NEAT-->
+                    <svg class="empty" viewBox="-5 0 135 128" xmlns="http://www.w3.org/2000/svg">
+                        <path class="stroke"
+                            d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
+                        </path>
+                        <path class="white"
+                            d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
+                        </path>
+                    </svg>
+
+                    <!--HEART COLOR-->
+                    <svg class="colorized" viewBox="-5 0 135 128" xmlns="http://www.w3.org/2000/svg">
+                        <linearGradient id="heart-gradient4" x2="0" y2="1">
+                            <stop offset="0%" class="stop-1" />
+                            <stop offset="100%" class="stop-2" />
+                        </linearGradient>
+                        <path class="stroke"
+                            d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
+                        </path>
+                        <path class="FavIn4"
+                            d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
+                        </path>
+                    </svg>
+                    <!-- <img src="./IMAGES/logo/heart-regular.svg" class="emptyHeart" alt="coeur vide">
+                    <img src="./IMAGES/logo/heart-solid.svg" class="favHeart" alt="coeur favoris"> -->
+                </label>
             </div>
 
         </section>
 
-    </main>
-
-    <footer>
-
-    </footer>
+        <!--FOOTER-->
+        <footer class="footer">
+            <h1>ohmyfood</h1>
+            <ul class="footer__flex">
+                <li>
+                    <a href="#">
+                        <img src="./images/logo/utensils-solid.svg" alt="logo couverts">
+                        Proposer un restaurant
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/logo/hands-helping-solid.svg" alt="logo poignée de mains">
+                        Devenir partenaire
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Mentions légales</a>
+                </li>
+                <li>
+                    <p><a href="mailto:romin.manogil@gmail.com">Contact</a></p>
+                </li>
+            </ul>
+        </footer>
+    </div>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <header>
-        <div class="logo">
-<<<<<<< HEAD
-            <img src="images/logo/ohmyfood@1x.svg" alt="" class="omf">
-        </div>
-        <div id="infoposition">
-            <img src="images/logo/map-marker-alt-solid.svg" alt="" class="marker">
-            <p>Paris, Belleville</p>
-        </div>
-        <div class="subtitle">
-            <div class="title">
-                <h1>Réservez le menu qui vous convient</h1>
-            </div>
-            <div class="title2">
-                <h3>Décourvez des restaurants d'exception, séléctionnés par nos soins</h3>
-=======
-            <img src="images/logo/ohmyfood@2x.svg" alt="Ohmyfood">
-        </div>
-        <div class="markerBack">
-            <div class="marker">
-                <img src="images/logo/map-marker-alt-solid.svg" alt="marker">
-                <p>Paris, Belleville</p>
->>>>>>> 58db3dace4e3811a92aa563aa24e2a4a6c050d44
-            </div>
-        </div>
-        <div class="titleTxtBack">
-            <div class="titleTxt">
-                <div class="titleTxt1">
-                    <h1>Réservez le menu qui vous convient</h1>
-                </div>
-                <div class="titleTxt2">
-                    <h3>Décourvez des restaurants d'exception, séléctionnés par nos soins</h3>
-                </div>
-                <a href="">
-                    <button>Explorer nos restaurants</button>
-                </a>
-            </div>
-        </div>
-    </header> -->
-    <!-- <nav>
-        <h2>Fonctionnement</h2>
-        <ul>
-            <li>
-                <a href="" class="link">
-                    <div class="bulle">
-                        <p>1</p>
-                    </div>
-                    <div class="imgFlex">
-                        <img src="images/logo/mobile-alt-solid.svg" alt="">
-                    </div>
-                    <div class="txt">
-                        <p>Choisissez un restaurant</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="" class="link">
-                    <div class="bulle">
-                        <p>2</p>
-                    </div>
-                    <div class="imgFlex">
-                        <img src="images/logo/ellipsis-v-solid.svg" alt="" class="points">
-                        <img src="images/logo/bars-solid.svg" alt="" class="barres">
-                    </div>
-                    <div class="txt">
-                        <p>Composez votre menu</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="" class="link">
-                    <div class="bulle">
-                        <p>3</p>
-                    </div>
-                    <div class="imgFlex">
-                        <img src="images/logo/store-solid.svg" alt="" class="resto">
-                    </div>
-                    <div class="txt">
-                        <p>Dégustez au restaurant</p>
-                        
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </nav> -->
-    <!-- <section class="select">
-        <h2>Restaurants</h2>
-        <div class="resto">
-            <a href="" class="link">
-                <div class="photo">
-                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
-                </div>
-                <div class="zone">
-                    <div class="txt">
-                        <h4>La palette du goût</h4>
-                        <p>Ménilmontant</p>
-                    </div>
-                    <div class="heart">
-                        <img src="images/logo/heart-regular.svg" alt="">
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="resto">
-            <a href="" class="link">
-                <div class="photo">
-                    <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
-                </div>
-                <div class="zone">
-                    <div class="txt">
-                        <h4>La note enchantée</h4>
-                        <p>Charonne</p>
-                    </div>
-                    <div class="heart">
-                        <img src="images/logo/heart-regular.svg" alt="">
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="resto">
-            <a href="" class="link">
-                <div class="photo">
-                    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
-                </div>
-                <div class="zone">
-                    <div class="txt">
-                        <h4>À la française</h4>
-                        <p>Cité Rouge</p>
-                    </div>
-                    <div class="heart">
-                        <img src="images/logo/heart-regular.svg" alt="">
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="resto">
-            <a href="" class="link">
-                <div class="photo">
-                    <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
-                </div>
-                <div class="zone">
-                    <div class="txt">
-                        <h4>Le délice des sens</h4>
-                        <p>Folie-Méricourt</p>
-                    </div>
-                    <div class="heart">
-                        <img src="images/logo/heart-regular.svg" alt="">
-                    </div>
-                </div>
-            </a>
-        </div>
-    </section> -->
-    <!-- <footer>
-        <div class="logo">
-            <img src="images/logo/ohmyfood@2x.svg" alt="">
-        </div>
-<<<<<<< HEAD
-        <div class="symb">
-            <a href="">
-                <img src="images/logo/utensils-solid.svg" alt="">
-                <p>Proposer un restaurant</p>
-            </a>
-            <a href="">
-                <img src="images/logo/hands-helping-solid.svg" alt="">
-                <p>Devenir partenaire</p>
-            </a>
-        </div>
-        <div class="mentions">
-            <a href="">Mentions légales</a>
-            <a href="">Contact</a>
-        </div>
-    </footer>
-    
-</body>
-</html>
-=======
-        <a href="">
-            <img src="" alt="">
-            <p>Proposer un restaurant</p>
-        </a>
-        <a href="">
-            <img src="" alt="">
-            <p>Devenir partenaire</p>
-        </a>
-        <a href="">Mentions légales</a>
-        <a href="">Contact</a>
-    </footer> -->
->>>>>>> 58db3dace4e3811a92aa563aa24e2a4a6c050d44

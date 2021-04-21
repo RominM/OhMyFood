@@ -1,0 +1,103 @@
+//__heart.scss__//
+
+  //************************************//
+ //---------------USED----------------//
+//**********************************//
+
+//__ACTION HEART__//
+
+//label//
+.ImgHeart { 
+    position: absolute;
+    width: 25px;
+    top: 85%;
+    left: 88%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+//input//
+.heartBox { 
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+//__SVG GRADIENT HEART__//
+
+//name svg//
+.colorized, .empty {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 25px;
+    transition: 0.5s;
+}
+
+.colorized {
+    display: none;
+}
+
+.empty {
+    display: block;
+}
+
+//offset//
+.stop-1 {
+    stop-color: $color-primary;
+}
+
+.stop-2 {
+    stop-color: $color-secondary;
+}
+
+//svg attribute needed//
+.FavIn1 {
+    stroke: url(#heart-gradient1) $color-primary;
+    stroke-width: 10;
+    fill: url(#heart-gradient1) $color-primary;
+}
+
+.FavIn2 {
+    stroke: url(#heart-gradient2) $color-primary;
+    stroke-width: 10;
+    fill: url(#heart-gradient2) $color-primary;
+}
+
+.FavIn3 {
+    stroke: url(#heart-gradient3) $color-primary;
+    stroke-width: 10;
+    fill: url(#heart-gradient3) $color-primary;
+}
+
+.FavIn4 {
+    stroke: url(#heart-gradient4) $color-primary;
+    stroke-width: 10;
+    fill: url(#heart-gradient4) $color-primary;
+}
+
+//border
+.stroke{
+    stroke:#000;
+    stroke-width: 10;
+    fill: #000;
+}
+
+//inside//
+.white {
+    stroke: #000;
+    stroke-width: 10;
+    fill:#fff
+}
+
+//action svg//
+
+.heartBox:checked ~ .ImgHeart .colorized {
+    display: block;
+}
+
+.heartBox:checked ~ .ImgHeart .empty {
+    display: none;
+}

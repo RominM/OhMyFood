@@ -1,0 +1,19 @@
+//__LOADER__//
+
+.loader {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	
+	div {
+		border: solid 2px;
+		border-top-color: transparent;
+		border-bottom-color: transparent;
+		border-left-color: $color-clear_primary;
+		border-right-color: $color-clear_secondary;
+		padding: 10px;
+		border-radius: 100%;
+		animation: rotate 7s;
+	}
+}

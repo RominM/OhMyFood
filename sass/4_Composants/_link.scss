@@ -1,0 +1,55 @@
+//__button.scss__//
+
+a {
+    text-decoration: none;
+}
+
+.select {
+    margin: -20px auto;
+    padding: 35px;
+    background-color: $color_clear-grey;
+    &__btn {
+        background-color: $color_clear-grey;
+    }
+}
+
+.explor, .select {
+    a {
+        display: block;
+        width: 70%;
+        max-width: 400px;
+        min-width: 225px;
+        height: 20px;
+        margin: 20px auto;
+        border: none;
+        border-radius: 25px;
+        padding: 17px;
+        background: linear-gradient($color-primary, $color-secondary);
+        box-shadow: 0px 2px 5px 2px #cccccc;
+        cursor: pointer;
+    }
+    &__btn:hover {
+        box-shadow: 2px 0px 5px 2px #cccccc;
+        background: linear-gradient($color-clear_primary, $color-clear_secondary);
+    }
+    &__btn:focus {
+        outline: 0 !important;
+    }
+}
+
+.working {
+    a {
+        width: 100%;
+        height: 100%;
+        border: none;
+        cursor: pointer;
+        border-radius: 15px;
+        text-align: center;
+        padding-top: 15px;
+    }
+    a:focus {
+        background-color:  $color_clear-purple;
+        outline: 0 !important;
+        border: none;
+    }
+}

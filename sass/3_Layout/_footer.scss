@@ -1,0 +1,42 @@
+//__footer__//
+
+.footer {
+    bottom: 100%;
+    width: 100%;
+    max-height: 200px;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: rgb(56, 56, 56);
+    h1 {
+        font-family: 'Shrikhand';
+        font-size: 1.2em;
+        color: #fff;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    &__flex {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 20px;
+        li {
+            min-width: 250px;
+            margin: 0px 50px 10px 0px;
+            font-family: 'Roboto-Medium';
+            font-size: 1.1em;
+            a {
+                color: #fff;
+                text-decoration: none;
+                width: 25%;
+                text-decoration: underline transparent;
+                transition: 0.2s;
+            }
+            a:hover {
+                text-decoration: underline #fff;
+            }
+        }
+        img {
+            width: 15px;
+        }
+    }
+}

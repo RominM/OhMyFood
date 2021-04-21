@@ -1,0 +1,49 @@
+//__img.scss__//
+
+.heartLog {
+    position: absolute;
+    width: 25px;
+    top: 60%;
+    left: 88%;
+    transform: translate(-50%,-50%);
+}
+
+//_index.html_//
+
+.local {
+    &__img {
+        width: 10px;
+        margin-right: 10px;
+    }
+}
+
+.working {
+    &__list {
+        img{
+        width: 18px;
+        height: 18px;
+        margin: 13px 15px -3px 10px;
+        }
+    }
+}
+
+.restaurants{
+    &__card {
+        &--bg {
+            object-fit: cover;
+            object-position: center 60%;
+            width: 100%;
+            height: 130px;
+        }
+    }
+}
+
+//_pages.html_//
+.imgBg {
+    position: relative;
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 200px;
+    }
+}

@@ -1,0 +1,80 @@
+//__animation.scss__//
+
+  //************************************//
+ //-------------KEYFRAMES-------------//
+//**********************************//
+
+//__bloc page__//
+@keyframes opacity {
+	from {
+		opacity: 0;
+	}
+
+	95% {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+//__loader__//
+@keyframes rotate {
+	0% {
+		transform: rotate(50deg);
+	}
+	100% {
+		transform: rotate(360deg);	
+    }
+}
+
+//__Green-Tick__//
+
+@keyframes rotate2 {
+    0% {
+        display: block;
+        transform: translate(-50%,-50%)rotate(-360deg);
+    }
+    100% {
+        display: block;
+        transform: translate(-50%,-50%)rotate(360deg);
+    }
+}
+
+//animation FadeInUp//
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+//loop//
+@for $i from 1 through 10 {
+    .fadeInUp-#{$i} {
+        animation-name: fadeInUp;
+        animation-duration: 1s;
+        animation-delay: 0.07s*$i;
+        animation-fill-mode: both;
+    }
+}
+
+// @keyframes size {
+    //     0% {
+    //         transform: scale(1);
+    //     }
+    
+    //     50%{
+    //         transform: scale(1.2);
+    //     }
+    
+    //     100% {
+    //         transform: scale(1);
+    //     }
+    // }
