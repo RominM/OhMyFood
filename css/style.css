@@ -81,9 +81,11 @@ h3 {
 }
 @keyframes rotate2 {
   0% {
+    display: block;
     transform: translate(-50%, -50%) rotate(-360deg);
   }
   100% {
+    display: block;
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
@@ -564,20 +566,6 @@ a {
   width: 20px;
 }
 
-.box:hover ~ .tick {
-  position: absolute;
-  right: 0;
-}
-
-.box:hover ~ .tick img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 20px;
-  animation: rotate2 0.5s;
-}
-
 .box:checked ~ .tick {
   right: 0;
 }
@@ -689,18 +677,8 @@ a {
   transition: 0.5s;
 }
 
-.box:hover ~ label .ellipsis {
-  width: calc(100% - 105px);
-  transition: 0.5s;
-}
-
 .box:checked ~ label .ellipsis {
   width: calc(100% - 105px);
-  transition: 0.5s;
-}
-
-.box:hover ~ label:nth-child(2) .cardLi__global--side {
-  right: calc(5% + 60px);
   transition: 0.5s;
 }
 
@@ -729,6 +707,30 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+@media screen and (min-width: 950px) {
+  .box:hover ~ .tick {
+    right: 0;
+  }
+
+  .box:hover ~ .tick img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    animation: rotate2 0.5s;
+  }
+
+  .box:hover ~ label .ellipsis {
+    width: calc(100% - 105px);
+    transition: 0.5s;
+  }
+
+  .box:hover ~ label:nth-child(2) .cardLi__global--side {
+    right: calc(5% + 60px);
+    transition: 0.5s;
   }
 }
 

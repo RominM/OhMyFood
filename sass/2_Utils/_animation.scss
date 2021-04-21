@@ -33,9 +33,11 @@
 
 @keyframes rotate2 {
     0% {
+        display: block;
         transform: translate(-50%,-50%)rotate(-360deg);
     }
     100% {
+        display: block;
         transform: translate(-50%,-50%)rotate(360deg);
     }
 }
