@@ -691,7 +691,8 @@ body {
   position: relative;
 }
 
-.block-page, .block-Rest {
+.block-page,
+.block-Rest {
   position: relative;
   margin: 0;
   padding: 0;
@@ -700,6 +701,11 @@ body {
 
 .block-page {
   animation: opacity 3s;
+  overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 @media screen and (max-width: 950px) {
