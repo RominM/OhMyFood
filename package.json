@@ -4,7 +4,7 @@
   "description": "P3_OC",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/master.scss:./css/style.css",
+    "sass": "sass --watch ./sass/master.scss:./css/style.css --style compressed",
     "prefix": "postcss ./css/style.css -u autoprefixer -o ./css/stylePrefix.css -w"
   },
   "repository": {
