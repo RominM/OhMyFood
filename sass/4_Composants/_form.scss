@@ -44,33 +44,42 @@
     line-height: 25px;
     cursor: pointer;
     &__global {
-        width: 95%;
-        margin: 7px 0px 7px 7px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: auto;
         cursor: pointer;
-        p {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-        &--title {
-            display: block;
-            width: 100%;
-            margin: auto;
-        }
-        &--subtitle {
-            display: block;
-            width: 100%;
-            margin: auto;        
-        }
-        &--side {
-            position: absolute;
-            top: 50%;
-            right: 5%;
-            display: block;
-            background-color: #fff;
-        }
     }
 }
+
+.container {
+    width: 95%;
+    margin: 7px 0px 7px 7px;
+    p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    &__title {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    &__subtitle {
+        display: block;
+        width: 100%;
+        margin: auto;        
+    }
+}
+
+.side {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    display: block;
+    background-color: #fff;
+}
+
 
 .cardLi:hover {
     box-shadow: -3px -2px 8px 3px rgb(212, 212, 212);
@@ -105,6 +114,17 @@
     text-align: center;
     animation: rotate2 0.5s;
 }
+
+.box:checked ~ .container .ellipsis {
+    width: calc(100% - 105px);
+    transition: 0.5s;
+}
+
+.box:checked ~ .container .side {
+    right: calc(5% + 60px);
+    transition: 0.5s;
+}
+
 
 .tick {
     position: absolute;

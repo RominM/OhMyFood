@@ -49,17 +49,17 @@ h3 {
     font-size: 1em;
 }
 
-.medium {
+.medium, .side {
     font-family: 'Roboto-Medium', 'sans-serif';
     font-size: 0.9em;
 }
 
-.cardLi {
-    &__global {
-        font-family: 'Roboto-Medium', 'sans-serif';
-        &--subtitle {
-            font-family: 'Roboto-Light','sans-serif';
-        }
+.ellipsis {
+    &__title {
+    font-family: 'Roboto-Medium', 'sans-serif';
+    }
+    &__subtitle {
+        font-family: 'Roboto-Light','sans-serif';
     }
 }
 

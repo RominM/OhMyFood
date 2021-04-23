@@ -27,12 +27,12 @@
         animation: rotate2 0.5s;
     }
   
-    .box:hover ~ label .ellipsis {
+    .box:hover ~ .container .ellipsis {
         width: calc(100% - 105px);
         transition: 0.5s;
     }
 
-    .box:hover~label:nth-child(2) .cardLi__global--side {
+    .box:hover ~ .container .side {
         right: calc(5% + 60px);
         transition: 0.5s;
     }
