@@ -6,6 +6,12 @@
     background-color: $color_dark-grey;
     padding: 18px;
     box-shadow: inset 0px 2px 5px 2px #b1b1b1;
+    input {
+        width: 115px;
+        border: none;
+        background-color: #EEEEEE;
+        color: #000;
+    }
 }
 
 .explor {
