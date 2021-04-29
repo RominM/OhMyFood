@@ -1,0 +1,48 @@
+//__checkbox.scss__//
+
+.box {
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+}
+
+.tick {
+    position: relative;
+    width: 60px;
+    height: 100%;
+    text-align: center;
+    background-color: $color-tertiary;
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 20px;
+    }
+}
+
+.box:checked ~ .tick {
+    right: 0;
+}
+
+.box:checked ~ .tick img {
+    text-align: center;
+    animation: rotate2 0.5s;
+}
+
+.box:checked ~ .container .ellipsis {
+    width: calc(100% - 105px);
+    transition: 0.5s;
+}
+
+.box:checked ~ .container .side {
+    right: calc(5% + 60px);
+    transition: 0.5s;
+}
+
+
+.tick {
+    position: absolute;
+    right: -60px;
+    transition: 0.5s;
+}

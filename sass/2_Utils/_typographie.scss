@@ -25,8 +25,6 @@
     src:url(../Fonts/Shrikhand/Shrikhand-Regular.ttf) format('truetype')
 }
 
-//title//
-
 h1, #fontMenu {
     font-family: 'Shrikhand';
     font-size: 1.5em;
@@ -41,8 +39,6 @@ h3 {
     font-family: 'Roboto-Black';
     font-size: 1em;
 }
-
-//span//
 
 .light {
     font-family: 'Roboto-Light';
@@ -68,7 +64,7 @@ h3 {
     a {
     font-family: 'Roboto-Medium';
     font-size: 1em;
-    color: #fff;
+    color: $color_white;
     text-align: center;
     }
 }

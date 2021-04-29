@@ -1,5 +1,6 @@
-//__section n°2__//
+//__PART N°2__//
 
+//SECTION//
 .restaurants {
     background-color: $color_clear-grey;
     padding: 25px 10px 25px 10px;
@@ -55,19 +56,5 @@
         margin-left: 10px;
         margin-top: 5px;
         line-height: 1.3em;
-    }
-}
-
-.menu {
-    margin-top: -40px;
-    padding-bottom: 40px;
-    background-color: $color_clear-grey;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
-    overflow: hidden;
-    #fontMenu {
-        position: relative;
-        padding: 25px 10px 10px 25px;
-        background-color: $color_clear-grey;
     }
 }

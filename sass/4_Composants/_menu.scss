@@ -2,6 +2,17 @@
 
 .menu {
     position: relative;
+    margin-top: -40px;
+    padding-bottom: 40px;
+    background-color: $color_clear-grey;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    overflow: hidden;
+    #fontMenu {
+        position: relative;
+        padding: 25px 10px 10px 25px;
+        background-color: $color_clear-grey;
+    }
 }
 
 //formulaire//
@@ -42,7 +53,7 @@
     min-width: 250px;
     margin: 7px;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: $color_white;
     box-shadow: 3px 2px 8px 3px rgb(212, 212, 212);
     transition: 0.3s;
     line-height: 25px;
@@ -53,6 +64,9 @@
         height: 100%;
         margin: auto;
         cursor: pointer;
+    }
+    &:hover {
+        box-shadow: -3px -2px 8px 3px rgb(212, 212, 212);
     }
 }
 
@@ -81,57 +95,5 @@
     top: 50%;
     right: 5%;
     display: block;
-    background-color: #fff;
-}
-
-
-.cardLi:hover {
-    box-shadow: -3px -2px 8px 3px rgb(212, 212, 212);
-}
-
-.box {
-    opacity: 0;
-    width: 0px;
-    height: 0px;
-}
-
-.tick {
-    position: relative;
-    width: 60px;
-    height: 100%;
-    text-align: center;
-    background-color: $color-tertiary;
-    img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        width: 20px;
-    }
-}
-
-.box:checked ~ .tick {
-    right: 0;
-}
-
-.box:checked ~ .tick img {
-    text-align: center;
-    animation: rotate2 0.5s;
-}
-
-.box:checked ~ .container .ellipsis {
-    width: calc(100% - 105px);
-    transition: 0.5s;
-}
-
-.box:checked ~ .container .side {
-    right: calc(5% + 60px);
-    transition: 0.5s;
-}
-
-
-.tick {
-    position: absolute;
-    right: -60px;
-    transition: 0.5s;
+    background-color: $color_white;
 }
