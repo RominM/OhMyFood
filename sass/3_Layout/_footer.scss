@@ -7,11 +7,11 @@
     margin: auto;
     padding-top: 30px;
     padding-bottom: 20px;
-    background-color: rgb(56, 56, 56);
+    background-color: $color-bgfooter;
     h1 {
         font-family: 'Shrikhand';
         font-size: 1.2em;
-        color: #fff;
+        color: $color_white;
         margin-bottom: 20px;
         margin-left: 20px;
     }
@@ -25,14 +25,14 @@
             font-family: 'Roboto-Medium';
             font-size: 1.1em;
             a {
-                color: #fff;
+                color: $color_white;
                 text-decoration: none;
                 width: 25%;
                 text-decoration: underline transparent;
                 transition: 0.2s;
             }
             a:hover {
-                text-decoration: underline #fff;
+                text-decoration: underline $color_white;
             }
         }
         img {

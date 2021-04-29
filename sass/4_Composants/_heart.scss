@@ -1,9 +1,5 @@
 //__heart.scss__//
 
-  //************************************//
- //---------------USED----------------//
-//**********************************//
-
 //__ACTION HEART__//
 
 //label//
@@ -24,6 +20,14 @@
     opacity: 0;
 }
 
+.heartLog {
+    position: absolute;
+    width: 25px;
+    top: 60%;
+    left: 88%;
+    transform: translate(-50%,-50%);
+}
+
 //__SVG GRADIENT HEART__//
 
 //name svg//
@@ -37,11 +41,11 @@
 }
 
 .colorized {
-    display: none;
+    opacity: 0;
 }
 
 .empty {
-    display: block;
+    opacity: 1;
 }
 
 //offset//
@@ -95,9 +99,9 @@
 //action svg//
 
 .heartBox:checked ~ .ImgHeart .colorized {
-    display: block;
+    opacity: 1;
 }
 
 .heartBox:checked ~ .ImgHeart .empty {
-    display: none;
+    opacity: 0;
 }

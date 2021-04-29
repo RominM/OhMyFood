@@ -12,14 +12,15 @@
 @import "./3_Layout/part-2";
 @import "./3_Layout/footer";
 //** 4.COMPOSANTS **\\
-@import "./4_Composants/link";
+@import "./4_Composants/button";
 @import "./4_Composants/loader";
 @import "./4_Composants/img";
-@import "./4_Composants/form";
+@import "./4_Composants/menu";
 @import "./4_Composants/heart";
 @import "./4_Composants/ellipsis";
+@import "./4_Composants/checkbox";
 //** 5.PAGE **\\
-@import "./5_Pages/home";
+@import "./5_Pages/frame";
 //** 6.THEMES **//
 @import "./6_Themes/mediaQ";
 

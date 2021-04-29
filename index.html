@@ -50,22 +50,19 @@
         <!--PART N°1-->
         <section>
             <!-- LOCAL -->
-            <div class="local">
-                <div class="local__img">
-                    <img src="./images/logo/map-marker-alt-solid.svg" alt="icon marker">
+            <form action="#" method="GET">
+                <div class="local">
+                    <div class="local__img">
+                        <img src="./images/logo/map-marker-alt-solid.svg" alt="icon marker">
+                    </div>
+                    <!--MARKER-->
+                    <input type="text" value="Paris, Belleville" name="search" class="medium" />
                 </div>
-                <!--MARKER-->
-                <span class="medium">Paris, Belleville</span>
-            </div>
-
-            <div class="local__img">
-                <img src="images/logo/map-marker-alt-solid.svg" alt="icon marker">
-            </div>
-            <input type="text" placeholder="Paris, Belleville" name="search" class="local__txt"/>-->
+            </form>
 
             <!-- EXPLOR -->
             <div class="explor">
-                <h2>Réservez le menu qui vous convient</h2>
+                <h2 id="fontExplor">Réservez le menu qui vous convient</h2>
                 <span class="light">Découvrez des restaurants d'exception, séléctionnés par nos soins.</span>
                 <a href="#ancreRestaurant" class="explor__btn">
                     <span class="explor__btn--txt">Explorer nos restaurants</span>
@@ -74,7 +71,7 @@
 
             <!-- WORKING -->
             <div class="working">
-                <h2>Fonctionnement</h2>
+                <h2 id="fontWorking">Fonctionnement</h2>
                 <ol class="working__list">
                     <li class="working__list--btn">
                         <a href="#" class="link">
@@ -147,12 +144,13 @@
                         <path class="stroke"
                             d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
                         </path>
+                        <!--Content color-->
                         <path class="FavIn1"
                             d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
                         </path>
                     </svg>
-
                 </label>
+
             </div>
 
             <!-- CARD N°2 -->
@@ -194,12 +192,11 @@
                         <path class="stroke"
                             d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
                         </path>
+                        <!--Content color-->
                         <path class="FavIn2"
                             d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
                         </path>
                     </svg>
-                    <!-- <img src="./IMAGES/logo/heart-regular.svg" class="emptyHeart" alt="coeur vide">
-                    <img src="./IMAGES/logo/heart-solid.svg" class="favHeart" alt="coeur favoris"> -->
                 </label>
             </div>
             <!-- CARD N°3 -->
@@ -218,7 +215,6 @@
                 <!--CHECKBOX SVG-->
                 <input type="checkbox" name="check" id="heart3" class="heartBox">
                 <label for="heart3" class="ImgHeart">
-
                     <!--HEART NEAT-->
                     <svg class="empty" viewBox="-5 0 135 128" xmlns="http://www.w3.org/2000/svg">
                         <path class="stroke"
@@ -238,18 +234,18 @@
                         <path class="stroke"
                             d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
                         </path>
+                        <!--Content color-->
                         <path class="FavIn3"
                             d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
                         </path>
                     </svg>
-                    <!-- <img src="./IMAGES/logo/heart-regular.svg" class="emptyHeart" alt="coeur vide">
-                    <img src="./IMAGES/logo/heart-solid.svg" class="favHeart" alt="coeur favoris"> -->
                 </label>
             </div>
             <!-- CARD N°4 -->
             <div class="restaurants__card">
                 <a href="HTML/le_delice_des_sens.html">
                     <div class="restaurants__card--img">
+
                         <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                             alt="assiette repas 4" class="restaurants__card--bg">
                     </div>
@@ -259,11 +255,10 @@
                         <span class="light">Folie-Méricourt</span>
                     </div>
                 </a>
-
+                
                 <!--CHECKBOX SVG-->
                 <input type="checkbox" name="check" id="heart4" class="heartBox">
                 <label for="heart4" class="ImgHeart">
-
                     <!--HEART NEAT-->
                     <svg class="empty" viewBox="-5 0 135 128" xmlns="http://www.w3.org/2000/svg">
                         <path class="stroke"
@@ -283,12 +278,11 @@
                         <path class="stroke"
                             d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
                         </path>
+                        <!--Content color-->
                         <path class="FavIn4"
                             d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
                         </path>
                     </svg>
-                    <!-- <img src="./IMAGES/logo/heart-regular.svg" class="emptyHeart" alt="coeur vide">
-                    <img src="./IMAGES/logo/heart-solid.svg" class="favHeart" alt="coeur favoris"> -->
                 </label>
             </div>
         </section>
@@ -313,7 +307,7 @@
                     <a href="#">Mentions légales</a>
                 </li>
                 <li>
-                    <p><a href="mailto:romin.manogil@gmail.com">Contact</a></p>
+                    <p><a href="mailto:rominmanogil.off@gmail.com">Contact</a></p>
                 </li>
             </ul>
         </footer>

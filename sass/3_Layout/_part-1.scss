@@ -1,13 +1,21 @@
-//__section n°1__//
+//__PART N°1__//
 
+//LOCAL//
 .local {
     display: flex;
     justify-content: center;
     background-color: $color_dark-grey;
     padding: 18px;
     box-shadow: inset 0px 2px 5px 2px #b1b1b1;
+    input {
+        width: 115px;
+        border: none;
+        background-color: #EEEEEE;
+        color: #000;
+    }
 }
 
+//EXPLOR//
 .explor {
     background-color: $color_clear-grey;
     padding: 25px 10px 25px 10px;
@@ -22,11 +30,12 @@
     }
 }
 
+//WORKING//
 .working {
     width: 90%;
     margin: auto;
     padding-bottom: 25px;
-    background-color: #fff;
+    background-color: $color_white;
     .number {
         position: absolute;
         top: 50%;
@@ -38,7 +47,7 @@
         font-size: 0.9em;
         border-radius: 50%;
         background-color: $color-primary;
-        color: #fff;
+        color: $color_white;
         line-height: 25px;
     }
     h2 {
@@ -57,6 +66,20 @@
     }
     span {
         margin-right: 10px;
-        color: #000;
+        color: $color_black;
+    }
+    a {
+        width: 100%;
+        height: 100%;
+        border: none;
+        cursor: pointer;
+        border-radius: 15px;
+        text-align: center;
+        padding-top: 15px;
+    }
+    a:focus {
+        background-color:  $color_clear-purple;
+        outline: 0 !important;
+        border: none;
     }
 }

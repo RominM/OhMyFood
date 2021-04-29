@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
     <div class="block-Rest">
 
         <!-- HEADER -->
@@ -24,72 +23,98 @@
             <h1>ohmyfood</h1>
         </header>
 
+        <!--IMG BACK-->
         <div class="imgBg">
             <img src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="assiette repas">
         </div>
 
+        <!--MENU-->
         <section class="menu">
-            <h1>À la française<img src="../images/logo/heart-regular.svg" alt="coeur" class="heartLog"></h1>
+            <h2 id="fontMenu">À la française
 
+                <!--HEART-->
+                <input type="checkbox" name="check" id="heart" class="heartBox">
+                <label for="heart" class="ImgHeart heartLog">
+
+                    <!--HEART NEAT-->
+                    <svg class="empty" viewBox="-5 0 135 128" xmlns="http://www.w3.org/2000/svg">
+                        <path class="stroke"
+                            d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
+                        </path>
+                        <path class="white"
+                            d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
+                        </path>
+                    </svg>
+
+                    <!--HEART COLOR-->
+                    <svg class="colorized" viewBox="-5 0 135 128" xmlns="http://www.w3.org/2000/svg">
+                        <linearGradient id="heart-gradient1" x2="0" y2="1">
+                            <stop offset="0%" class="stop-1" />
+                            <stop offset="100%" class="stop-2" />
+                        </linearGradient>
+                        <path class="stroke"
+                            d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
+                        </path>
+                        <path class="FavIn1"
+                            d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
+                        </path>
+                    </svg>
+                </label>
+            </h2>
+
+            <!--FORMULAIRE-->
             <form action="#" method="POST" id="list">
-
                 <!--START 1.0-->
                 <div class="start">
                     <span class="light">Entrées</span>
                     <hr />
-                    <ul class="card">
 
+                    <ul class="card">
                         <!--CARD 1.1-->
-                        <!--Tartare de poulpe acidulé
-                            Aux zestes d'orange
-                            25€-->
                         <li class="cardLi fadeInUp-1">
+                            <label for="start1" class="cardLi__global"></label>
                             <input type="checkbox" name="check" id="start1" class="box">
-                            <label for="start1" class="cardLi__global">
+                            <div class="container">
                                 <div class="ellipsis">
-                                    <p class="cardLi__global--title">Tartare de poulpe acidulé</p>
-                                    <p class="cardLi__global--subtitle">Aux zestes d'orange</p>
+                                    <p class="ellipsis__title">Tartare de poulpe acidulé</p>
+                                    <p class="ellipsis__subtitle">Aux zestes d'orange</p>
                                 </div>
-                                <p class="cardLi__global--side">25€</p>
-                            </label>
+                                <p class="side">25€</p>
+                            </div>
                             <div class="tick">
-                                <img src="../images/logo/check-circle-solid.svg" alt="">
+                                <img src="../images/logo/check-circle-solid.svg" alt="tick vert">
                             </div>
                         </li>
 
                         <!--CARD 2.1-->
-                        <!--Velouté de légumes d'antan
-                            Carotte, panais, topinambour
-                            35€ -->
                         <li class="cardLi fadeInUp-2">
+                            <label for="start2" class="cardLi__global"></label>
                             <input type="checkbox" name="check" id="start2" class="box">
-                            <label for="start2" class="cardLi__global">
+                            <div class="container">
                                 <div class="ellipsis">
-                                    <p class="cardLi__global--title">Velouté de légumes d'antan</p>
-                                    <p class="cardLi__global--subtitle">Carotte, panais, topinambour</p>
+                                    <p class="ellipsis__title">Velouté de légumes d'antan</p>
+                                    <p class="ellipsis__subtitle">Carotte, panais, topinambour</p>
                                 </div>
-                                <p class="cardLi__global--side">35€</p>
-                            </label>
+                                <p class="side">35€</p>
+                            </div>
                             <div class="tick">
-                                <img src="../images/logo/check-circle-solid.svg" alt="">
+                                <img src="../images/logo/check-circle-solid.svg" alt="tick vert">
                             </div>
                         </li>
 
                         <!--CARD 3.1-->
-                        <!--Soupe à l'oignon
-                            Revisitée
-                            20€-->
                         <li class="cardLi fadeInUp-3">
+                            <label for="start3" class="cardLi__global"></label>
                             <input type="checkbox" name="check" id="start3" class="box">
-                            <label for="start3" class="cardLi__global">
+                            <div class="container">
                                 <div class="ellipsis">
-                                    <p class="cardLi__global--title">Soupe à l'oignon</p>
-                                    <p class="cardLi__global--subtitle">Revisitée</p>
+                                    <p class="ellipsis__title">Soupe à l'oignon</p>
+                                    <p class="ellipsis__subtitle">Revisitée</p>
                                 </div>
-                                <p class="cardLi__global--side">20€</p>
-                            </label>
+                                <p class="side">20€</p>
+                            </div>
                             <div class="tick">
-                                <img src="../images/logo/check-circle-solid.svg" alt="">
+                                <img src="../images/logo/check-circle-solid.svg" alt="tick vert">
                             </div>
                         </li>
                     </ul>
@@ -102,61 +127,54 @@
                     <ul class="card">
 
                         <!--CARD 2.1-->
-                        <!--Coquilles Saint-Jacques
-                            Accompagnées d'une purée de panais
-                            40€-->
                         <li class="cardLi fadeInUp-4">
+                            <label for="main1" class="cardLi__global"></label>
                             <input type="checkbox" name="check" id="main1" class="box">
-                            <label for="main1" class="cardLi__global">
+                            <div class="container">
                                 <div class="ellipsis">
-                                    <p class="cardLi__global--title">Coquilles Saint-Jacques</p>
-                                    <p class="cardLi__global--subtitle">Accompagnées d'une purée de panais</p>
+                                    <p class="ellipsis__title">Coquilles Saint-Jacques</p>
+                                    <p class="ellipsis__subtitle">Accompagnées d'une purée de panais</p>
                                 </div>
-                                <p class="cardLi__global--side">40€</p>
-                            </label>
+                                <p class="side">40€</p>
+                            </div>
                             <div class="tick">
-                                <img src="../images/logo/check-circle-solid.svg" alt="">
+                                <img src="../images/logo/check-circle-solid.svg" alt="tick vert">
                             </div>
                         </li>
 
                         <!--CARD 2.2-->
-                        <!--Magret de canard
-                            Et parmentier de pommes de terre
-                            35€-->
                         <li class="cardLi fadeInUp-5">
+                            <label for="main2" class="cardLi__global"></label>
                             <input type="checkbox" name="check" id="main2" class="box">
-                            <label for="main2" class="cardLi__global">
+                            <div class="container">
                                 <div class="ellipsis">
-                                    <p class="cardLi__global--title">Magret de canard</p>
-                                    <p class="cardLi__global--subtitle">Et parmentier de pommes de terre</p>
+                                    <p class="ellipsis__title">Magret de canard</p>
+                                    <p class="ellipsis__subtitle">Et parmentier de pommes de terre</p>
                                 </div>
-                                <p class="cardLi__global--side">35€</p>
-                            </label>
+                                <p class="side">35€</p>
+                            </div>
                             <div class="tick">
-                                <img src="../images/logo/check-circle-solid.svg" alt="">
+                                <img src="../images/logo/check-circle-solid.svg" alt="tick vert">
                             </div>
                         </li>
 
                         <!--CARD 2.3-->
-                        <!--Pigeonneau d’Ille-et-Vilaine
-                            Sur son lit de gnocchis aux légumes
-                            44€ -->
                         <li class="cardLi fadeInUp-6">
+                            <label for="main3" class="cardLi__global"></label>
                             <input type="checkbox" name="check" id="main3" class="box">
-                            <label for="main3" class="cardLi__global">
+                            <div class="container">
                                 <div class="ellipsis">
-                                    <p class="cardLi__global--title">Pigeonneau d’Ille-et-Vilaine</p>
-                                    <p class="cardLi__global--subtitle">Sur son lit de gnocchis aux légumes</p>
+                                    <p class="ellipsis__title">Pigeonneau d’Ille-et-Vilaine</p>
+                                    <p class="ellipsis__subtitle">Sur son lit de gnocchis aux légumes</p>
                                 </div>
-                                <p class="cardLi__global--side">44€</p>
-                            </label>
+                                <p class="side">44€</p>
+                            </div>
                             <div class="tick">
-                                <img src="../images/logo/check-circle-solid.svg" alt="">
+                                <img src="../images/logo/check-circle-solid.svg" alt="tick vert">
                             </div>
                         </li>
                     </ul>
                 </div>
-
 
                 <!--COURSE 3.0-->
                 <div class="course">
@@ -165,56 +183,50 @@
                     <ul class="card">
 
                         <!--CARD 3.1-->
-                        <!--Pétales de violettes glacés
-                            Et purée de noisettes
-                            18€-->
                         <li class="cardLi fadeInUp-7">
+                            <label for="course1" class="cardLi__global"></label>
                             <input type="checkbox" name="check" id="course1" class="box">
-                            <label for="course1" class="cardLi__global">
+                            <div class="container">
                                 <div class="ellipsis">
-                                    <p class="cardLi__global--title">Pétales de violettes glacés</p>
-                                    <p class="cardLi__global--subtitle">Et purée de noisettes</p>
+                                    <p class="ellipsis__title">Pétales de violettes glacés</p>
+                                    <p class="ellipsis__subtitle">Et purée de noisettes</p>
                                 </div>
-                                <p class="cardLi__global--side">18€</p>
-                            </label>
+                                <p class="side">18€</p>
+                            </div>
                             <div class="tick">
-                                <img src="../images/logo/check-circle-solid.svg" alt="">
+                                <img src="../images/logo/check-circle-solid.svg" alt="tick vert">
                             </div>
                         </li>
 
                         <!--CARD 3.2-->
-                        <!--Fondant au chocolat
-                            Revisité
-                            22€-->
                         <li class="cardLi fadeInUp-8">
+                            <label for="course2" class="cardLi__global"></label>
                             <input type="checkbox" name="check" id="course2" class="box">
-                            <label for="course2" class="cardLi__global">
+                            <div class="container">
                                 <div class="ellipsis">
-                                    <p class="cardLi__global--title">Fondant au chocolat</p>
-                                    <p class="cardLi__global--subtitle">Revisité</p>
+                                    <p class="ellipsis__title">Fondant au chocolat</p>
+                                    <p class="ellipsis__subtitle">Revisité</p>
                                 </div>
-                                <p class="cardLi__global--side">22€</p>
-                            </label>
+                                <p class="side">22€</p>
+                            </div>
                             <div class="tick">
-                                <img src="../images/logo/check-circle-solid.svg" alt="">
+                                <img src="../images/logo/check-circle-solid.svg" alt="tick vert">
                             </div>
                         </li>
 
                         <!--CARD 3.3-->
-                        <!--Millefeuille croustillant
-                            Myrtilles et pâte d’amande
-                            23€ -->
                         <li class="cardLi fadeInUp-9">
+                            <label for="course3" class="cardLi__global"></label>
                             <input type="checkbox" name="check" id="course3" class="box">
-                            <label for="course3" class="cardLi__global">
+                            <div class="container">
                                 <div class="ellipsis">
-                                    <p class="cardLi__global--title">Millefeuille croustillant</p>
-                                    <p class="cardLi__global--subtitle">Myrtilles et pâte d’amande</p>
+                                    <p class="ellipsis__title">Millefeuille croustillant</p>
+                                    <p class="ellipsis__subtitle">Myrtilles et pâte d’amande</p>
                                 </div>
-                                <p class="cardLi__global--side">23€</p>
-                            </label>
+                                <p class="side">23€</p>
+                            </div>
                             <div class="tick">
-                                <img src="../images/logo/check-circle-solid.svg" alt="">
+                                <img src="../images/logo/check-circle-solid.svg" alt="tick vert">
                             </div>
                         </li>
                     </ul>
@@ -222,16 +234,19 @@
             </form>
         </section>
 
+        <!--BUTTON-->
         <div class="select">
             <a href="#" class="select__btn">
                 <span class="select__btn--txt">Commander</span>
             </a>
         </div>
 
+        <!--FOOTER-->
         <footer class="footer">
             <h1>ohmyfood</h1>
             <ul class="footer__flex">
-                <li><a href="#">
+                <li>
+                    <a href="#">
                         <img src="../images/logo/utensils-solid.svg" alt="logo couverts">
                         Proposer un restaurant
                     </a>
@@ -246,7 +261,7 @@
                     <a href="#">Mentions légales</a>
                 </li>
                 <li>
-                    <p><a href="mailto:romin.manogil@gmail.com">Contact</a></p>
+                    <p><a href="mailto:rominmanogil.off@gmail.com">Contact</a></p>
                 </li>
             </ul>
         </footer>

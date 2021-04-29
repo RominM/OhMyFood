@@ -25,14 +25,12 @@
     src:url(../Fonts/Shrikhand/Shrikhand-Regular.ttf) format('truetype')
 }
 
-//title//
-
-h1 {
+h1, #fontMenu {
     font-family: 'Shrikhand';
     font-size: 1.5em;
 }
 
-h2 {
+#fontExplor, #fontWorking, #ancreRestaurant {
     font-family: 'Roboto-Black','sans-serif';
     font-size: 1.4em;
 }
@@ -42,24 +40,23 @@ h3 {
     font-size: 1em;
 }
 
-//span//
-
 .light {
     font-family: 'Roboto-Light';
     font-size: 1em;
 }
 
-.medium {
+.medium, .side {
     font-family: 'Roboto-Medium', 'sans-serif';
     font-size: 0.9em;
 }
 
-.cardLi {
-    &__global {
-        font-family: 'Roboto-Medium', 'sans-serif';
-        &--subtitle {
-            font-family: 'Roboto-Light','sans-serif';
-        }
+.ellipsis {
+    &__title {
+    font-family: 'Roboto-Medium', 'sans-serif';
+    }
+    &__subtitle {
+        font-family: 'Roboto-Light','sans-serif';
+        font-size: 0.8em;
     }
 }
 
@@ -67,7 +64,7 @@ h3 {
     a {
     font-family: 'Roboto-Medium';
     font-size: 1em;
-    color: #fff;
+    color: $color_white;
     text-align: center;
     }
 }

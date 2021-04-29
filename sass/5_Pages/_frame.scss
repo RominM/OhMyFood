@@ -4,6 +4,7 @@ body {
     position: relative;
 }
 
+//reset//
 .block-page,
 .block-Rest {
     position: relative;
@@ -12,11 +13,13 @@ body {
     height: 100%;
 }
 
+//loader//
 .block-page {
     animation: opacity 3s;
     overflow-y: hidden;
 }
 
+//scrollbar//
 ::-webkit-scrollbar {
     display: none;
 }

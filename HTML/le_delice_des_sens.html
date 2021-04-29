@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
     <div class="block-Rest">
 
         <!-- HEADER -->
@@ -24,17 +23,47 @@
             <h1>ohmyfood</h1>
         </header>
 
-        <!--IMG BACKGROUND-->
+        <!--IMG BACK-->
         <div class="imgBg">
             <img src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="assiette repas">
         </div>
 
-        <!--SECTION-->
+        <!--MENU-->
         <section class="menu">
-            <h1>Le délice des sens<img src="../images/logo/heart-regular.svg" alt="coeur" class="heartLog"></h1>
+            <h2 id="fontMenu">Le délice des sens
 
+                <!--HEART-->
+                <input type="checkbox" name="check" id="heart" class="heartBox">
+                <label for="heart" class="ImgHeart heartLog">
+
+                    <!--HEART NEAT-->
+                    <svg class="empty" viewBox="-5 0 135 128" xmlns="http://www.w3.org/2000/svg">
+                        <path class="stroke"
+                            d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
+                        </path>
+                        <path class="white"
+                            d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
+                        </path>
+                    </svg>
+
+                    <!--HEART COLOR-->
+                    <svg class="colorized" viewBox="-5 0 135 128" xmlns="http://www.w3.org/2000/svg">
+                        <linearGradient id="heart-gradient1" x2="0" y2="1">
+                            <stop offset="0%" class="stop-1" />
+                            <stop offset="100%" class="stop-2" />
+                        </linearGradient>
+                        <path class="stroke"
+                            d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
+                        </path>
+                        <path class="FavIn1"
+                            d="M64.425 19.75l-.46-.462c-13.72-13.717-35.96-13.717-49.677 0C.57 33.006.57 55.246 14.288 68.964l49.676 49.676.46-.46.46.46 49.677-49.676c13.72-13.718 13.72-35.958 0-49.676-13.715-13.717-35.955-13.717-49.673 0l-.46.46z">
+                        </path>
+                    </svg>
+                </label>
+            </h2>
+
+            <!--FORMULAIRE-->
             <form action="#" method="POST" id="list">
-
                 <!--START 1.0-->
                 <div class="start">
                     <span class="light">Entrées</span>
@@ -42,54 +71,48 @@
                     <ul class="card">
 
                         <!--CARD 1.1-->
-                        <!--Tartare de thon
-                            Assaisonné au yuzu
-                            25€-->
                         <li class="cardLi fadeInUp-1">
+                            <label for="start1" class="cardLi__global"></label>
                             <input type="checkbox" name="check" id="start1" class="box">
-                            <label for="start1" class="cardLi__global">
+                            <div class="container">
                                 <div class="ellipsis">
-                                    <p class="cardLi__global--title">Tartare de thon</p>
-                                    <p class="cardLi__global--subtitle">Assaisonné au yuzu</p>
+                                    <p class="ellipsis__title">Tartare de thon</p>
+                                    <p class="ellipsis__subtitle">Assaisonné au yuzu</p>
                                 </div>
-                                <p class="cardLi__global--side">25€</p>
-                            </label>
+                                <p class="side">25€</p>
+                            </div>
                             <div class="tick">
                                 <img src="../images/logo/check-circle-solid.svg" alt="">
                             </div>
                         </li>
 
                         <!--CARD 2.1-->
-                        <!-- Bouchée de homard croustillant 
-                            Et sa farandole de petits légumes
-                            35€ -->
                         <li class="cardLi fadeInUp-2">
+                            <label for="start2" class="cardLi__global"></label>
                             <input type="checkbox" name="check" id="start2" class="box">
-                            <label for="start2" class="cardLi__global">
+                            <div class="container">
                                 <div class="ellipsis">
-                                    <p class="cardLi__global--title">Bouchée de homard croustillant</p>
-                                    <p class="cardLi__global--subtitle">Et sa farandole de petits légumes</p>
+                                    <p class="ellipsis__title">Bouchée de homard croustillant</p>
+                                    <p class="ellipsis__subtitle">Et sa farandole de petits légumes</p>
                                 </div>
-                                <p class="cardLi__global--side">35€</p>
-                            </label>
+                                <p class="side">35€</p>
+                            </div>
                             <div class="tick">
                                 <img src="../images/logo/check-circle-solid.svg" alt="">
                             </div>
                         </li>
 
                         <!--CARD 3.1-->
-                        <!-- Velouté de cèpes 
-                            Aux truffes
-                            20€ -->
                         <li class="cardLi fadeInUp-3">
+                            <label for="start3" class="cardLi__global"></label>
                             <input type="checkbox" name="check" id="start3" class="box">
-                            <label for="start3" class="cardLi__global">
+                            <div class="container">
                                 <div class="ellipsis">
-                                    <p class="cardLi__global--title">Velouté de cèpes</p>
-                                    <p class="cardLi__global--subtitle">Aux truffes</p>
+                                    <p class="ellipsis__title">Velouté de cèpes</p>
+                                    <p class="ellipsis__subtitle">Aux truffes</p>
                                 </div>
-                                <p class="cardLi__global--side">20€</p>
-                            </label>
+                                <p class="side">20€</p>
+                            </div>
                             <div class="tick">
                                 <img src="../images/logo/check-circle-solid.svg" alt="">
                             </div>
@@ -104,54 +127,48 @@
                     <ul class="card">
 
                         <!--CARD 2.1-->
-                        <!-- Poulet rôti aux herbes de Provence 
-                            Et sa crème de truffe
-                            40€ -->
                         <li class="cardLi fadeInUp-4">
+                            <label for="main1" class="cardLi__global"></label>
                             <input type="checkbox" name="check" id="main1" class="box">
-                            <label for="main1" class="cardLi__global">
+                            <div class="container">
                                 <div class="ellipsis">
-                                    <p class="cardLi__global--title">Poulet rôti aux herbes de Provence</p>
-                                    <p class="cardLi__global--subtitle">Et sa crème de truffe</p>
+                                    <p class="ellipsis__title">Poulet rôti aux herbes de Provence</p>
+                                    <p class="ellipsis__subtitle">Et sa crème de truffe</p>
                                 </div>
-                                <p class="cardLi__global--side">40€</p>
-                            </label>
+                                <p class="side">40€</p>
+                            </div>
                             <div class="tick">
                                 <img src="../images/logo/check-circle-solid.svg" alt="">
                             </div>
                         </li>
 
                         <!--CARD 2.2-->
-                        <!-- Langouste rôtie
-                            Et ses légumes de saison
-                            35€ -->
                         <li class="cardLi fadeInUp-5">
+                            <label for="main2" class="cardLi__global"></label>
                             <input type="checkbox" name="check" id="main2" class="box">
-                            <label for="main2" class="cardLi__global">
+                            <div class="container">
                                 <div class="ellipsis">
-                                    <p class="cardLi__global--title">Langouste rôtie</p>
-                                    <p class="cardLi__global--subtitle">Et ses légumes de saison</p>
+                                    <p class="ellipsis__title">Langouste rôtie</p>
+                                    <p class="ellipsis__subtitle">Et ses légumes de saison</p>
                                 </div>
-                                <p class="cardLi__global--side">35€</p>
-                            </label>
+                                <p class="side">35€</p>
+                            </div>
                             <div class="tick">
                                 <img src="../images/logo/check-circle-solid.svg" alt="">
                             </div>
                         </li>
 
                         <!--CARD 2.3-->
-                        <!-- Côte de boeuf Angus 
-                            Et sa purée de panais
-                            44€ -->
                         <li class="cardLi fadeInUp-6">
+                            <label for="main3" class="cardLi__global"></label>
                             <input type="checkbox" name="check" id="main3" class="box">
-                            <label for="main3" class="cardLi__global">
+                            <div class="container">
                                 <div class="ellipsis">
-                                    <p class="cardLi__global--title">Côte de boeuf Angus</p>
-                                    <p class="cardLi__global--subtitle">Et sa purée de panais</p>
+                                    <p class="ellipsis__title">Côte de boeuf Angus</p>
+                                    <p class="ellipsis__subtitle">Et sa purée de panais</p>
                                 </div>
-                                <p class="cardLi__global--side">44€</p>
-                            </label>
+                                <p class="side">44€</p>
+                            </div>
                             <div class="tick">
                                 <img src="../images/logo/check-circle-solid.svg" alt="">
                             </div>
@@ -167,54 +184,48 @@
                     <ul class="card">
 
                         <!--CARD 3.1-->
-                        <!-- Farandole de desserts
-                            Du chef
-                            18€ -->
                         <li class="cardLi fadeInUp-7">
                             <input type="checkbox" name="check" id="course1" class="box">
-                            <label for="course1" class="cardLi__global">
+                            <label for="course1" class="cardLi__global"></label>
+                            <div class="container">
                                 <div class="ellipsis">
-                                    <p class="cardLi__global--title">Farandole de desserts</p>
-                                    <p class="cardLi__global--subtitle">Du chef</p>
+                                    <p class="ellipsis__title">Farandole de desserts</p>
+                                    <p class="ellipsis__subtitle">Du chef</p>
                                 </div>
-                                <p class="cardLi__global--side">18€</p>
-                            </label>
+                                <p class="side">18€</p>
+                            </div>
                             <div class="tick">
                                 <img src="../images/logo/check-circle-solid.svg" alt="">
                             </div>
                         </li>
 
                         <!--CARD 3.2-->
-                        <!-- Crème brulée 
-                            Revisitée
-                            22€ -->
                         <li class="cardLi fadeInUp-8">
                             <input type="checkbox" name="check" id="course2" class="box">
-                            <label for="course2" class="cardLi__global">
+                            <label for="course2" class="cardLi__global"></label>
+                            <div class="container">
                                 <div class="ellipsis">
-                                    <p class="cardLi__global--title">Crème brulée</p>
-                                    <p class="cardLi__global--subtitle">Revisitée</p>
+                                    <p class="ellipsis__title">Crème brulée</p>
+                                    <p class="ellipsis__subtitle">Revisitée</p>
                                 </div>
-                                <p class="cardLi__global--side">22€</p>
-                            </label>
+                                <p class="side">22€</p>
+                            </div>
                             <div class="tick">
                                 <img src="../images/logo/check-circle-solid.svg" alt="">
                             </div>
                         </li>
 
                         <!--CARD 3.3-->
-                        <!-- Tiramisu 
-                            À la noisette
-                            23€ -->
                         <li class="cardLi fadeInUp-9">
+                            <label for="course3" class="cardLi__global"></label>
                             <input type="checkbox" name="check" id="course3" class="box">
-                            <label for="course3" class="cardLi__global">
+                            <div class="container">
                                 <div class="ellipsis">
-                                    <p class="cardLi__global--title">Tiramisu </p>
-                                    <p class="cardLi__global--subtitle">À la noisette</p>
+                                    <p class="ellipsis__title">Tiramisu </p>
+                                    <p class="ellipsis__subtitle">À la noisette</p>
                                 </div>
-                                <p class="cardLi__global--side">23€</p>
-                            </label>
+                                <p class="side">23€</p>
+                            </div>
                             <div class="tick">
                                 <img src="../images/logo/check-circle-solid.svg" alt="">
                             </div>
@@ -224,12 +235,14 @@
             </form>
         </section>
 
+        <!--BUTTON-->
         <div class="select">
             <a href="#" class="select__btn">
                 <span class="select__btn--txt">Commander</span>
             </a>
         </div>
-        
+
+        <!--FOOTER-->
         <footer class="footer">
             <h1>ohmyfood</h1>
             <ul class="footer__flex">
@@ -249,7 +262,7 @@
                     <a href="#">Mentions légales</a>
                 </li>
                 <li>
-                    <p><a href="mailto:romin.manogil@gmail.com">Contact</a></p>
+                    <p><a href="mailto:rominmanogil.off@gmail.com">Contact</a></p>
                 </li>
             </ul>
         </footer>
