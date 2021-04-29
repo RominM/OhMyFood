@@ -1,0 +1,25 @@
+// __home.scss__//
+
+body {
+    position: relative;
+}
+
+//reset//
+.block-page,
+.block-Rest {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+//loader//
+.block-page {
+    animation: opacity 3s;
+    overflow-y: hidden;
+}
+
+//scrollbar//
+::-webkit-scrollbar {
+    display: none;
+}
