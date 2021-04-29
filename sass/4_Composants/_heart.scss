@@ -24,6 +24,18 @@
     opacity: 0;
 }
 
+.menu {
+    position: relative;
+}
+
+.heartLog {
+    position: absolute;
+    width: 25px;
+    top: 60%;
+    left: 88%;
+    transform: translate(-50%,-50%);
+}
+
 //__SVG GRADIENT HEART__//
 
 //name svg//
