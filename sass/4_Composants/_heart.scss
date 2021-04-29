@@ -1,9 +1,5 @@
 //__heart.scss__//
 
-  //************************************//
- //---------------USED----------------//
-//**********************************//
-
 //__ACTION HEART__//
 
 //label//
@@ -22,10 +18,6 @@
     width: 1px;
     height: 1px;
     opacity: 0;
-}
-
-.menu {
-    position: relative;
 }
 
 .heartLog {
@@ -49,11 +41,11 @@
 }
 
 .colorized {
-    display: none;
+    opacity: 0;
 }
 
 .empty {
-    display: block; //opacity //z-index
+    opacity: 1;
 }
 
 //offset//
@@ -107,9 +99,9 @@
 //action svg//
 
 .heartBox:checked ~ .ImgHeart .colorized {
-    display: block;
+    opacity: 1;
 }
 
 .heartBox:checked ~ .ImgHeart .empty {
-    display: none;
+    opacity: 0;
 }
