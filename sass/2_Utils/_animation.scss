@@ -30,7 +30,6 @@
 }
 
 //__Green-Tick__//
-
 @keyframes rotate2 {
     0% {
         display: block;
@@ -43,7 +42,6 @@
 }
 
 //animation FadeInUp//
-
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -54,7 +52,6 @@
         transform: translate3d(0, 0, 0);
     }
 }
-
 //loop//
 @for $i from 1 through 10 {
     .fadeInUp-#{$i} {
